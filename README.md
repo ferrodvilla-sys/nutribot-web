@@ -69,7 +69,7 @@ Edita `enlaces.md` y añade una línea `- [Texto](https://dirección)`.
 ## 5. Capturas de la app
 
 Sube a `assets/img/` estas imágenes (PNG, mejor en vertical) y aparecerán solas en la portada (mientras no estén, ese hueco no se muestra):
-`alertas.jpg`, `comparador.jpg`, `patrones.jpg`, `informes.jpg`, `ficha.jpg` (falta la de la ficha de alergias).
+`alertas.jpg`, `comparador.jpg`, `patrones.jpg`, `informes.jpg`, `ficha.jpg`.
 
 ## SEO
 
