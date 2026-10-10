@@ -39,8 +39,14 @@ keywords: [app alergias alimentarias, escáner de alérgenos, app intolerancias,
 </section>
 
 <section id="como-funciona" class="steps">
-  <p class="kicker">Cómo funciona</p>
-  <h2>Tres pasos y listo</h2>
+  <div class="steps-head">
+    <div>
+      <p class="kicker">Cómo funciona</p>
+      <h2>Tres pasos y listo</h2>
+      <p class="steps-lead">Configúralo una vez y olvídate de leer letra pequeña en cada pasillo del súper.</p>
+    </div>
+    <img class="ilus" src="{{ '/assets/img/ilus/cesta.svg' | relative_url }}" alt="Cesta de la compra con una lupa revisando la etiqueta de un producto" width="480" height="400" loading="lazy">
+  </div>
   <div class="steps-grid">
     <div class="step"><span class="step-n">1</span>{% include icon.html name="user" %}<h3>Crea tu perfil</h3><p>Marca tus alergias e intolerancias: gluten, lactosa, frutos secos, sulfitos, FODMAP…</p></div>
     <div class="step"><span class="step-n">2</span>{% include icon.html name="scan" %}<h3>Escanea en el súper</h3><p>Apunta al código de barras y Nutribot revisa la lista de ingredientes real.</p></div>
@@ -171,8 +177,11 @@ keywords: [app alergias alimentarias, escáner de alérgenos, app intolerancias,
 
 <section class="cta-band">
   <div class="cta-inner">
-    <h2>Compra con tranquilidad desde hoy</h2>
-    <p>{{ site.trial_days }} días gratis, sin compromiso.</p>
-    <a class="btn btn-light btn-lg" href="{{ site.play_store_url }}">{% include icon.html name="play" %}Descargar en Google Play</a>
+    <div class="cta-copy">
+      <h2>Compra y come fuera con tranquilidad</h2>
+      <p>{{ site.trial_days }} días gratis, sin compromiso. Tu ficha de alergias siempre en el bolsillo.</p>
+      <a class="btn btn-light btn-lg" href="{{ site.play_store_url }}">{% include icon.html name="play" %}Descargar en Google Play</a>
+    </div>
+    <img class="ilus" src="{{ '/assets/img/ilus/restaurante.svg' | relative_url }}" alt="Plato de comida y un móvil enseñando la ficha de alergias" width="480" height="400" loading="lazy">
   </div>
 </section>

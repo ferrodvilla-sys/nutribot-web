@@ -35,12 +35,16 @@ exclude:
 # Temas del blog. Cada artículo lleva "tema:" con uno de estos nombres.
 temas:
   - nombre: Etiquetas
+    imagen: /assets/img/ilus/etiquetas.svg
     descripcion: Aprende a leer lo que de verdad lleva un producto.
   - nombre: Alergias
+    imagen: /assets/img/ilus/alergias.svg
     descripcion: Vivir con alergias e intolerancias en el día a día.
   - nombre: FODMAP
+    imagen: /assets/img/ilus/fodmap.svg
     descripcion: Qué son y dónde se esconden.
   - nombre: Hábitos
+    imagen: /assets/img/ilus/habitos.svg
     descripcion: Pequeños cambios para comer mejor y conocerte más.
 
 defaults:

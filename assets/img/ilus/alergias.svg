@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-label="Escudo protegiendo frente a alérgenos como trigo, cacahuete y leche">
+  <rect width="600" height="340" fill="#f5e1de"/>
+  <circle cx="300" cy="170" r="140" fill="#efcfc9"/>
+  <!-- trigo -->
+  <g transform="translate(110 110) rotate(-15)">
+    <path d="M0 140V0" stroke="#c88840" stroke-width="6" stroke-linecap="round"/>
+    <g fill="#e8c26a"><ellipse cx="-12" cy="20" rx="9" ry="16" transform="rotate(-25 -12 20)"/><ellipse cx="12" cy="20" rx="9" ry="16" transform="rotate(25 12 20)"/><ellipse cx="-12" cy="50" rx="9" ry="16" transform="rotate(-25 -12 50)"/><ellipse cx="12" cy="50" rx="9" ry="16" transform="rotate(25 12 50)"/><ellipse cx="-12" cy="80" rx="9" ry="16" transform="rotate(-25 -12 80)"/><ellipse cx="12" cy="80" rx="9" ry="16" transform="rotate(25 12 80)"/><ellipse cx="0" cy="-4" rx="8" ry="15"/></g>
+  </g>
+  <!-- cacahuete -->
+  <g transform="translate(470 120) rotate(25)">
+    <path d="M0-40c22 0 30 18 22 32-6 10-6 14 0 24 8 14 0 34-22 34s-30-20-22-34c6-10 6-14 0-24-8-14 0-32 22-32z" fill="#d6a46a"/>
+    <path d="M-8-20h16M-10 26h20" stroke="#b8844a" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <!-- leche -->
+  <g transform="translate(455 210)">
+    <path d="M0 20l12-20h36l12 20v80a8 8 0 0 1-8 8H8a8 8 0 0 1-8-8z" fill="#fdfdfb"/>
+    <rect x="12" y="-14" width="36" height="14" rx="3" fill="#516645"/>
+    <rect x="10" y="44" width="40" height="26" rx="5" fill="#e7ecdf"/>
+  </g>
+  <!-- escudo -->
+  <path d="M300 60l90 34v66c0 60-40 100-90 120-50-20-90-60-90-120V94z" fill="#516645"/>
+  <path d="M300 82l68 26v52c0 46-30 78-68 94-38-16-68-48-68-94v-52z" fill="#6f8661"/>
+  <path d="M262 168l26 26 52-56" stroke="#fdfdfb" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

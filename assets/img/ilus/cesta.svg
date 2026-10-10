@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 400" role="img" aria-label="Cesta de la compra con una lupa revisando la etiqueta de un producto">
+  <ellipse cx="240" cy="372" rx="190" ry="14" fill="#3e5034" opacity=".12"/>
+  <circle cx="250" cy="190" r="165" fill="#e7ecdf"/>
+  <circle cx="395" cy="80" r="26" fill="#f6ead9"/>
+  <circle cx="70" cy="110" r="14" fill="#f6ead9"/>
+  <!-- productos detrás de la cesta -->
+  <rect x="120" y="110" width="70" height="120" rx="10" fill="#c88840"/>
+  <rect x="130" y="140" width="50" height="40" rx="6" fill="#fdfdfb"/>
+  <rect x="138" y="150" width="34" height="5" rx="2.5" fill="#c88840"/>
+  <rect x="138" y="162" width="24" height="5" rx="2.5" fill="#e3c9a3"/>
+  <path d="M215 120c0-14 10-22 10-36h30c0 14 10 22 10 36v110h-50z" fill="#ac4439"/>
+  <rect x="228" y="70" width="24" height="16" rx="4" fill="#3e5034"/>
+  <rect x="222" y="150" width="36" height="34" rx="6" fill="#fdfdfb"/>
+  <path d="M232 167l6 6 12-12" stroke="#516645" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M300 140c-10-40 20-70 40-60-5 30-15 45-40 60z" fill="#7fa36a"/>
+  <path d="M310 150c20-35 55-40 65-25-25 15-40 22-65 25z" fill="#516645"/>
+  <circle cx="320" cy="185" r="42" fill="#d9674f"/>
+  <path d="M308 160c6-6 14-8 20-6" stroke="#f3a08e" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- cesta -->
+  <path d="M95 210h290l-28 140a14 14 0 0 1-14 11H137a14 14 0 0 1-14-11z" fill="#516645"/>
+  <rect x="82" y="196" width="316" height="30" rx="15" fill="#3e5034"/>
+  <path d="M165 250v80M215 250v80M265 250v80M315 250v80" stroke="#6f8661" stroke-width="10" stroke-linecap="round"/>
+  <path d="M130 196c10-60 40-90 110-90s100 30 110 90" stroke="#3e5034" stroke-width="10" fill="none" stroke-linecap="round" opacity=".0"/>
+  <!-- lupa -->
+  <g transform="rotate(-18 380 250)">
+    <rect x="368" y="285" width="24" height="80" rx="12" fill="#3e5034"/>
+    <circle cx="380" cy="245" r="52" fill="#fdfdfb" stroke="#3e5034" stroke-width="12"/>
+    <rect x="352" y="225" width="56" height="7" rx="3.5" fill="#c88840"/>
+    <rect x="352" y="241" width="40" height="7" rx="3.5" fill="#e3e5dc"/>
+    <rect x="352" y="257" width="48" height="7" rx="3.5" fill="#e3e5dc"/>
+    <path d="M345 210a40 40 0 0 1 22-14" stroke="#e7ecdf" stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- chispas -->
+  <path d="M90 60l5 12 12 5-12 5-5 12-5-12-12-5 12-5z" fill="#c88840"/>
+  <path d="M430 160l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="#516645"/>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-label="Etiqueta de un producto bajo una lupa">
+  <rect width="600" height="340" fill="#f6ead9"/>
+  <circle cx="480" cy="60" r="90" fill="#efdcc0"/>
+  <circle cx="90" cy="300" r="70" fill="#efdcc0"/>
+  <rect x="170" y="50" width="220" height="250" rx="18" fill="#fdfdfb" transform="rotate(-6 280 175)"/>
+  <g transform="rotate(-6 280 175)">
+    <rect x="195" y="78" width="120" height="14" rx="7" fill="#1f2419"/>
+    <rect x="195" y="108" width="170" height="9" rx="4.5" fill="#e3e5dc"/>
+    <rect x="195" y="128" width="60" height="9" rx="4.5" fill="#c88840"/>
+    <rect x="262" y="128" width="100" height="9" rx="4.5" fill="#e3e5dc"/>
+    <rect x="195" y="148" width="140" height="9" rx="4.5" fill="#e3e5dc"/>
+    <rect x="195" y="168" width="90" height="9" rx="4.5" fill="#e3e5dc"/>
+    <rect x="292" y="168" width="70" height="9" rx="4.5" fill="#c88840"/>
+    <rect x="195" y="200" width="170" height="70" rx="10" fill="#f4f5f0"/>
+    <path d="M210 250v-30M222 250v-30M230 250v-30M242 250v-30M250 250v-30M262 250v-30M268 250v-30M280 250v-30" stroke="#1f2419" stroke-width="4"/>
+  </g>
+  <g transform="rotate(-20 410 190)">
+    <rect x="398" y="230" width="24" height="90" rx="12" fill="#3e5034"/>
+    <circle cx="410" cy="185" r="56" fill="#fdfdfb" fill-opacity=".55" stroke="#3e5034" stroke-width="12"/>
+    <path d="M378 150a42 42 0 0 1 24-14" stroke="#fdfdfb" stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+  <path d="M110 70l5 12 12 5-12 5-5 12-5-12-12-5 12-5z" fill="#c88840"/>
+</svg>

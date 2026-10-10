@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 400" role="img" aria-label="Plato de comida y un móvil enseñando la ficha de alergias">
+  <ellipse cx="240" cy="372" rx="190" ry="14" fill="#000" opacity=".15"/>
+  <circle cx="230" cy="200" r="165" fill="#fdfdfb" opacity=".12"/>
+  <!-- tenedor y cuchillo -->
+  <rect x="58" y="150" width="12" height="190" rx="6" fill="#efe6d6"/>
+  <path d="M46 110v50a18 18 0 0 0 36 0v-50" stroke="#efe6d6" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M64 110v40" stroke="#efe6d6" stroke-width="8" stroke-linecap="round"/>
+  <path d="M330 340V120c30 10 40 60 30 110h-10v110z" fill="#efe6d6"/>
+  <!-- plato -->
+  <circle cx="200" cy="240" r="120" fill="#fdfdfb"/>
+  <circle cx="200" cy="240" r="92" fill="#f4f5f0"/>
+  <circle cx="200" cy="240" r="92" fill="none" stroke="#e3e5dc" stroke-width="4"/>
+  <!-- comida -->
+  <path d="M140 250c0-35 40-55 70-45 30-15 65 10 55 45-10 30-115 35-125 0z" fill="#e8c26a"/>
+  <circle cx="175" cy="225" r="20" fill="#d9674f"/>
+  <circle cx="232" cy="222" r="16" fill="#d9674f"/>
+  <path d="M150 270c20-30 50-20 60-5-15 15-45 18-60 5z" fill="#7fa36a"/>
+  <path d="M215 275c20-25 45-20 55-5-15 12-40 15-55 5z" fill="#516645"/>
+  <circle cx="200" cy="248" r="6" fill="#fdfdfb"/>
+  <circle cx="186" cy="262" r="4" fill="#fdfdfb"/>
+  <!-- móvil -->
+  <g transform="rotate(8 370 200)">
+    <rect x="300" y="60" width="140" height="250" rx="24" fill="#23291f"/>
+    <rect x="310" y="72" width="120" height="226" rx="16" fill="#fdfdfb"/>
+    <rect x="352" y="80" width="36" height="6" rx="3" fill="#23291f"/>
+    <rect x="322" y="100" width="70" height="9" rx="4.5" fill="#1f2419"/>
+    <rect x="320" y="122" width="100" height="120" rx="12" fill="none" stroke="#ac4439" stroke-width="3"/>
+    <path d="M334 146l8-14 8 14z" fill="none" stroke="#ac4439" stroke-width="3" stroke-linejoin="round"/>
+    <rect x="356" y="136" width="52" height="7" rx="3.5" fill="#1f2419"/>
+    <rect x="332" y="160" width="40" height="18" rx="9" fill="#ac4439"/>
+    <rect x="332" y="188" width="34" height="18" rx="9" fill="#c88840"/>
+    <rect x="370" y="188" width="40" height="18" rx="9" fill="#c88840"/>
+    <rect x="332" y="214" width="56" height="18" rx="9" fill="#c88840"/>
+    <rect x="320" y="256" width="100" height="26" rx="13" fill="#516645"/>
+  </g>
+  <path d="M420 40l5 12 12 5-12 5-5 12-5-12-12-5 12-5z" fill="#e8c26a"/>
+  <path d="M110 60l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="#efe6d6"/>
+</svg>
