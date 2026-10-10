@@ -8,13 +8,25 @@ permalink: /aviso-legal/
 
 # Aviso legal
 
-<!-- RELLENA: en España la LSSI exige identificar al titular de la web. -->
+## Titular de la web
 
-- **Titular:** Fernando Rodríguez Villa
-- **NIF:** (rellenar)
-- **Domicilio:** (rellenar)
+- **Titular:** {{ site.author }}
 - **Contacto:** [{{ site.contact_email }}](mailto:{{ site.contact_email }})
 
-Nutribot ofrece información orientativa sobre alimentos. No es un producto sanitario, no diagnostica y no sustituye el consejo de un profesional.
+## Objeto
+
+Esta web presenta Nutribot, una aplicación para Android que ayuda a leer etiquetas de alimentos y a registrar comidas teniendo en cuenta alergias e intolerancias, y publica artículos informativos relacionados.
+
+## Carácter informativo
+
+Nutribot y los contenidos de esta web son orientativos. No son un producto sanitario, no diagnostican y no sustituyen el consejo de un profesional sanitario. Comprueba siempre la etiqueta del producto, especialmente si tienes una alergia grave.
+
+## Enlaces externos
+
+Esta web incluye enlaces a sitios de terceros. No nos hacemos responsables de su contenido.
+
+## Propiedad intelectual
+
+Los textos, imágenes y diseño de esta web pertenecen a su titular, salvo que se indique lo contrario.
 
 </section>
