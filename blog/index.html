@@ -1,18 +1,41 @@
 ---
 layout: default
 title: Blog
-description: Artículos sobre alergias, intolerancias, FODMAP y cómo leer etiquetas.
+description: Guías cortas y prácticas sobre alergias, intolerancias, FODMAP y cómo leer etiquetas.
 ---
 <section class="page">
   <h1>Blog</h1>
   <p class="lead">{{ page.description }}</p>
-  <div class="post-grid">
-    {% for post in site.posts %}
-    <a class="post-card" href="{{ post.url | relative_url }}">
-      <span class="post-date">{{ post.date | date: "%d/%m/%Y" }}</span>
-      <h3>{{ post.title }}</h3>
-      {% if post.description %}<p>{{ post.description }}</p>{% endif %}
-    </a>
-    {% endfor %}
+
+  {% assign destacados = site.posts | where: "destacado", true %}
+  {% if destacados.size > 0 %}
+  <div class="start-here">
+    <h2>Empieza aquí</h2>
+    <div class="post-grid">
+      {% for post in destacados limit:3 %}{% include post-card.html post=post %}{% endfor %}
+    </div>
   </div>
+  {% endif %}
+
+  <nav class="topic-nav">
+    {% for tema in site.temas %}<a href="#{{ tema.nombre | slugify }}">{{ tema.nombre }}</a>{% endfor %}
+  </nav>
+
+  {% for tema in site.temas %}
+  {% assign posts_tema = site.posts | where: "tema", tema.nombre %}
+  {% if posts_tema.size > 0 %}
+  <section class="topic" id="{{ tema.nombre | slugify }}">
+    <h2>{{ tema.nombre }}</h2>
+    <p class="topic-desc">{{ tema.descripcion }}</p>
+    <div class="post-grid">
+      {% for post in posts_tema %}{% include post-card.html post=post %}{% endfor %}
+    </div>
+  </section>
+  {% endif %}
+  {% endfor %}
+
+  <aside class="post-cta">
+    <p><strong>¿Sobre qué quieres que escribamos?</strong> Cuéntanos qué dudas tienes con las etiquetas o tus alergias.</p>
+    <a class="btn" href="mailto:{{ site.contact_email }}?subject=Idea%20para%20el%20blog">Sugerir un tema</a>
+  </aside>
 </section>

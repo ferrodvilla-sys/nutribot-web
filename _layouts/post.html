@@ -1,8 +1,9 @@
 ---
 layout: default
 ---
+{% assign words = content | number_of_words %}{% assign mins = words | divided_by: 200 | plus: 1 %}
 <article class="post">
-  <p class="post-meta"><a href="{{ '/blog/' | relative_url }}">← Blog</a> · {{ page.date | date: "%d/%m/%Y" }}</p>
+  <p class="post-meta"><a href="{{ '/blog/' | relative_url }}">← Blog</a>{% if page.tema %} · <a href="{{ '/blog/' | relative_url }}#{{ page.tema | slugify }}">{{ page.tema }}</a>{% endif %} · {{ mins }} min de lectura</p>
   <h1>{{ page.title }}</h1>
   {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
   <div class="post-body">
@@ -13,4 +14,16 @@ layout: default
     <a class="btn" href="{{ site.play_store_url }}">Probar {{ site.trial_days }} días gratis</a>
   </aside>
   <p class="disclaimer">Este artículo es informativo y no sustituye el consejo de un profesional sanitario.</p>
+
+  {% assign same = site.posts | where: "tema", page.tema | where_exp: "p", "p.url != page.url" %}
+  {% assign others = site.posts | where_exp: "p", "p.tema != page.tema" %}
+  {% assign related = same | concat: others %}
+  {% if related.size > 0 %}
+  <section class="related">
+    <h2>Sigue leyendo</h2>
+    <div class="post-grid">
+      {% for post in related limit:3 %}{% include post-card.html post=post %}{% endfor %}
+    </div>
+  </section>
+  {% endif %}
 </article>

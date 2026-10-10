@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Nutribot, alergias e intolerancias en cada producto
+title: "Nutribot: app de alergias e intolerancias alimentarias"
+keywords: [app alergias alimentarias, escáner de alérgenos, app intolerancias, app FODMAP, leer etiquetas alimentos, diario de comidas y síntomas, sin gluten, sin lactosa]
 ---
 <header class="hero">
   <h1>Escanea un producto y sabe al momento si <span>encaja con tus alergias e intolerancias</span></h1>
@@ -71,17 +72,51 @@ title: Nutribot, alergias e intolerancias en cada producto
   </div>
 </section>
 
+
+<section class="faq">
+  <h2>Preguntas frecuentes</h2>
+  <details>
+    <summary>¿Qué alérgenos detecta Nutribot?</summary>
+    <p>Los 14 alérgenos de declaración obligatoria en la UE (gluten, leche, huevo, frutos de cáscara, cacahuete, soja, pescado, crustáceos, moluscos, sésamo, mostaza, apio, altramuces y sulfitos), además de intolerancias como la lactosa y los FODMAP.</p>
+  </details>
+  <details>
+    <summary>¿En qué se diferencia de otras apps para escanear alimentos?</summary>
+    <p>Está pensada para personas con alergias e intolerancias: revisa la lista de ingredientes real, distingue entre "lo lleva" y "puede contener" para evitar falsos positivos, e incluye FODMAP, no solo gluten y lactosa.</p>
+  </details>
+  <details>
+    <summary>¿Nutribot diagnostica intolerancias?</summary>
+    <p>No. Nutribot es una herramienta informativa: te ayuda a leer etiquetas y a ver coincidencias entre lo que comes y cómo te encuentras, para que lo comentes con tu profesional sanitario.</p>
+  </details>
+  <details>
+    <summary>¿Cuánto cuesta?</summary>
+    <p>Tienes {{ site.trial_days }} días gratis con todas las funciones. Después cuesta {{ site.price_month }} al mes y puedes cancelar cuando quieras desde Google Play.</p>
+  </details>
+  <details>
+    <summary>¿Está disponible para iPhone?</summary>
+    <p>De momento Nutribot está disponible para Android en Google Play.</p>
+  </details>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Nutribot",
+  "operatingSystem": "Android",
+  "applicationCategory": "HealthApplication",
+  "description": {{ site.description | jsonify }},
+  "url": "{{ site.url }}",
+  "downloadUrl": "{{ site.play_store_url }}",
+  "inLanguage": "es",
+  "offers": { "@type": "Offer", "price": "3.99", "priceCurrency": "EUR" }
+}
+</script>
+
 {% if site.posts.size > 0 %}
 <section class="latest">
   <h2>Del blog</h2>
   <div class="post-grid">
-    {% for post in site.posts limit:3 %}
-    <a class="post-card" href="{{ post.url | relative_url }}">
-      <span class="post-date">{{ post.date | date: "%d/%m/%Y" }}</span>
-      <h3>{{ post.title }}</h3>
-      {% if post.description %}<p>{{ post.description }}</p>{% endif %}
-    </a>
-    {% endfor %}
+    {% for post in site.posts limit:3 %}{% include post-card.html post=post %}{% endfor %}
   </div>
   <p class="center"><a href="{{ '/blog/' | relative_url }}">Ver todos los artículos →</a></p>
 </section>

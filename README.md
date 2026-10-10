@@ -45,6 +45,9 @@ Recomendado: en **Settings (de tu perfil) → Pages → Add a domain** verifica 
 ---
 title: "Cómo leer una etiqueta en 30 segundos"
 description: "Una frase que resuma el artículo (sale en Google y en la portada)."
+tema: Etiquetas          # Etiquetas, Alergias, FODMAP o Hábitos (se cambian en _config.yml)
+destacado: true          # opcional: aparece en "Empieza aquí" del blog
+keywords: [cómo leer etiquetas, alérgenos etiqueta]   # opcional: búsquedas que quieres captar
 ---
 
 Tu texto aquí. **Negrita**, *cursiva*, [enlaces](https://ejemplo.com).
@@ -65,8 +68,13 @@ Edita `enlaces.md` y añade una línea `- [Texto](https://dirección)`.
 
 ## 5. Capturas de la app
 
-Sube a `assets/img/` estas imágenes (PNG, mejor en vertical) y aparecerán solas en la portada:
+Sube a `assets/img/` estas imágenes (PNG, mejor en vertical) y aparecerán solas en la portada (mientras no estén, ese hueco no se muestra):
 `alertas.png`, `comparador.png`, `patrones.png`, `informes.png`, `ficha.png`.
+
+## SEO
+
+- El título y la descripción de cada artículo son lo que más cuenta para Google: escribe el título como lo buscaría la gente ("qué significa puede contener trazas").
+- Da de alta la web en [Google Search Console](https://search.google.com/search-console) (verificación por DNS: añades un registro TXT en Namecheap) y envía `https://nutribot.eu/sitemap.xml`.
 
 ## 6. Ajustes generales
 

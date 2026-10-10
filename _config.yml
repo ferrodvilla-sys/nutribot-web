@@ -2,8 +2,9 @@
 title: Nutribot
 tagline: Tus alergias e intolerancias, en cada producto que escaneas
 description: >-
-  App Android que escanea productos y registra tus comidas con tus alergias e
-  intolerancias (incluido FODMAP) como eje central. Sin falsos positivos.
+  App para personas con alergias e intolerancias alimentarias: escanea productos,
+  detecta alérgenos y FODMAP en los ingredientes sin falsos positivos y lleva un
+  diario de comidas y síntomas. Android, 30 días gratis.
 url: "https://nutribot.eu"
 baseurl: ""
 lang: es_ES
@@ -30,3 +31,25 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+
+# Temas del blog. Cada artículo lleva "tema:" con uno de estos nombres.
+temas:
+  - nombre: Etiquetas
+    descripcion: Aprende a leer lo que de verdad lleva un producto.
+  - nombre: Alergias
+    descripcion: Vivir con alergias e intolerancias en el día a día.
+  - nombre: FODMAP
+    descripcion: Qué son y dónde se esconden.
+  - nombre: Hábitos
+    descripcion: Pequeños cambios para comer mejor y conocerte más.
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/social.png
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
