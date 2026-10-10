@@ -82,8 +82,6 @@ En `_config.yml`: enlace de Google Play, precio, días de prueba, email de conta
 
 ## Pendiente antes de publicar
 
-- Pegar tu política de privacidad en `privacidad.md`.
-- Rellenar NIF y domicilio en `aviso-legal.md` (lo exige la LSSI).
 - Revisar el artículo de ejemplo de `_posts/`.
 
 ## Verla en tu ordenador (opcional)
