@@ -9,7 +9,9 @@ permalink: /enlaces/
 
 # Enlaces útiles
 
-Recursos que nos parecen fiables. Para añadir uno, copia una línea y cambia el texto y la dirección.
+<!-- Para añadir un enlace, copia una línea de las de abajo y cambia el texto y la dirección. Esto no se ve en la web. -->
+
+Recursos fiables sobre alergias, intolerancias y etiquetado de alimentos.
 
 ## Alergias e intolerancias
 

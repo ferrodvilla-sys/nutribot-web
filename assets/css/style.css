@@ -53,7 +53,7 @@ h2 { font-size: 30px; margin-bottom: 14px; }
   position: sticky; top: 0; z-index: 10;
 }
 .logo { font-size: 22px; font-weight: 800; color: var(--primary); text-decoration: none; }
-.nav-links { display: flex; align-items: center; gap: 20px; }
+.nav-links { display: flex; align-items: center; gap: 20px; white-space: nowrap; }
 .nav-links a:not(.btn) { color: var(--text); text-decoration: none; font-weight: 500; }
 
 /* Hero */
