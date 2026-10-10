@@ -1,10 +1,32 @@
 <footer class="footer">
-  <p>© {{ 'now' | date: "%Y" }} nutribot.eu</p>
-  <p class="footer-links">
-    <a href="{{ site.privacy_url | relative_url }}">Privacidad</a> ·
-    <a href="{{ '/aviso-legal/' | relative_url }}">Aviso legal</a> ·
-    <a href="mailto:{{ site.contact_email }}">Contacto</a> ·
-    <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
-  </p>
-  <p class="footer-note">Nutribot es una herramienta informativa. No diagnostica ni sustituye a un profesional sanitario.</p>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="logo logo-light" href="{{ '/' | relative_url }}"><img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="" width="32" height="32"><span>nutribot</span></a>
+      <p>{{ site.tagline }}.</p>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h4>Nutribot</h4>
+        <a href="{{ '/#funciones' | relative_url }}">Funciones</a>
+        <a href="{{ '/#precio' | relative_url }}">Precio</a>
+        <a href="{{ site.play_store_url }}">Google Play</a>
+      </div>
+      <div>
+        <h4>Aprende</h4>
+        <a href="{{ '/blog/' | relative_url }}">Blog</a>
+        <a href="{{ '/enlaces/' | relative_url }}">Enlaces útiles</a>
+        <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="{{ site.privacy_url | relative_url }}">Privacidad</a>
+        <a href="{{ '/aviso-legal/' | relative_url }}">Aviso legal</a>
+        <a href="mailto:{{ site.contact_email }}">Contacto</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© {{ 'now' | date: "%Y" }} nutribot.eu</p>
+    <p>Nutribot es una herramienta informativa. No diagnostica ni sustituye a un profesional sanitario.</p>
+  </div>
 </footer>
