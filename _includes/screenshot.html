@@ -1,0 +1,10 @@
+{% comment %}Muestra la captura si existe en assets/img/; si no, un hueco con el texto de ayuda.{% endcomment %}
+{% assign img_path = '/assets/img/' | append: include.file %}
+{% assign found = site.static_files | where: "path", img_path | first %}
+<figure class="shot">
+  {% if found %}
+    <img src="{{ img_path | relative_url }}" alt="{{ include.alt }}" loading="lazy">
+  {% else %}
+    <div class="shot-placeholder">Sube <code>assets/img/{{ include.file }}</code><br>({{ include.alt }})</div>
+  {% endif %}
+</figure>

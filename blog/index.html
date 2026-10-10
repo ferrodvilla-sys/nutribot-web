@@ -1,0 +1,18 @@
+---
+layout: default
+title: Blog
+description: Artículos sobre alergias, intolerancias, FODMAP y cómo leer etiquetas.
+---
+<section class="page">
+  <h1>Blog</h1>
+  <p class="lead">{{ page.description }}</p>
+  <div class="post-grid">
+    {% for post in site.posts %}
+    <a class="post-card" href="{{ post.url | relative_url }}">
+      <span class="post-date">{{ post.date | date: "%d/%m/%Y" }}</span>
+      <h3>{{ post.title }}</h3>
+      {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+    </a>
+    {% endfor %}
+  </div>
+</section>

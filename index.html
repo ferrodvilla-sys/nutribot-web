@@ -1,0 +1,88 @@
+---
+layout: default
+title: Nutribot, alergias e intolerancias en cada producto
+---
+<header class="hero">
+  <h1>Escanea un producto y sabe al momento si <span>encaja con tus alergias e intolerancias</span></h1>
+  <p class="subtitle">Nutribot lee los ingredientes reales, no solo la etiqueta del envase, y te avisa según tu perfil. Incluye FODMAP, no solo gluten y lactosa.</p>
+  <a class="btn btn-lg" href="{{ site.play_store_url }}">Descargar en Google Play</a>
+  <p class="hero-note">{{ site.trial_days }} días gratis · Después {{ site.price_month }}/mes · Cancela cuando quieras</p>
+</header>
+
+<section id="funciones" class="features">
+  <div class="feature">
+    <div class="feature-text">
+      <span class="badge">Alergias sin falsos positivos</span>
+      <h2>Avisos solo cuando de verdad toca</h2>
+      <p>Nutribot revisa la lista de ingredientes con tus alergias e intolerancias. Si algo solo aparece en una mención genérica del envase, no salta la alarma; si está en los ingredientes, sí. Menos ruido, más confianza.</p>
+    </div>
+    {% include screenshot.html file="alertas.png" alt="Avisos de alergia en un producto escaneado" %}
+  </div>
+
+  <div class="feature">
+    <div class="feature-text">
+      <span class="badge">En el súper</span>
+      <h2>Compara dos productos cara a cara</h2>
+      <p>¿Dudas entre dos marcas? Escanea las dos y Nutribot te dice cuál encaja mejor contigo, según tus alergias y lo que llevan dentro.</p>
+    </div>
+    {% include screenshot.html file="comparador.png" alt="Comparador de dos productos con veredicto" %}
+  </div>
+
+  <div class="feature">
+    <div class="feature-text">
+      <span class="badge">Tu diario</span>
+      <h2>Patrones entre lo que comes y cómo te sientes</h2>
+      <p>Registra comidas y cómo te encuentras. Con unos días de datos, Nutribot te enseña coincidencias, por ejemplo que los días con cebolla o ajo sueles anotar más hinchazón. Es una pista para comentar con tu profesional, no un diagnóstico.</p>
+    </div>
+    {% include screenshot.html file="patrones.png" alt="Pantalla de patrones detectados" %}
+  </div>
+
+  <div class="feature">
+    <div class="feature-text">
+      <span class="badge">Informes claros</span>
+      <h2>Qué estás comiendo y qué puedes hacer</h2>
+      <p>Azúcar, sal y grasas, fibra, procesados y aditivos, alergias y agua. Sin gráficas frías: cómo estás, qué lo explica y qué hacer esta semana.</p>
+    </div>
+    {% include screenshot.html file="informes.png" alt="Pantalla de informes con consejos" %}
+  </div>
+
+  <div class="feature">
+    <div class="feature-text">
+      <span class="badge">Para compartir</span>
+      <h2>Tu ficha de alergias, lista para enseñar</h2>
+      <p>Enséñala en un restaurante o mándasela a un familiar: todo lo que no puedes tomar, en una pantalla clara.</p>
+    </div>
+    {% include screenshot.html file="ficha.png" alt="Ficha de alergias compartible" %}
+  </div>
+</section>
+
+<section class="pricing">
+  <h2>Pruébalo {{ site.trial_days }} días gratis</h2>
+  <div class="card">
+    <h3>Nutribot completo</h3>
+    <div class="price">{{ site.price_month }}<span>/mes</span></div>
+    <ul>
+      <li>Escáner con avisos de alergias e intolerancias</li>
+      <li>Comparador de productos</li>
+      <li>Diario, patrones e informes</li>
+      <li>Ficha de alergias compartible</li>
+    </ul>
+    <a class="btn" href="{{ site.play_store_url }}">Empezar gratis</a>
+  </div>
+</section>
+
+{% if site.posts.size > 0 %}
+<section class="latest">
+  <h2>Del blog</h2>
+  <div class="post-grid">
+    {% for post in site.posts limit:3 %}
+    <a class="post-card" href="{{ post.url | relative_url }}">
+      <span class="post-date">{{ post.date | date: "%d/%m/%Y" }}</span>
+      <h3>{{ post.title }}</h3>
+      {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+    </a>
+    {% endfor %}
+  </div>
+  <p class="center"><a href="{{ '/blog/' | relative_url }}">Ver todos los artículos →</a></p>
+</section>
+{% endif %}

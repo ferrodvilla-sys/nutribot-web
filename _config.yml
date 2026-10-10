@@ -1,0 +1,32 @@
+# Ajustes generales del sitio. Cambia aquí y se aplica en todas las páginas.
+title: Nutribot
+tagline: Tus alergias e intolerancias, en cada producto que escaneas
+description: >-
+  App Android que escanea productos y registra tus comidas con tus alergias e
+  intolerancias (incluido FODMAP) como eje central. Sin falsos positivos.
+url: "https://nutribot.eu"
+baseurl: ""
+lang: es_ES
+author: Fernando Rodríguez Villa
+
+# Enlaces que se usan en botones y pie de página
+play_store_url: "https://play.google.com/store/apps/details?id=com.fernandorodriguezvilla.nutribot"
+privacy_url: "/privacidad/"
+contact_email: "hola@nutribot.eu"
+
+# Precio (si cambias el precio, cámbialo solo aquí)
+price_month: "3,99 €"
+trial_days: 30
+
+permalink: /blog/:title/
+timezone: Europe/Madrid
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
