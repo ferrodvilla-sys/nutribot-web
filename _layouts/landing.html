@@ -1,0 +1,89 @@
+---
+layout: default
+---
+{% comment %}
+Página para un público concreto (FODMAP, celíacos, alergias). Todo el texto está en
+la cabecera del archivo .md de cada página; aquí solo se monta. "campana" marca de qué
+página viene cada descarga en Google Play (Play Console → Adquisición de usuarios).
+{% endcomment %}
+{% capture play %}{{ site.play_store_url }}&referrer=utm_source%3Dnutribot.eu%26utm_medium%3Dweb%26utm_campaign%3D{{ page.campana }}{% endcapture %}
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="dot"></span>{{ page.etiqueta }}</span>
+      <h1>{{ page.titular }}</h1>
+      <p class="subtitle">{{ page.entradilla }}</p>
+      <div class="hero-actions">
+        <a class="btn btn-lg" href="{{ play }}">{% include icon.html name="play" %}Pruébalo {{ site.trial_days }} días gratis</a>
+      </div>
+      <ul class="hero-trust">
+        {% for t in page.ventajas %}<li>{% include icon.html name="check" %}{{ t }}</li>{% endfor %}
+      </ul>
+    </div>
+    <div class="landing-visual" aria-hidden="true">
+      <div class="blob blob-a"></div>
+      <img class="landing-shot" src="{{ '/assets/img/' | append: page.captura | relative_url }}" alt="">
+    </div>
+  </div>
+</section>
+
+<section class="steps">
+  <p class="kicker">¿Te suena?</p>
+  <h2>{{ page.problemas_titulo }}</h2>
+  <div class="steps-grid">
+    {% for p in page.problemas %}<div class="step pain">{% include icon.html name="alert" %}<p>{{ p }}</p></div>{% endfor %}
+  </div>
+</section>
+
+<section class="features">
+  <p class="kicker center">Cómo te ayuda Nutribot</p>
+  <h2 class="center">{{ page.ayuda_titulo }}</h2>
+  {% for f in page.ayuda %}
+  <div class="feature">
+    <div class="feature-text">
+      <span class="badge">{% include icon.html name=f.icono %}{{ f.etiqueta }}</span>
+      <h3>{{ f.titulo }}</h3>
+      <p>{{ f.texto }}</p>
+    </div>
+    {% include screenshot.html file=f.captura alt=f.titulo %}
+  </div>
+  {% endfor %}
+</section>
+
+<section class="faq">
+  <p class="kicker center">Dudas</p>
+  <h2>Preguntas frecuentes</h2>
+  {% for q in page.preguntas %}
+  <details>
+    <summary>{{ q.p }}</summary>
+    <p>{{ q.r }}</p>
+  </details>
+  {% endfor %}
+  <details>
+    <summary>¿Cuánto cuesta?</summary>
+    <p>Tienes {{ site.trial_days }} días gratis con todas las funciones. Después cuesta {{ site.price_month }} al mes y puedes cancelar cuando quieras desde Google Play.</p>
+  </details>
+  <p class="landing-note">Nutribot es una herramienta informativa: no diagnostica ni sustituye el consejo de un profesional sanitario. Comprueba siempre la etiqueta del envase.</p>
+</section>
+
+{% assign articulos = site.posts | where_exp: "post", "page.temas contains post.tema" %}
+{% if articulos.size > 0 %}
+<section class="latest">
+  <p class="kicker center">Del blog</p>
+  <h2 class="center">Para saber más</h2>
+  <div class="post-grid">
+    {% for post in articulos limit:3 %}{% include post-card.html post=post %}{% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section class="cta-band">
+  <div class="cta-inner">
+    <div class="cta-copy">
+      <h2>{{ page.cierre }}</h2>
+      <p>{{ site.trial_days }} días gratis con todas las funciones. Después, {{ site.price_month }} al mes y cancelas cuando quieras.</p>
+      <a class="btn btn-light btn-lg" href="{{ play }}">{% include icon.html name="play" %}Descargar en Google Play</a>
+    </div>
+    <img class="ilus" src="{{ page.ilustracion | relative_url }}" alt="" width="480" height="400" loading="lazy">
+  </div>
+</section>
