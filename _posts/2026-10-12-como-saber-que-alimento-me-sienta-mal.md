@@ -1,6 +1,7 @@
 ---
 title: "¿Cómo saber qué alimento me sienta mal? Un método paso a paso"
 description: "Cómo pasar de «algo me sienta mal» a pistas concretas: qué apuntar, cuánto tiempo, cómo leerlo y por qué no conviene quitar alimentos a ciegas."
+image: /assets/img/posts/como-saber-que-alimento-me-sienta-mal.jpg
 tema: Hábitos
 destacado: true
 etiquetas: [gases, hinchazon, fodmap, lactosa]

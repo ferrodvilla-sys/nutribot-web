@@ -1,6 +1,7 @@
 ---
 title: "¿Por qué tengo gases todos los días? Causas frecuentes y qué puedes hacer"
 description: "Cuántos gases son normales, qué alimentos y hábitos suelen estar detrás y cuándo conviene consultar al médico."
+image: /assets/img/posts/por-que-tengo-gases-todos-los-dias.jpg
 tema: FODMAP
 destacado: true
 etiquetas: [gases, hinchazon, fodmap]

@@ -1,6 +1,7 @@
 ---
 title: "Cómo encontrar los alérgenos en una etiqueta en 30 segundos"
 description: "Los 14 alérgenos que la ley obliga a destacar y dónde mirar para no perderte ninguno."
+image: /assets/img/posts/como-leer-una-etiqueta-alergenos.jpg
 tema: Etiquetas
 destacado: true
 etiquetas: [alergenos]

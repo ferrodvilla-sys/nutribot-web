@@ -1,6 +1,7 @@
 ---
 title: "Intolerancia a la lactosa o alergia a la leche: en qué se diferencian"
 description: "Una es un problema para digerir el azúcar de la leche y la otra una reacción a sus proteínas que puede ser grave. Cómo distinguirlas y qué mirar en la etiqueta."
+image: /assets/img/posts/intolerancia-lactosa-o-alergia-a-la-leche.jpg
 tema: Alergias
 etiquetas: [alergia-a-la-leche, lactosa, alergenos]
 keywords: [intolerancia a la lactosa o alergia a la leche, diferencia alergia leche intolerancia lactosa, alergia a la proteína de la leche, APLV, sin lactosa alergia, proteínas de la leche etiqueta]

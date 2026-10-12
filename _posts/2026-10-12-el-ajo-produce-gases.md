@@ -1,6 +1,7 @@
 ---
 title: "¿El ajo produce gases? Fructanos, ajo en polvo y cómo dar sabor sin él"
 description: "Por qué el ajo y la cebolla pueden sentar mal a algunas personas, en qué productos se esconden y el truco del aceite aromatizado."
+image: /assets/img/posts/el-ajo-produce-gases.jpg
 tema: FODMAP
 etiquetas: [ajo-y-cebolla, gases, fodmap]
 keywords: [el ajo produce gases, ajo y gases, cebolla y gases, ajo en polvo, fructanos, ajo FODMAP, aceite aromatizado con ajo]

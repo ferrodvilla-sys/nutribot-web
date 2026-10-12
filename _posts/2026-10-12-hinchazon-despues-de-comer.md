@@ -1,6 +1,7 @@
 ---
 title: "Hinchazón después de comer: por qué pasa y qué puedes probar"
 description: "Las causas más habituales de notar la tripa hinchada después de comer, hábitos que suelen ayudar y señales para ir al médico."
+image: /assets/img/posts/hinchazon-despues-de-comer.jpg
 tema: FODMAP
 destacado: true
 etiquetas: [hinchazon, gases, fodmap]

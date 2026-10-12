@@ -1,6 +1,7 @@
 ---
 title: "¿Qué fruta da gases? Las que suelen sentar peor y las que suelen sentar mejor"
 description: "Por qué algunas frutas se relacionan con gases e hinchazón, cuáles suelen tolerarse mejor y cómo tomarlas sin renunciar a ellas."
+image: /assets/img/posts/fruta-que-da-gases.jpg
 tema: FODMAP
 etiquetas: [fructosa, sorbitol, gases, hinchazon, fodmap]
 keywords: [qué fruta da gases, fruta que da gases, fruta e hinchazón, frutas bajas en FODMAP, manzana gases, fruta que sienta bien al estómago]

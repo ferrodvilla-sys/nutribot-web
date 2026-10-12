@@ -1,6 +1,7 @@
 ---
 title: "Alimentos con sorbitol y otros polioles: dónde se esconden y cómo verlos"
 description: "Qué frutas y productos llevan sorbitol, manitol, xilitol o maltitol, sus números E y qué significa el aviso de «efecto laxante»."
+image: /assets/img/posts/alimentos-con-sorbitol.jpg
 tema: Etiquetas
 etiquetas: [sorbitol, fructosa, fodmap, gases]
 keywords: [alimentos con sorbitol, sorbitol, polioles, E420, manitol, xilitol, maltitol, chicles sin azúcar gases, efecto laxante etiqueta]
