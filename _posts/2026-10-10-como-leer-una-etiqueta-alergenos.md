@@ -3,6 +3,7 @@ title: "Cómo encontrar los alérgenos en una etiqueta en 30 segundos"
 description: "Los 14 alérgenos que la ley obliga a destacar y dónde mirar para no perderte ninguno."
 tema: Etiquetas
 destacado: true
+etiquetas: [alergenos]
 keywords: [14 alérgenos, alérgenos de declaración obligatoria, cómo leer etiquetas de alimentos, alérgenos en la etiqueta, reglamento 1169/2011 alérgenos]
 ---
 

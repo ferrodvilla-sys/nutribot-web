@@ -3,28 +3,72 @@ layout: default
 ---
 {% assign words = content | number_of_words %}{% assign t = site.temas | where: "nombre", page.tema | first %}{% assign mins = words | divided_by: 200 | plus: 1 %}
 <article class="post">
-  <p class="post-meta"><a href="{{ '/blog/' | relative_url }}">← Blog</a>{% if page.tema %} · <a href="{{ '/blog/' | relative_url }}#{{ page.tema | slugify }}">{{ page.tema }}</a>{% endif %} · {{ mins }} min de lectura</p>
+  <p class="post-meta"><a href="{{ '/blog/' | relative_url }}">← Blog</a>{% if page.tema %} · <a href="{{ '/blog/' | relative_url }}#{{ page.tema | slugify }}">{{ page.tema }}</a>{% endif %} · {{ mins }} min de lectura{% if page.fuentes %} · Revisado el {{ page.last_modified_at | default: page.date | date: "%d/%m/%Y" }}{% endif %}</p>
   <h1>{{ page.title }}</h1>
   {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
+  {% if page.etiquetas %}<p class="tag-list">{% for e in page.etiquetas %}{% assign et = site.etiquetas | where: "slug", e | first %}{% if et %}<a class="tag" href="{{ et.url | relative_url }}">{{ et.nombre }}</a>{% endif %}{% endfor %}</p>{% endif %}
   {% if t.imagen %}<img class="post-banner" src="{{ t.imagen | relative_url }}" alt="" width="600" height="340">{% endif %}
   <div class="post-body">
     {{ content }}
   </div>
-  <aside class="post-cta">
-    <p><strong>¿Te ha sido útil?</strong> Nutribot revisa los ingredientes de cada producto según tus alergias e intolerancias.</p>
-    <a class="btn" href="{{ site.play_store_url }}">Probar {{ site.trial_days }} días gratis</a>
-  </aside>
-  <p class="disclaimer">Este artículo es informativo y no sustituye el consejo de un profesional sanitario.</p>
 
-  {% assign same = site.posts | where: "tema", page.tema | where_exp: "p", "p.url != page.url" %}
-  {% assign others = site.posts | where_exp: "p", "p.tema != page.tema" %}
-  {% assign related = same | concat: others %}
-  {% if related.size > 0 %}
+  {% if page.medico %}
+  <aside class="doctor-box">
+    <h2>Cuándo consultar a un profesional</h2>
+    <p>Pide cita con tu médico si:</p>
+    <ul>{% for m in page.medico %}<li>{{ m }}</li>{% endfor %}</ul>
+    <p>Ante un dolor abdominal fuerte y repentino, vómitos con sangre o dificultad para respirar, llama al 112.</p>
+  </aside>
+  {% endif %}
+
+  {% if page.preguntas %}
+  <section class="faq post-faq">
+    <h2>Preguntas frecuentes</h2>
+    {% for q in page.preguntas %}
+    <details>
+      <summary>{{ q.p }}</summary>
+      <p>{{ q.r }}</p>
+    </details>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if page.fuentes %}
+  <section class="sources">
+    <h2>Fuentes</h2>
+    <ul>{% for f in page.fuentes %}<li><a href="{{ f.url }}" rel="noopener">{{ f.nombre }}</a></li>{% endfor %}</ul>
+  </section>
+  {% endif %}
+
+  {% include cta-app.html campana="blog" %}
+  <p class="disclaimer">Este artículo es informativo y no sustituye el consejo de un profesional sanitario. Nutribot no diagnostica: te ayuda a ordenar lo que comes y cómo te encuentras para hablarlo con tu profesional.</p>
+
+  {% comment %}Sigue leyendo: primero los artículos que comparten etiqueta, luego los del mismo tema y luego el resto.{% endcomment %}
+  {% assign rel = "|" %}
+  {% for post in site.posts %}{% if post.url != page.url %}{% for e in page.etiquetas %}{% if post.etiquetas contains e %}{% assign key = post.url | append: "|" %}{% unless rel contains key %}{% assign rel = rel | append: key %}{% endunless %}{% endif %}{% endfor %}{% endif %}{% endfor %}
+  {% for post in site.posts %}{% if post.url != page.url and post.tema == page.tema %}{% assign key = post.url | append: "|" %}{% unless rel contains key %}{% assign rel = rel | append: key %}{% endunless %}{% endif %}{% endfor %}
+  {% for post in site.posts %}{% if post.url != page.url %}{% assign key = post.url | append: "|" %}{% unless rel contains key %}{% assign rel = rel | append: key %}{% endunless %}{% endif %}{% endfor %}
+  {% assign rel_urls = rel | split: "|" %}
+  {% if rel_urls.size > 1 %}
   <section class="related">
     <h2>Sigue leyendo</h2>
     <div class="post-grid">
-      {% for post in related limit:3 %}{% include post-card.html post=post %}{% endfor %}
+      {% assign shown = 0 %}{% for u in rel_urls %}{% if u != "" and shown < 3 %}{% assign post = site.posts | where: "url", u | first %}{% include post-card.html post=post %}{% assign shown = shown | plus: 1 %}{% endif %}{% endfor %}
     </div>
   </section>
   {% endif %}
 </article>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":"Blog","item":{{ '/blog/' | absolute_url | jsonify }}},
+  {"@type":"ListItem","position":2,"name":{{ page.title | jsonify }},"item":{{ page.url | absolute_url | jsonify }}}
+]}
+</script>
+{% if page.preguntas %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for q in page.preguntas %}
+  {"@type":"Question","name":{{ q.p | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ q.r | jsonify }}}}{% unless forloop.last %},{% endunless %}{% endfor %}
+]}
+</script>
+{% endif %}

@@ -1,0 +1,10 @@
+{% comment %}Todas las etiquetas agrupadas (Síntomas, Intolerancias…). Se usa en el blog y en cada etiqueta.{% endcomment %}
+<nav class="tag-groups" aria-label="Buscar por síntoma o ingrediente">
+  <h2>Busca por síntoma, intolerancia o ingrediente</h2>
+  {% for grupo in site.grupos_etiquetas %}{% assign ets = site.etiquetas | where: "grupo", grupo | sort: "nombre" %}{% if ets.size > 0 %}
+  <div class="tag-group">
+    <h3>{{ grupo }}</h3>
+    <div class="topic-nav">{% for et in ets %}<a href="{{ et.url | relative_url }}"{% if et.slug == include.actual %} aria-current="page"{% endif %}>{{ et.nombre }}</a>{% endfor %}</div>
+  </div>
+  {% endif %}{% endfor %}
+</nav>

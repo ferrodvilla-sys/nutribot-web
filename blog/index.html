@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Blog
-description: Guías cortas y prácticas sobre alergias, intolerancias, FODMAP y cómo leer etiquetas.
+description: Guías claras sobre gases, hinchazón, intolerancias, alergias, FODMAP y cómo leer etiquetas, con fuentes fiables.
 ---
 <section class="page">
   <h1>Blog</h1>
@@ -20,6 +20,8 @@ description: Guías cortas y prácticas sobre alergias, intolerancias, FODMAP y 
   <nav class="topic-nav">
     {% for tema in site.temas %}<a href="#{{ tema.nombre | slugify }}">{{ tema.nombre }}</a>{% endfor %}
   </nav>
+
+  {% include etiquetas-nav.html %}
 
   {% for tema in site.temas %}
   {% assign posts_tema = site.posts | where: "tema", tema.nombre %}

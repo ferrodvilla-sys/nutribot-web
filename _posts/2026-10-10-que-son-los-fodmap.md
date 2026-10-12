@@ -3,6 +3,7 @@ title: "Qué son los FODMAP y por qué no todo es gluten o lactosa"
 description: "Una explicación sencilla de los FODMAP y en qué alimentos comunes aparecen."
 tema: FODMAP
 destacado: true
+etiquetas: [fodmap, ajo-y-cebolla, sorbitol, lactosa]
 keywords: [qué son los FODMAP, alimentos altos en FODMAP, dieta baja en FODMAP, lista FODMAP, intolerancia FODMAP, ajo y cebolla FODMAP]
 ---
 

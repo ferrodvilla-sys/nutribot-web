@@ -1,0 +1,31 @@
+---
+layout: default
+---
+{% comment %}Página de una etiqueta: lista todos los artículos que la llevan en "etiquetas:".{% endcomment %}
+{% assign posts_etiqueta = site.posts | where_exp: "p", "p.etiquetas contains page.slug" %}
+<section class="page">
+  <p class="post-meta"><a href="{{ '/blog/' | relative_url }}">← Blog</a> · {{ page.grupo }}</p>
+  <h1>{{ page.titular | default: page.title }}</h1>
+  <p class="lead">{{ page.description }}</p>
+  <div class="post-body">
+    {{ content }}
+  </div>
+
+  {% if posts_etiqueta.size > 0 %}
+  <h2>Artículos sobre {{ page.nombre | downcase }}</h2>
+  <div class="post-grid">
+    {% for post in posts_etiqueta %}{% include post-card.html post=post %}{% endfor %}
+  </div>
+  {% endif %}
+
+  {% if page.landing %}<p><a class="link-arrow" href="{{ page.landing | relative_url }}">Cómo te ayuda Nutribot {% include icon.html name="arrow" %}</a></p>{% endif %}
+
+  {% include etiquetas-nav.html actual=page.slug %}
+  {% include cta-app.html campana=page.slug %}
+  <p class="disclaimer">Información general. No sustituye el consejo de un profesional sanitario.</p>
+</section>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CollectionPage","name":{{ page.title | jsonify }},"description":{{ page.description | jsonify }},"url":{{ page.url | absolute_url | jsonify }},
+ "hasPart":[{% for post in posts_etiqueta %}{"@type":"BlogPosting","headline":{{ post.title | jsonify }},"url":{{ post.url | absolute_url | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}]}
+</script>

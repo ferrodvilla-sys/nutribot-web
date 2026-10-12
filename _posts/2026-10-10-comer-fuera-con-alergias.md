@@ -3,6 +3,7 @@ title: "Comer fuera con alergias: 6 consejos para pedir tranquilo"
 description: "Tus derechos en bares y restaurantes, qué preguntar y cómo explicarlo sin agobiarte."
 tema: Alergias
 destacado: true
+etiquetas: [alergenos, gluten]
 keywords: [comer fuera con alergias, alérgenos en restaurantes, derechos alergias restaurante, alergia alimentaria restaurante, carta de alérgenos]
 ---
 

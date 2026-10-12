@@ -2,6 +2,7 @@
 title: "\"Sin gluten\" y \"muy bajo en gluten\": qué significa cada sello"
 description: "Las dos menciones que la ley permite y la diferencia real entre ellas."
 tema: Alergias
+etiquetas: [gluten]
 keywords: [sin gluten, muy bajo en gluten, 20 ppm gluten, espiga barrada, celiaquía etiquetas, avena sin gluten]
 ---
 
