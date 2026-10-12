@@ -25,6 +25,10 @@ Nutribot y los contenidos de esta web son orientativos. No son un producto sanit
 
 Esta web incluye enlaces a sitios de terceros. No nos hacemos responsables de su contenido.
 
+## Estadísticas de visitas
+
+Esta web usa GoatCounter, un contador de visitas sin cookies que no identifica a quien la visita.
+
 ## Propiedad intelectual
 
 Los textos, imágenes y diseño de esta web pertenecen a su titular, salvo que se indique lo contrario.
