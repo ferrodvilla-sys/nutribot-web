@@ -1,6 +1,7 @@
 ---
 title: "Malabsorción de fructosa: qué es, en qué alimentos está y qué hacer"
 description: "La diferencia entre la malabsorción de fructosa y la intolerancia hereditaria, en qué alimentos hay más fructosa y su relación con el sorbitol."
+image: /assets/img/posts/intolerancia-a-la-fructosa.jpg
 tema: FODMAP
 etiquetas: [fructosa, sorbitol, fodmap, hinchazon]
 keywords: [intolerancia a la fructosa, malabsorción de fructosa, alimentos con fructosa, fructosa y sorbitol, fruta y gases, dieta fructosa]

@@ -1,6 +1,7 @@
 ---
 title: "Ultraprocesados: qué son y cómo reconocerlos sin obsesionarte"
 description: "La clasificación NOVA explicada en cuatro grupos y un truco rápido para el súper."
+image: /assets/img/posts/ultraprocesados-nova.jpg
 tema: Hábitos
 keywords: [ultraprocesados, qué son los ultraprocesados, clasificación NOVA, alimentos ultraprocesados lista, cómo reconocer ultraprocesados]
 ---

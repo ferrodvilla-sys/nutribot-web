@@ -1,6 +1,7 @@
 ---
 title: "Legumbres sin gases: trucos para que te sienten mejor"
 description: "Por qué las legumbres dan gases y qué puedes hacer en la cocina y en el plato para tolerarlas mejor sin dejar de tomarlas."
+image: /assets/img/posts/legumbres-sin-gases.jpg
 tema: FODMAP
 etiquetas: [legumbres, gases, fodmap]
 keywords: [legumbres sin gases, legumbres gases, cómo quitar los gases de las legumbres, garbanzos gases, lentejas gases, alubias gases, legumbres de bote]

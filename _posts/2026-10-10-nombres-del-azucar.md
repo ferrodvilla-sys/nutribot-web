@@ -1,6 +1,7 @@
 ---
 title: "Los mil nombres del azúcar en las etiquetas"
 description: "Por qué un producto \"sin azúcares añadidos\" puede ser dulce y cómo detectarlo."
+image: /assets/img/posts/nombres-del-azucar.jpg
 tema: Etiquetas
 keywords: [nombres del azúcar, azúcar oculto, sin azúcares añadidos, azúcar en etiquetas, jarabe de glucosa]
 ---

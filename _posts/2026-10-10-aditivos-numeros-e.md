@@ -1,6 +1,7 @@
 ---
 title: "Aditivos y números E: qué son de verdad"
 description: "Por qué la \"E\" no es una señal de peligro y en qué casos sí conviene fijarse."
+image: /assets/img/posts/aditivos-numeros-e.jpg
 tema: Etiquetas
 keywords: [aditivos alimentarios, números E, E322 lecitina, E415 goma xantana, qué significa la E en los aditivos, sulfitos]
 ---

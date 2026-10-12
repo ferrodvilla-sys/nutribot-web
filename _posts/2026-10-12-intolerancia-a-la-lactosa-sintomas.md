@@ -1,6 +1,7 @@
 ---
 title: "Intolerancia a la lactosa: síntomas, cuánta se tolera y dónde está"
 description: "Cómo se nota la intolerancia a la lactosa, cuánta lactosa suelen tolerar la mayoría de personas y qué lácteos llevan menos."
+image: /assets/img/posts/intolerancia-a-la-lactosa-sintomas.jpg
 tema: FODMAP
 destacado: true
 etiquetas: [lactosa, gases, hinchazon]
