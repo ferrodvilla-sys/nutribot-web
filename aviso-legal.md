@@ -10,7 +10,7 @@ permalink: /aviso-legal/
 
 ## Titular de la web
 
-- **Titular:** {{ site.author }}
+- **Titular:** {{ site.titular }}
 - **Contacto:** [{{ site.contact_email }}](mailto:{{ site.contact_email }})
 
 ## Objeto
