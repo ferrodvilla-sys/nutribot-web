@@ -312,3 +312,25 @@ svg.fill { fill: currentColor; stroke: none; }
   .footer-cols { grid-template-columns: 1fr 1fr; }
   .post { font-size: 17px; }
 }
+
+/* ---------- Etiquetas, fuentes y cuándo ir al médico ---------- */
+.tag-list { margin: -6px 0 18px; }
+.tag-list .tag { text-decoration: none; margin-bottom: 6px; }
+.tag-list .tag:hover { background: var(--primary); color: #fff; }
+.doctor-box { margin-top: 40px; padding: 22px 26px; border-radius: var(--radius); border: 1px solid var(--danger-soft); background: color-mix(in srgb, var(--danger-soft) 45%, var(--card)); }
+.doctor-box h2 { font-size: 22px; margin: 0 0 6px; }
+.doctor-box ul { margin: 8px 0 8px 22px; }
+.doctor-box li { margin: 6px 0; }
+.doctor-box p:last-child { font-size: 15px; color: var(--muted); margin-bottom: 0; }
+.post-faq { padding: 0; margin-top: 40px; }
+.post-faq h2 { text-align: left; font-size: 24px; margin-bottom: 16px; }
+.sources { margin-top: 36px; font-size: 15px; }
+.sources h2 { font-size: 20px; margin-bottom: 6px; }
+.sources ul { margin: 6px 0 6px 22px; }
+.sources li { margin: 4px 0; color: var(--muted); }
+.cta-small { font-size: 14px; color: var(--muted); margin: 14px 0 0 !important; }
+.tag-groups { margin-top: 44px; }
+.tag-groups h2 { font-size: 24px; margin-bottom: 4px; }
+.tag-group h3 { font-size: 15px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 20px 0 0; }
+.tag-group .topic-nav { margin: 10px 0 0; }
+.topic-nav a[aria-current="page"] { border-color: var(--primary); background: var(--primary-soft); color: var(--primary); }

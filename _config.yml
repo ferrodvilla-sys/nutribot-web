@@ -33,6 +33,16 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+# Etiquetas: una página por síntoma, intolerancia, ingrediente o alergia (carpeta _etiquetas).
+# Cada artículo lleva "etiquetas: [gases, lactosa]" con el nombre del archivo de la etiqueta.
+collections:
+  etiquetas:
+    output: true
+    permalink: /etiqueta/:name/
+
+# Orden de los grupos de etiquetas en el blog
+grupos_etiquetas: [Síntomas, Intolerancias, Ingredientes, Alergias]
+
 exclude:
   - README.md
   - Gemfile
@@ -48,7 +58,7 @@ temas:
     descripcion: Vivir con alergias e intolerancias en el día a día.
   - nombre: FODMAP
     imagen: /assets/img/ilus/fodmap.svg
-    descripcion: Qué son y dónde se esconden.
+    descripcion: Gases, hinchazón y los alimentos que suelen estar detrás.
   - nombre: Hábitos
     imagen: /assets/img/ilus/habitos.svg
     descripcion: Pequeños cambios para comer mejor y conocerte más.
@@ -63,3 +73,8 @@ defaults:
       type: posts
     values:
       layout: post
+  - scope:
+      path: ""
+      type: etiquetas
+    values:
+      layout: etiqueta

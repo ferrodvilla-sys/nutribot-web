@@ -1,0 +1,10 @@
+{% comment %}
+Llamada final a la app, igual en todos los artículos y etiquetas. Siempre "{{ site.trial_days }} días gratis",
+nunca solo "gratis". "campana" marca de dónde viene la descarga en Google Play.
+{% endcomment %}
+{% capture play %}{{ site.play_store_url }}&referrer=utm_source%3Dnutribot.eu%26utm_medium%3Dweb%26utm_campaign%3D{{ include.campana | default: 'blog' }}{% endcapture %}
+<aside class="post-cta">
+  <p><strong>¿Quieres saber qué se repite los días que te encuentras peor?</strong> Con Nutribot apuntas lo que comes y cómo te sientes, y la app te enseña pistas para comentar con tu médico o dietista-nutricionista. También revisa los ingredientes de cada producto que escaneas.</p>
+  <a class="btn" href="{{ play }}">{% include icon.html name="play" %}Pruébalo {{ site.trial_days }} días gratis</a>
+  <p class="cta-small">Después, {{ site.price_month }} al mes o {{ site.price_year }} al año. Cancelas cuando quieras desde Google Play.</p>
+</aside>

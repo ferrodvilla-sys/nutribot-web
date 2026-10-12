@@ -3,6 +3,7 @@ title: "Cómo llevar un diario de comidas y síntomas que sirva de algo"
 description: "Qué apuntar, durante cuánto tiempo y cómo leerlo sin sacar conclusiones precipitadas."
 tema: Hábitos
 destacado: true
+etiquetas: [gases, hinchazon]
 keywords: [diario de comidas, diario de síntomas, registro de alimentos y síntomas, identificar intolerancias, diario alimentario]
 ---
 

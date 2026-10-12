@@ -2,6 +2,7 @@
 title: "Qué significa \"puede contener trazas\" (y qué no)"
 description: "La advertencia más confusa del envase: por qué aparece, qué regula la ley y cómo usarla."
 tema: Etiquetas
+etiquetas: [alergenos, gluten]
 keywords: [puede contener trazas, qué significa puede contener trazas, trazas alérgenos, etiquetado precautorio alérgenos, contaminación cruzada]
 ---
 
