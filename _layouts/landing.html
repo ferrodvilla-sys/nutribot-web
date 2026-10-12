@@ -61,7 +61,7 @@ página viene cada descarga en Google Play (Play Console → Adquisición de usu
   {% endfor %}
   <details>
     <summary>¿Cuánto cuesta?</summary>
-    <p>Tienes {{ site.trial_days }} días gratis con todas las funciones. Después cuesta {{ site.price_month }} al mes y puedes cancelar cuando quieras desde Google Play.</p>
+    <p>Tienes {{ site.trial_days }} días gratis con todas las funciones. Después cuesta {{ site.price_month }} al mes o {{ site.price_year }} al año (sale a {{ site.price_year_month }} al mes), y puedes cancelar cuando quieras desde Google Play. Si no te suscribes, el escáner con avisos de alergias sigue siendo gratis.</p>
   </details>
   <p class="landing-note">Nutribot es una herramienta informativa: no diagnostica ni sustituye el consejo de un profesional sanitario. Comprueba siempre la etiqueta del envase.</p>
 </section>
@@ -81,7 +81,7 @@ página viene cada descarga en Google Play (Play Console → Adquisición de usu
   <div class="cta-inner">
     <div class="cta-copy">
       <h2>{{ page.cierre }}</h2>
-      <p>{{ site.trial_days }} días gratis con todas las funciones. Después, {{ site.price_month }} al mes y cancelas cuando quieras.</p>
+      <p>{{ site.trial_days }} días gratis con todas las funciones. Después, {{ site.price_month }} al mes o {{ site.price_year }} al año, y cancelas cuando quieras.</p>
       <a class="btn btn-light btn-lg" href="{{ play }}">{% include icon.html name="play" %}Descargar en Google Play</a>
     </div>
     <img class="ilus" src="{{ page.ilustracion | relative_url }}" alt="" width="480" height="400" loading="lazy">

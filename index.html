@@ -118,11 +118,12 @@ keywords: [app alergias alimentarias, escáner de alérgenos, app intolerancias,
     <div class="pricing-copy">
       <p class="kicker">Precio</p>
       <h2>Pruébalo {{ site.trial_days }} días gratis</h2>
-      <p>Todas las funciones desde el primer día. Después, {{ site.price_month }} al mes y cancelas cuando quieras.</p>
+      <p>Todas las funciones desde el primer día. Después, {{ site.price_month }} al mes o {{ site.price_year }} al año, y cancelas cuando quieras. El escáner con avisos de alergias sigue siendo gratis aunque no te suscribas.</p>
     </div>
     <div class="card">
       <h3>Nutribot completo</h3>
       <div class="price">{{ site.price_month }}<span>/mes</span></div>
+      <p class="price-alt">o <strong>{{ site.price_year }}/año</strong> (sale a {{ site.price_year_month }} al mes)</p>
       <ul>
         <li>{% include icon.html name="check" %}Escáner con avisos de alergias e intolerancias</li>
         <li>{% include icon.html name="check" %}Comparador de productos</li>
@@ -151,7 +152,7 @@ keywords: [app alergias alimentarias, escáner de alérgenos, app intolerancias,
   </details>
   <details>
     <summary>¿Cuánto cuesta?</summary>
-    <p>Tienes {{ site.trial_days }} días gratis con todas las funciones. Después cuesta {{ site.price_month }} al mes y puedes cancelar cuando quieras desde Google Play.</p>
+    <p>Tienes {{ site.trial_days }} días gratis con todas las funciones. Después cuesta {{ site.price_month }} al mes o {{ site.price_year }} al año (sale a {{ site.price_year_month }} al mes), y puedes cancelar cuando quieras desde Google Play. Si no te suscribes, el escáner con avisos de alergias sigue siendo gratis.</p>
   </details>
   <details>
     <summary>¿Está disponible para iPhone?</summary>
@@ -170,7 +171,10 @@ keywords: [app alergias alimentarias, escáner de alérgenos, app intolerancias,
   "url": "{{ site.url }}",
   "downloadUrl": "{{ site.play_store_url }}",
   "inLanguage": "es",
-  "offers": { "@type": "Offer", "price": "3.99", "priceCurrency": "EUR" }
+  "offers": [
+    { "@type": "Offer", "name": "Mensual", "price": "3.99", "priceCurrency": "EUR" },
+    { "@type": "Offer", "name": "Anual", "price": "29.99", "priceCurrency": "EUR" }
+  ]
 }
 </script>
 {% if site.posts.size > 0 %}
