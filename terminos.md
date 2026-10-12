@@ -12,7 +12,7 @@ permalink: /terminos/
 
 ## 1. Quién presta el servicio
 
-Nutribot es una aplicación para Android desarrollada por {{ site.author }}. Contacto: [{{ site.contact_email }}](mailto:{{ site.contact_email }}).
+Nutribot es una aplicación para Android desarrollada por {{ site.titular }}. Contacto: [{{ site.contact_email }}](mailto:{{ site.contact_email }}).
 
 ## 2. Qué es Nutribot
 

@@ -8,7 +8,9 @@ description: >-
 url: "https://nutribot.eu"
 baseurl: ""
 lang: es_ES
-author: Fernando Rodríguez Villa
+author: Nutribot
+# Titular legal: solo sale en Aviso legal y Términos (la ley pide identificarlo)
+titular: Fernando Rodríguez Villa
 
 # Enlaces que se usan en botones y pie de página
 play_store_url: "https://play.google.com/store/apps/details?id=com.fernandorodriguezvilla.nutribot"
