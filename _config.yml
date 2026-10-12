@@ -21,6 +21,8 @@ goatcounter: nutribot
 
 # Precio (si cambias el precio, cámbialo solo aquí)
 price_month: "3,99 €"
+price_year: "29,99 €"
+price_year_month: "2,50 €"
 trial_days: 30
 
 permalink: /blog/:title/
