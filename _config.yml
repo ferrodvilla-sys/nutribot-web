@@ -1,10 +1,11 @@
 # Ajustes generales del sitio. Cambia aquí y se aplica en todas las páginas.
 title: Nutribot
-tagline: Tus alergias e intolerancias, en cada producto que escaneas
+tagline: Entiende cómo te sienta lo que comes
 description: >-
-  App para personas con alergias e intolerancias alimentarias: escanea productos,
-  detecta alérgenos y FODMAP en los ingredientes sin falsos positivos y lleva un
-  diario de comidas y síntomas. Android, 30 días gratis.
+  Diario de comidas y síntomas que busca pistas entre lo que comes y cómo te
+  encuentras (gases, hinchazón, reflujo…) y te ayuda a comprobarlas con una prueba
+  guiada. Además, avisa de alérgenos, intolerancias y FODMAP en cada producto.
+  Android, 30 días gratis.
 url: "https://nutribot.eu"
 baseurl: ""
 lang: es_ES

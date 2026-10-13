@@ -69,7 +69,11 @@ Edita `enlaces.md` y añade una línea `- [Texto](https://dirección)`.
 ## 5. Capturas de la app
 
 Sube a `assets/img/` estas imágenes (PNG, mejor en vertical) y aparecerán solas en la portada (mientras no estén, ese hueco no se muestra):
-`alertas.jpg`, `comparador.jpg`, `patrones.jpg`, `informes.jpg`, `ficha.jpg`.
+`pista.jpg`, `prueba-guiada.jpg`, `resumen.jpg`, `informes.jpg`, `alertas.jpg`, `comparador.jpg`, `ficha.jpg` (y `calendario.jpg` en la cabecera; `patrones.jpg` se usa en la página /fodmap).
+
+## Opiniones de usuarios
+
+Edita `_data/opiniones.yml` (dentro del archivo hay un ejemplo). Mientras esté vacío, el apartado "Opiniones" no sale en la portada. Pon solo opiniones reales y con permiso de quien las escribe.
 
 ## SEO
 
