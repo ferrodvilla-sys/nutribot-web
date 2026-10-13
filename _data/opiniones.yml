@@ -1,0 +1,12 @@
+# Opiniones de usuarios para la portada.
+# Mientras esta lista esté vacía, el apartado "Opiniones" no sale en la web.
+# Pon solo opiniones reales y con permiso de quien la escribe (por ejemplo,
+# reseñas de Google Play o mensajes que te hayan enviado). Basta con el nombre
+# de pila o las iniciales.
+#
+# Para añadir una, quita el "[]" de abajo y copia este ejemplo sin las almohadillas:
+#
+# - texto: "Lo que dijo la persona, tal cual."
+#   nombre: "Ana"
+#   detalle: "Reseña en Google Play"   # opcional
+[]
