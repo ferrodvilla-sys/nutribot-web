@@ -57,7 +57,7 @@ keywords: [diario de comidas y síntomas, gases e hinchazón, qué alimento me s
     <img class="ilus" src="{{ '/assets/img/ilus/cesta.svg' | relative_url }}" alt="Cesta de la compra con una lupa revisando la etiqueta de un producto" width="480" height="400" loading="lazy">
   </div>
   <div class="steps-grid">
-    <div class="step"><span class="step-n">1</span>{% include icon.html name="scan" %}<h3>Apunta lo que comes</h3><p>Escanea el código de barras, díctalo o elige entre cientos de platos típicos. Si tienes alergias, te avisa al momento.</p></div>
+    <div class="step"><span class="step-n">1</span>{% include icon.html name="scan" %}<h3>Apunta lo que comes</h3><p>Escanea el código de barras, díctalo, elige entre cientos de platos típicos o describe el plato del restaurante. Tus comidas de siempre se apuntan de un toque. Si tienes alergias, te avisa al momento.</p></div>
     <div class="step"><span class="step-n">2</span>{% include icon.html name="calendar" %}<h3>Anota cómo te encuentras</h3><p>Gases, hinchazón, reflujo, dolor de cabeza… en unos segundos. También los días en que estás bien.</p></div>
     <div class="step"><span class="step-n">3</span>{% include icon.html name="search" %}<h3>Descubre pistas y compruébalas</h3><p>Nutribot te enseña qué coincide con tus días malos y te propone una prueba guiada para salir de dudas.</p></div>
   </div>
@@ -89,7 +89,7 @@ keywords: [diario de comidas y síntomas, gases e hinchazón, qué alimento me s
     <div class="feature-text">
       <span class="badge">{% include icon.html name="share" %}Para tu profesional</span>
       <h3>Un resumen claro para tu médico o dietista</h3>
-      <p>Cuántos días has tenido cada síntoma, cuáles fueron fuertes y qué coincidencias se han visto, en una página. Puedes enviarlo en PDF y llevarlo a la consulta.</p>
+      <p>Cuántos días has tenido cada síntoma, cuáles fueron fuertes y qué coincidencias se han visto, en una página. Si has hecho una prueba guiada, también sale su resultado. Puedes enviarlo en PDF y llevarlo a la consulta.</p>
     </div>
     {% include screenshot.html file="resumen.jpg" alt="Resumen para tu profesional con los días de cada síntoma y las coincidencias observadas" %}
   </div>
@@ -98,9 +98,18 @@ keywords: [diario de comidas y síntomas, gases e hinchazón, qué alimento me s
     <div class="feature-text">
       <span class="badge">{% include icon.html name="chart" %}Informes claros</span>
       <h3>Qué estás comiendo y qué puedes hacer</h3>
-      <p>Azúcar, sal y grasas, fibra, procesados y aditivos, alergias y agua. Sin gráficas frías: cómo estás, qué lo explica y qué hacer esta semana.</p>
+      <p>Calorías frente a tu objetivo, saciedad, azúcar, sal y grasas, procesados y aditivos, alergias y agua. Cada apartado lleva su valoración (Bien, Regular o Mejorable) con una frase clara, y al final ves si has mejorado respecto a la semana anterior. También en PDF, para guardarlo o compartirlo.</p>
     </div>
-    {% include screenshot.html file="informes.jpg" alt="Pantalla de informes con consejos" %}
+    {% include screenshot.html file="informe-pdf.jpg" alt="Informe semanal en PDF con la valoración global y las calorías de cada día frente al objetivo" %}
+  </div>
+
+  <div class="feature">
+    <div class="feature-text">
+      <span class="badge">{% include icon.html name="leaf" %}Saciedad</span>
+      <h3>Qué te llena y qué solo suma calorías</h3>
+      <p>Nutribot mira tres cosas por cada 100 kcal: cuántas calorías hay en cada gramo, la fibra y la proteína. Así ves de un vistazo si un alimento, una comida o tu semana sacia bien, regular o poco, qué alimentos te ayudaron más y qué cambio te vendría mejor. Es una orientación a partir de lo que comes, no mide tu hambre.</p>
+    </div>
+    {% include screenshot.html file="saciedad.jpg" alt="Apartado de saciedad: medidor, densidad, fibra y proteína, lo que más y lo que menos sació y qué cambiar" %}
   </div>
 
   <div class="feature">
@@ -116,7 +125,7 @@ keywords: [diario de comidas y síntomas, gases e hinchazón, qué alimento me s
     <div class="feature-text">
       <span class="badge">{% include icon.html name="compare" %}En el súper</span>
       <h3>Compara dos productos cara a cara</h3>
-      <p>¿Dudas entre dos marcas? Escanea las dos y Nutribot te dice cuál encaja mejor contigo, según tus alergias y lo que llevan dentro.</p>
+      <p>¿Dudas entre dos marcas? Escanea las dos y Nutribot te dice cuál encaja mejor contigo, según tus alergias y lo que llevan dentro. También ves cuál te sacia más y cuánta proteína aporta por cada 100 kcal.</p>
     </div>
     {% include screenshot.html file="comparador.jpg" alt="Comparador de dos productos con veredicto" %}
   </div>
@@ -161,6 +170,8 @@ keywords: [diario de comidas y síntomas, gases e hinchazón, qué alimento me s
       <ul>
         <li>{% include icon.html name="check" %}Diario de comidas y síntomas</li>
         <li>{% include icon.html name="check" %}Pistas, prueba guiada e informes en PDF</li>
+        <li>{% include icon.html name="check" %}Saciedad de cada alimento, comida y semana</li>
+        <li>{% include icon.html name="check" %}Plato de restaurante y comidas guardadas</li>
         <li>{% include icon.html name="check" %}Escáner con avisos de alergias e intolerancias</li>
         <li>{% include icon.html name="check" %}Comparador de productos</li>
         <li>{% include icon.html name="check" %}Ficha de alergias compartible</li>
@@ -184,6 +195,14 @@ keywords: [diario de comidas y síntomas, gases e hinchazón, qué alimento me s
   <details>
     <summary>¿En qué se diferencia de otras apps para escanear alimentos?</summary>
     <p>La mayoría solo te dice si un producto es bueno o malo. Nutribot está pensada para entender cómo te sienta a ti lo que comes: une tu diario de comidas con cómo te encuentras, te da pistas y te ayuda a comprobarlas. Y si tienes alergias o intolerancias, revisa la lista de ingredientes real, distingue entre "lo lleva" y "puede contener" e incluye FODMAP, no solo gluten y lactosa.</p>
+  </details>
+  <details>
+    <summary>¿Qué quiere decir "sacia bien" o "sacia poco"?</summary>
+    <p>Es una orientación a partir de tres datos por cada 100 kcal: las calorías por gramo, la fibra y la proteína. Un alimento con pocas calorías por gramo, con fibra o con proteína suele llenar más que otro con las mismas calorías. Las bebidas nunca salen como "sacia bien". No mide tu hambre ni sustituye el consejo de un profesional.</p>
+  </details>
+  <details>
+    <summary>¿Puedo apuntar lo que como en un restaurante?</summary>
+    <p>Sí. Escribe el plato como sale en la carta (por ejemplo, "lubina a la plancha con patatas y alioli") y Nutribot calcula los ingredientes con unos gramos que puedes cambiar. Si algo de la carta choca con tus alergias, te avisa. La carta no lo dice todo, así que pregunta siempre al camarero.</p>
   </details>
   <details>
     <summary>¿Nutribot diagnostica intolerancias?</summary>
