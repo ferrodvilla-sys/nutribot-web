@@ -1,7 +1,7 @@
 ---
 layout: landing
 title: "App de alergias alimentarias: escanea y detecta alérgenos sin falsas alarmas"
-description: "Marca tus alergias una vez y escanea. Nutribot revisa los ingredientes de cada producto y te avisa solo cuando toca. Los 14 alérgenos de la UE. 30 días gratis."
+description: "Marca tus alergias una vez y escanea. Nutribot revisa los ingredientes de cada producto y te avisa solo cuando toca. Los 14 alérgenos de la UE. 30 días gratis sin tarjeta."
 keywords: [app alergias alimentarias, escáner de alérgenos, detectar alérgenos en alimentos, alergia frutos secos app, alergia huevo leche app, 14 alérgenos, alergias niños]
 permalink: /alergias/
 campana: alergias
