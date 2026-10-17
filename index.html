@@ -160,10 +160,11 @@ keywords: [diario de comidas y síntomas, gases e hinchazón, qué alimento me s
   <div class="pricing-inner">
     <div class="pricing-copy">
       <p class="kicker">Precio</p>
-      <h2>Pruébalo {{ site.trial_days }} días gratis</h2>
+      <h2>Pruébalo {{ site.trial_days }} días gratis, <em>sin tarjeta</em></h2>
       <p>Todas las funciones desde el primer día, sin meter tarjeta y sin cobros automáticos al terminar. Si quieres seguir, {{ site.price_month }} al mes o {{ site.price_year }} al año, y cancelas cuando quieras. El escáner con avisos de alergias sigue siendo gratis aunque no te suscribas.</p>
     </div>
     <div class="card">
+      <div class="no-card">{% include icon.html name="check" %}<div><strong>Sin tarjeta</strong><small>{{ site.trial_days }} días gratis y no se cobra nada al terminar</small></div></div>
       <h3>Nutribot completo</h3>
       <div class="price">{{ site.price_month }}<span>/mes</span></div>
       <p class="price-alt">o <strong>{{ site.price_year }}/año</strong> (sale a {{ site.price_year_month }} al mes)</p>

@@ -179,6 +179,11 @@ svg.fill { fill: currentColor; stroke: none; }
 .price span { font-size: 17px; font-weight: 500; color: var(--muted); }
 .price { margin-bottom: 4px; }
 .price-alt { color: var(--muted); margin: 0 0 18px; }
+.pricing-copy h2 em { font-style: normal; color: var(--primary); }
+.no-card { display: flex; align-items: center; gap: 12px; background: var(--primary-soft); color: var(--primary); border-radius: 14px; padding: 14px 16px; margin: 0 0 18px; }
+.no-card svg { width: 30px; height: 30px; flex-shrink: 0; }
+.no-card strong { display: block; font-family: var(--font-head); font-size: 24px; font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; }
+.no-card small { display: block; font-size: 14px; color: var(--text); margin-top: 2px; }
 .card ul { list-style: none; margin-bottom: 28px; display: grid; gap: 12px; }
 .card li { display: flex; gap: 10px; align-items: flex-start; }
 .card li svg { color: #fff; background: var(--primary); border-radius: 50%; padding: 4px; width: 22px; height: 22px; stroke-width: 3; margin-top: 1px; }
