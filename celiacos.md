@@ -1,7 +1,7 @@
 ---
 layout: landing
 title: "App para celíacos: gluten en los ingredientes al escanear"
-description: "Escanea en el súper y Nutribot revisa la lista de ingredientes real: si lleva gluten o solo «puede contener». Compara productos y enseña tu ficha en el restaurante. 30 días gratis sin tarjeta."
+description: "Escanea en el súper y Nutribot revisa la lista de ingredientes real: si lleva gluten o solo «puede contener». Compara productos y enseña tu ficha en el restaurante. Empieza gratis, sin tarjeta."
 keywords: [app celíacos, escanear gluten, app sin gluten, saber si un producto tiene gluten, trazas de gluten, celiaquía app, sensibilidad al gluten]
 permalink: /celiacos/
 campana: celiacos

@@ -6,7 +6,7 @@ keywords: [diario de comidas y síntomas, gases e hinchazón, qué alimento me s
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-copy">
-      <span class="eyebrow"><span class="dot"></span>Android · {{ site.trial_days }} días gratis · Sin tarjeta</span>
+      <span class="eyebrow"><span class="dot"></span>Android · Empieza gratis · Sin tarjeta</span>
       <h1>Tu comida, clara. <em>Tus decisiones, más fáciles.</em></h1>
       <p class="subtitle">Apunta lo que comes y cómo te encuentras. Nutribot busca pistas entre las dos cosas (gases, hinchazón, reflujo…), te ayuda a comprobarlas con una prueba guiada y, de paso, te avisa de tus alergias e intolerancias en cada producto.</p>
       <div class="hero-actions">
@@ -159,15 +159,12 @@ keywords: [diario de comidas y síntomas, gases e hinchazón, qué alimento me s
 <section id="precio" class="pricing">
   <div class="pricing-inner">
     <div class="pricing-copy">
-      <p class="kicker">Precio</p>
-      <h2>Pruébalo {{ site.trial_days }} días gratis, <em>sin tarjeta</em></h2>
-      <p>Todas las funciones desde el primer día, sin meter tarjeta y sin cobros automáticos al terminar. Si quieres seguir, {{ site.price_month }} al mes o {{ site.price_year }} al año, y cancelas cuando quieras. El escáner con avisos de alergias sigue siendo gratis aunque no te suscribas.</p>
+      <p class="kicker">Empieza</p>
+      <h2>Empieza gratis, <em>sin tarjeta</em></h2>
+      <p>Todas las funciones desde el primer día, sin meter tarjeta. Y el escáner con avisos de alergias es gratis siempre.</p>
     </div>
     <div class="card">
-      <div class="no-card">{% include icon.html name="check" %}<div><strong>Sin tarjeta</strong><small>{{ site.trial_days }} días gratis y no se cobra nada al terminar</small></div></div>
       <h3>Nutribot completo</h3>
-      <div class="price">{{ site.price_month }}<span>/mes</span></div>
-      <p class="price-alt">o <strong>{{ site.price_year }}/año</strong> (sale a {{ site.price_year_month }} al mes)</p>
       <ul>
         <li>{% include icon.html name="check" %}Diario de comidas y síntomas</li>
         <li>{% include icon.html name="check" %}Pistas, prueba guiada e informes en PDF</li>
@@ -177,7 +174,7 @@ keywords: [diario de comidas y síntomas, gases e hinchazón, qué alimento me s
         <li>{% include icon.html name="check" %}Comparador de productos</li>
         <li>{% include icon.html name="check" %}Ficha de alergias compartible</li>
       </ul>
-      <a class="btn btn-block" href="{{ site.play_store_url }}">Empezar gratis</a>
+      <a class="btn btn-block" href="{{ site.play_store_url }}">Descárgala gratis</a>
     </div>
   </div>
 </section>
@@ -210,8 +207,8 @@ keywords: [diario de comidas y síntomas, gases e hinchazón, qué alimento me s
     <p>No. Nutribot es una herramienta informativa: te ayuda a leer etiquetas y a ver coincidencias entre lo que comes y cómo te encuentras, para que lo comentes con tu profesional sanitario.</p>
   </details>
   <details>
-    <summary>¿Cuánto cuesta?</summary>
-    <p>Tienes {{ site.trial_days }} días gratis con todas las funciones, sin meter tarjeta. Al terminar no se te cobra nada: si quieres seguir, cuesta {{ site.price_month }} al mes o {{ site.price_year }} al año (sale a {{ site.price_year_month }} al mes), y puedes cancelar cuando quieras desde Google Play. Si no te suscribes, el escáner con avisos de alergias sigue siendo gratis.</p>
+    <summary>¿Es gratis?</summary>
+    <p>Puedes empezar gratis, sin meter tarjeta y con todas las funciones. Si más adelante quieres seguir con todo, dentro de la app ves las opciones antes de pagar nada, y cancelas cuando quieras desde Google Play. El escáner con avisos de alergias es gratis siempre.</p>
   </details>
   <details>
     <summary>¿Está disponible para iPhone?</summary>
@@ -230,10 +227,7 @@ keywords: [diario de comidas y síntomas, gases e hinchazón, qué alimento me s
   "url": "{{ site.url }}",
   "downloadUrl": "{{ site.play_store_url }}",
   "inLanguage": "es",
-  "offers": [
-    { "@type": "Offer", "name": "Mensual", "price": "3.99", "priceCurrency": "EUR" },
-    { "@type": "Offer", "name": "Anual", "price": "29.99", "priceCurrency": "EUR" }
-  ]
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
 }
 </script>
 {% if site.posts.size > 0 %}
@@ -251,7 +245,7 @@ keywords: [diario de comidas y síntomas, gases e hinchazón, qué alimento me s
   <div class="cta-inner">
     <div class="cta-copy">
       <h2>Empieza hoy a entender tu comida</h2>
-      <p>{{ site.trial_days }} días gratis, sin tarjeta y sin compromiso. En unas semanas tendrás tus primeras pistas.</p>
+      <p>Empieza gratis, sin tarjeta y sin compromiso. En unas semanas tendrás tus primeras pistas.</p>
       <a class="btn btn-light btn-lg" href="{{ site.play_store_url }}">{% include icon.html name="play" %}Descargar en Google Play</a>
     </div>
     <img class="ilus" src="{{ '/assets/img/ilus/restaurante.svg' | relative_url }}" alt="Plato de comida y un móvil enseñando la ficha de alergias" width="480" height="400" loading="lazy">

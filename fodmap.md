@@ -1,7 +1,7 @@
 ---
 layout: landing
 title: "App para gases, hinchazón y FODMAP: diario de comidas y síntomas"
-description: "Apunta lo que comes y cómo te encuentras. Nutribot te enseña pistas entre tu comida y tus gases o hinchazón, con FODMAP, gluten, lactosa y aditivos. 30 días gratis sin tarjeta."
+description: "Apunta lo que comes y cómo te encuentras. Nutribot te enseña pistas entre tu comida y tus gases o hinchazón, con FODMAP, gluten, lactosa y aditivos. Empieza gratis, sin tarjeta."
 keywords: [app gases hinchazón, app FODMAP, diario de comidas y síntomas, colon irritable app, qué me sienta mal, intolerancia FODMAP, dieta baja en FODMAP app]
 permalink: /fodmap/
 campana: fodmap
