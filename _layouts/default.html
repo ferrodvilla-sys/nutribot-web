@@ -17,6 +17,14 @@
     {{ content }}
   </main>
   {% include footer.html %}
-  {% if site.goatcounter and jekyll.environment == "production" %}<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>{% endif %}
+  {% if site.goatcounter and jekyll.environment == "production" %}<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  {% comment %}Cuenta los clics hacia Google Play como evento "clic-google-play <página>" (en GoatCounter, filtrar por "clic").{% endcomment %}
+  <script>
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a[href*="play.google.com"]');
+      if (!a || !window.goatcounter || !window.goatcounter.count) return;
+      window.goatcounter.count({ path: 'clic-google-play ' + location.pathname, title: 'Clic en Google Play', event: true });
+    });
+  </script>{% endif %}
 </body>
 </html>
