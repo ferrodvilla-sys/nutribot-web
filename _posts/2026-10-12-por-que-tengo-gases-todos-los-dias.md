@@ -1,17 +1,19 @@
 ---
-title: "¿Por qué tengo gases todos los días? Causas frecuentes y qué puedes hacer"
-description: "Cuántos gases son normales, qué alimentos y hábitos suelen estar detrás y cuándo conviene consultar al médico."
+title: "¿Por qué tengo gases todos los días (y a todas horas)? Causas frecuentes y qué puedes hacer"
+description: "Si tienes gases constantes, a todas horas, te contamos cuántos son normales, qué alimentos y hábitos suelen estar detrás y cuándo conviene consultar al médico."
 image: /assets/img/posts/por-que-tengo-gases-todos-los-dias.jpg
 tema: FODMAP
 destacado: true
 etiquetas: [gases, hinchazon, fodmap]
-keywords: [por qué tengo gases todos los días, gases todos los días, tengo muchos gases, causas de los gases, flatulencia, alimentos que dan gases]
+keywords: [por qué tengo gases todos los días, tengo gases a todas horas, gases constantes, gases todos los días, tengo muchos gases, tener muchos gases, flatulencia crónica, gases en el intestino grueso, causas de los gases, alimentos que dan gases]
 medico:
   - "Los gases te molestan mucho o te cambian la vida diaria."
   - "Notas un cambio repentino en tus síntomas o en tu forma de ir al baño."
   - "Van acompañados de dolor abdominal, diarrea o estreñimiento que no se pasan."
   - "Pierdes peso sin buscarlo, tienes fiebre o ves sangre en las heces."
 preguntas:
+  - p: "¿Por qué tengo gases a todas horas?"
+    r: "Lo más frecuente es una mezcla de alimentos que fermentan en el intestino grueso (legumbres, cebolla, ajo, algunas frutas, lactosa si la digieres mal, edulcorantes en «-ol») y de hábitos como comer deprisa o tomar bebidas con gas. Si son constantes, molestan mucho o vienen con otros síntomas, conviene consultarlo con un médico."
   - p: "¿Cuántos gases al día son normales?"
     r: "Según el NIDDK (Instituto Nacional de Diabetes y Enfermedades Digestivas y Renales de EE. UU.), lo habitual es expulsar gases entre 8 y 14 veces al día, y hasta 25 veces se considera normal."
   - p: "¿Qué alimentos dan más gases?"
