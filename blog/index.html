@@ -7,6 +7,13 @@ description: Guías claras sobre gases, hinchazón, intolerancias, alergias, FOD
   <h1>Blog</h1>
   <p class="lead">{{ page.description }}</p>
 
+  <div class="start-here" id="lo-mas-nuevo">
+    <h2>Lo más nuevo</h2>
+    <div class="post-grid">
+      {% for post in site.posts limit:3 %}{% include post-card.html post=post %}{% endfor %}
+    </div>
+  </div>
+
   {% assign destacados = site.posts | where: "destacado", true %}
   {% if destacados.size > 0 %}
   <div class="start-here">
