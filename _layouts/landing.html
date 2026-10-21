@@ -84,6 +84,7 @@ página viene cada descarga en Google Play (Play Console → Adquisición de usu
       <h2>{{ page.cierre }}</h2>
       <p>Empieza gratis, con todas las funciones y sin tarjeta.</p>
       <a class="btn btn-light btn-lg" href="{{ play }}">{% include icon.html name="play" %}Descargar en Google Play</a>
+      {% include qr-play.html %}
     </div>
     <img class="ilus" src="{{ page.ilustracion | relative_url }}" alt="" width="480" height="400" loading="lazy">
   </div>
