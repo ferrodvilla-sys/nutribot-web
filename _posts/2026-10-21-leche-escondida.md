@@ -30,6 +30,8 @@ fuentes:
 
 *Marta es un **caso de ejemplo**: no es una persona real. La hemos creado para explicar paso a paso cómo se busca la leche escondida en los productos. Los textos de las pantallas son los que enseña Nutribot; los productos y los datos son inventados. Pero lo que le pasa le pasa a mucha gente.*
 
+{% include video-caso.html slug="leche-escondida" texto="La historia de Marta en 30 segundos." %}
+
 ## El problema: «si yo no tomo leche, ¿por qué me pica la boca?»
 
 Marta tiene 34 años y hace dos que su alergóloga le diagnosticó **alergia a la proteína de la leche de vaca**. Desde entonces no toma leche, ni queso, ni yogur, ni nata. Lo tiene clarísimo.

@@ -1,0 +1,7 @@
+{% comment %}Vídeo corto del caso (vertical, sin sonido, alojado en la propia web: sin cookies de terceros).{% endcomment %}
+<figure class="post-video">
+  <video controls muted playsinline preload="none" poster="/assets/video/{{ include.slug }}.jpg" width="360" height="640">
+    <source src="/assets/video/{{ include.slug }}.mp4" type="video/mp4">
+  </video>
+  <figcaption>{{ include.texto }}</figcaption>
+</figure>

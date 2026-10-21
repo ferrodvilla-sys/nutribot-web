@@ -28,6 +28,8 @@ fuentes:
 
 *Laura es un **caso de ejemplo**: no es una persona real. La hemos creado para explicar paso a paso cómo se busca lo que te sienta mal. Los textos de las pantallas son los que enseña Nutribot; los datos son inventados. Pero lo que le pasa le pasa a mucha gente.*
 
+{% include video-caso.html slug="creia-que-era-el-pan" texto="La historia de Laura en 18 segundos." %}
+
 ## El problema: «a media tarde ya no me abrocha el pantalón»
 
 Laura tiene 38 años y trabaja en una oficina. Por las mañanas está bien, pero casi todas las tardes se le hincha la tripa, tiene gases y llega a casa incómoda. Lleva así meses.
