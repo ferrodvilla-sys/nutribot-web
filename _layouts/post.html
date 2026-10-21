@@ -8,8 +8,10 @@ layout: default
   {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
   {% if page.etiquetas %}<p class="tag-list">{% for e in page.etiquetas %}{% assign et = site.etiquetas | where: "slug", e | first %}{% if et %}<a class="tag" href="{{ et.url | relative_url }}">{{ et.nombre }}</a>{% endif %}{% endfor %}</p>{% endif %}
   {% if t.imagen %}<img class="post-banner" src="{{ t.imagen | relative_url }}" alt="" width="600" height="340">{% endif %}
+  {% comment %}Aviso de descarga antes del apartado (h2) del medio. Solo en artículos con 3 apartados o más.{% endcomment %}
+  {% assign trozos = content | split: "<h2" %}{% assign n_h2 = trozos.size | minus: 1 %}
   <div class="post-body">
-    {{ content }}
+    {% if n_h2 >= 3 %}{% assign mitad = n_h2 | plus: 1 | divided_by: 2 | plus: 1 %}{% for t in trozos %}{% if forloop.first %}{{ t }}{% else %}{% if forloop.index == mitad %}{% include cta-mitad.html %}{% endif %}<h2{{ t }}{% endif %}{% endfor %}{% else %}{{ content }}{% endif %}
   </div>
 
   {% if page.medico %}
