@@ -16,6 +16,7 @@ página viene cada descarga en Google Play (Play Console → Adquisición de usu
       <div class="hero-actions">
         <a class="btn btn-lg" href="{{ play }}">{% include icon.html name="play" %}Descárgala gratis</a>
       </div>
+      {% include qr-play.html %}
       <ul class="hero-trust">
         {% for t in page.ventajas %}<li>{% include icon.html name="check" %}{{ t }}</li>{% endfor %}
       </ul>
