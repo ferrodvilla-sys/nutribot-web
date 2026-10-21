@@ -349,3 +349,13 @@ svg.fill { fill: currentColor; stroke: none; }
 .tag-group h3 { font-size: 15px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 20px 0 0; }
 .tag-group .topic-nav { margin: 10px 0 0; }
 .topic-nav a[aria-current="page"] { border-color: var(--primary); background: var(--primary-soft); color: var(--primary); }
+
+/* QR a Google Play: solo en pantallas grandes con ratón (en el móvil ya está el botón). */
+.qr-play { display: none; }
+@media (min-width: 900px) and (hover: hover) and (pointer: fine) {
+  .qr-play { display: flex; align-items: center; gap: 16px; margin: 18px auto 0; max-width: 460px; text-align: left; }
+  .qr-play img { flex: none; width: 120px; height: 120px; padding: 6px; background: #fff; border-radius: 12px; border: 1px solid var(--border); }
+  .qr-play p { margin: 0; font-size: 15px; color: var(--muted); line-height: 1.45; }
+  .qr-play strong { color: var(--text); }
+  .hero .qr-play { margin-left: 0; }
+}
