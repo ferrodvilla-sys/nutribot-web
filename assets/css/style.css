@@ -365,3 +365,8 @@ svg.fill { fill: currentColor; stroke: none; }
 .mid-cta { margin: 34px 0; padding: 20px 22px; border-radius: var(--radius); background: var(--primary-soft); border-left: 4px solid var(--primary); }
 .mid-cta p { margin: 0 0 14px; }
 .mid-cta .qr-play { margin-left: 0; }
+
+/* Vídeo corto de los casos de ejemplo */
+.post-video { margin: 24px auto; max-width: 320px; text-align: center; }
+.post-video video { display: block; width: 100%; height: auto; border-radius: 16px; background: #f5f2ea; box-shadow: 0 8px 24px rgba(47,58,40,.12); }
+.post-video figcaption { font-size: 15px; color: var(--muted); margin-top: 8px; }
