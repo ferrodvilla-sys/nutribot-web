@@ -1,0 +1,10 @@
+{% comment %}
+Aviso corto a mitad de artículo (mucha gente no llega al final). Sin precios ni días de prueba.
+utm_campaign=blog-mitad para ver en Google Play cuántas descargas vienen de aquí.
+{% endcomment %}
+{% capture play %}{{ site.play_store_url }}&referrer=utm_source%3Dnutribot.eu%26utm_medium%3Dweb%26utm_campaign%3Dblog-mitad{% endcapture %}
+<aside class="mid-cta">
+  <p><strong>¿Te pasa algo parecido?</strong> Con Nutribot apuntas lo que comes y cómo te sientes, y escaneas los productos para ver sus ingredientes y alérgenos.</p>
+  <a class="btn" href="{{ play }}">{% include icon.html name="play" %}Descárgala gratis</a>
+  {% include qr-play.html %}
+</aside>

@@ -360,3 +360,8 @@ svg.fill { fill: currentColor; stroke: none; }
   .hero .qr-play, .cta-copy .qr-play { margin-left: 0; }
   .cta-copy .qr-play p, .cta-copy .qr-play strong { color: inherit; opacity: .92; }
 }
+
+/* Aviso de descarga a mitad de artículo */
+.mid-cta { margin: 34px 0; padding: 20px 22px; border-radius: var(--radius); background: var(--primary-soft); border-left: 4px solid var(--primary); }
+.mid-cta p { margin: 0 0 14px; }
+.mid-cta .qr-play { margin-left: 0; }
