@@ -28,7 +28,7 @@ fuentes:
 Dos comidas con las mismas calorías pueden dejarte muy distinto: con una aguantas hasta la cena y con la otra, a la hora ya estás buscando algo en la nevera. No es fuerza de voluntad. Depende mucho de **qué** comes, no solo de cuánto.
 
 
-{% include video-caso.html slug="que-alimentos-sacian-mas" texto="Un caso de ejemplo: Pilar y su desayuno, en 30 segundos." %}
+{% include video-caso.html slug="que-alimentos-sacian-mas" texto="Qué sacia y qué no, y el índice de saciedad de Nutribot: un caso de ejemplo en 40 segundos." %}
 
 ## Las tres cosas que más influyen
 
