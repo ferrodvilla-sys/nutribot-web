@@ -32,6 +32,9 @@ Hay días en que te levantas con la tripa hinchada, o en que a media tarde ya no
 
 Si quieres entender por qué pasa, lo explicamos en [hinchazón después de comer](/blog/hinchazon-despues-de-comer/).
 
+
+{% include video-caso.html slug="que-comer-con-la-tripa-hinchada" texto="Lo esencial, en 25 segundos." %}
+
 ## Un menú para los días de tripa hinchada
 
 [![Menú de un día para la tripa hinchada: avena con leche sin lactosa, kiwi, arroz con pollo y calabacín, yogur sin lactosa con arándanos y merluza al horno con patata](/assets/img/posts/que-comer-con-la-tripa-hinchada/1-menu-un-dia.jpg)](/assets/img/posts/que-comer-con-la-tripa-hinchada/1-menu-un-dia.jpg)

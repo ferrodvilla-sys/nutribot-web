@@ -30,6 +30,9 @@ Tener gases es normal: todo el mundo los tiene a diario. Pero si notas que **alg
 
 Si tienes gases a todas horas y quieres entender por qué, lo explicamos en [por qué tengo gases todos los días](/blog/por-que-tengo-gases-todos-los-dias/).
 
+
+{% include video-caso.html slug="alimentos-que-dan-mas-gases" texto="Lo esencial, en 25 segundos." %}
+
 ## Los alimentos que más gases suelen dar
 
 [![Alimentos que más gases suelen dar: legumbres, col, coliflor y brócoli, cebolla y ajo, manzana, pera y mango, leche normal, trigo en cantidad, chicles sin azúcar y bebidas con gas](/assets/img/posts/alimentos-que-dan-mas-gases/1-los-que-mas.jpg)](/assets/img/posts/alimentos-que-dan-mas-gases/1-los-que-mas.jpg)
