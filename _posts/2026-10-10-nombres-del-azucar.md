@@ -8,6 +8,8 @@ keywords: [nombres del azúcar, azúcar oculto, sin azúcares añadidos, azúcar
 
 El azúcar no siempre aparece como "azúcar". En la lista de ingredientes puede esconderse con muchos otros nombres.
 
+{% include video-caso.html slug="nombres-del-azucar" texto="Los nombres del azúcar en 20 segundos. Guárdalo para tu compra." %}
+
 ## Nombres habituales
 
 - Sacarosa, glucosa, fructosa, dextrosa, maltosa

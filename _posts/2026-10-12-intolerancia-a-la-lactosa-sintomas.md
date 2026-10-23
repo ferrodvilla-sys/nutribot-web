@@ -33,6 +33,8 @@ fuentes:
 
 La lactosa es el azúcar natural de la leche. Para digerirla, el intestino fabrica una enzima llamada **lactasa**. Muchas personas producen menos lactasa a medida que se hacen mayores y, cuando toman más lactosa de la que pueden digerir, lo notan.
 
+{% include video-caso.html slug="intolerancia-a-la-lactosa-sintomas" texto="Dónde está la lactosa, en 25 segundos." %}
+
 ## Cómo se nota
 
 Cuando la lactosa no se digiere, llega al intestino grueso y fermenta. Según el NIDDK, los síntomas más habituales son:
