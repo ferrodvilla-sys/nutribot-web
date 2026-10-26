@@ -15,7 +15,7 @@ titular: Fernando Rodríguez Villa
 
 # Enlaces que se usan en botones y pie de página
 play_store_url: "https://play.google.com/store/apps/details?id=com.fernandorodriguezvilla.nutribot"
-privacy_url: "https://sites.google.com/view/politica-privacidad-nutribot/inicio"
+privacy_url: /privacidad/
 contact_email: "nutribotappl@gmail.com"
 # Página de Facebook (si está vacío, el enlace no sale en la web)
 facebook_url: "https://www.facebook.com/profile.php?id=61595046641595"
