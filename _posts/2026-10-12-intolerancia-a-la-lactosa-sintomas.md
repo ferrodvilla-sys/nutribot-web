@@ -75,6 +75,10 @@ Ojo: si quitas los lácteos, asegúrate de tomar **calcio** de otras fuentes. Un
 
 La lactosa no solo está en la leche. Aparece en muchos productos procesados: pan de molde, embutidos, salsas, purés de sobre, bollería, chocolate con leche o algunos medicamentos. En la etiqueta, búscala como **leche, leche en polvo, suero de leche, lactosa, nata o sólidos lácteos**.
 
+Así te avisa Nutribot cuando la lactosa va escondida en un producto del súper (capturas reales de la app):
+
+{% include video-caso.html slug="escaner-leche-escondida" texto="La leche escondida en unos copos de chocolate, en 28 segundos." %}
+
 ## No la confundas con la alergia
 
 La intolerancia a la lactosa **no es una alergia**. La alergia a la leche es una reacción a sus proteínas, puede ser grave y un producto «sin lactosa» no sirve. Te lo contamos en [intolerancia a la lactosa o alergia a la leche](/blog/intolerancia-lactosa-o-alergia-a-la-leche/).
