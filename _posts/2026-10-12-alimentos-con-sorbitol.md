@@ -31,6 +31,10 @@ Los **polioles** son azúcares «alcohol» que acaban en **-ol**: sorbitol, mani
 
 El intestino los absorbe mal. En cantidad, atraen agua y fermentan, y por eso a algunas personas les pueden dar **gases, hinchazón o diarrea**. Son la «P» de los [FODMAP](/blog/que-son-los-fodmap/).
 
+Así avisa Nutribot del maltitol en unas galletas y un chocolate «sin azúcar» del súper (capturas reales de la app):
+
+{% include video-caso.html slug="sin-azucar-maltitol" texto="El maltitol de lo «sin azúcar», en 29 segundos." %}
+
 ## En qué alimentos están de forma natural
 
 Según la Universidad de Monash y la Fundación Española del Aparato Digestivo:
