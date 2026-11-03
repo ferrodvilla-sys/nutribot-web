@@ -10,6 +10,8 @@ keywords: [14 alérgenos, alérgenos de declaración obligatoria, cómo leer eti
 
 Si tienes una alergia o intolerancia, la etiqueta es tu mejor aliada. La buena noticia: en la Unión Europea hay reglas claras sobre cómo deben aparecer los alérgenos.
 
+{% include video-caso.html slug="rayos-x-barrita" texto="Rayos X de una barrita de proteínas: lo que el envase no te dice. Captura real del escáner de Nutribot." %}
+
 ## Paso 1: ve directo a la lista de ingredientes
 
 Olvídate de la parte frontal del envase ("natural", "casero", "receta tradicional"): eso es publicidad. La información que importa está en la **lista de ingredientes**, normalmente en la parte de atrás.
