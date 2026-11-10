@@ -8,6 +8,8 @@ keywords: [ultraprocesados, qué son los ultraprocesados, clasificación NOVA, a
 
 Seguro que has oído hablar de los ultraprocesados. Pero ¿qué son exactamente? La forma más usada de clasificarlos es el sistema **NOVA**, desarrollado por investigadores de la Universidad de São Paulo.
 
+{% include video-caso.html slug="escaner-digestive" texto="¿Galletas Digestive? Las escaneo en el súper: 25 sobre 100, ultraprocesadas y con aviso de FODMAP. Grabación real del escáner de Nutribot." %}
+
 ## Los cuatro grupos NOVA
 
 1. **Alimentos sin procesar o mínimamente procesados**: fruta, verdura, legumbres, huevos, carne, pescado, leche, frutos secos naturales.
