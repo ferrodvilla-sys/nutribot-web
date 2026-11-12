@@ -9,7 +9,7 @@ permalink: /privacidad/
 # Política de privacidad de Nutribot
 
 
-Última actualización: 1 de noviembre de 2026.
+Última actualización: 12 de noviembre de 2026.
 
 ## 1. Responsable
 
@@ -32,6 +32,7 @@ Contacto: nutribotappl@gmail.com
 - **Recuento anónimo de uso:** contamos cuántas veces al día se abre la app, se escanea un producto o se abre la pantalla de crear cuenta, también si usas la app sin cuenta. Solo se guarda el total de cada día: ni quién eres, ni qué productos escaneas, ni ningún dato de tu móvil. Sirve para saber si la app es útil y mejorarla.
 - **Notificaciones:** si las activas, el aviso diario de Bienestar y el aviso de fin de prueba se programan en tu propio móvil.
 - **Avisos de novedades:** si aceptas recibirlos, guardamos el código de tu móvil para mandarle avisos (consejos y novedades, como mucho uno a la semana) y, si tienes cuenta, a qué cuenta pertenece. Puedes quitarlos cuando quieras en Cuenta → Preferencias o en los ajustes del móvil.
+- **Correos sobre tu cuenta:** si creas una cuenta, te escribimos como mucho tres correos: uno de bienvenida con cómo empezar, uno a los pocos días si todavía no has apuntado nada y uno antes de que acabe tu prueba gratis. Para eso usamos tu email, la fecha de alta, la fecha de fin de la prueba y si has apuntado algo (no lo que apuntas). Cada uno lleva un enlace para no recibir más.
 - **Consejos y novedades por correo:** solo si marcas la casilla al crear la cuenta o lo activas en Preferencias. Cada correo lleva un enlace para darte de baja con un clic.
 - **Productos no encontrados:** si escaneas un producto que no está, guardamos su código de barras y cuántas veces se ha buscado ese día, sin saber quién lo ha escaneado. Sirve para añadir los productos que faltan.
 - **«Ayúdanos a añadirlo»:** si decides enviar fotos de un producto que no está (delante, ingredientes y tabla nutricional) y, si quieres, su nombre y marca, los enviamos a Open Food Facts con la cuenta de Nutribot. No se envía ningún dato tuyo. Fotografía solo el envase, sin personas.
@@ -41,7 +42,7 @@ Contacto: nutribotappl@gmail.com
 - **Ejecución del contrato:** cuenta, perfil, historial, informes y suscripción.
 - **Consentimiento explícito (art. 9.2.a RGPD):** datos de salud (bienestar, síntomas, pruebas guiadas, alergias e intolerancias). Lo das en la app antes de usarlos y puedes retirarlo cuando quieras en Cuenta → Preferencias → «Retirar consentimiento de datos de salud». Al retirarlo se borran esos datos.
 - **Consentimiento:** los avisos de novedades, los correos de consejos y novedades y las fotos que envías con «Ayúdanos a añadirlo». Puedes retirarlo cuando quieras.
-- **Interés legítimo:** el identificador del dispositivo, para evitar abusos de la prueba gratuita, y el recuento anónimo de uso y los códigos de productos no encontrados, para mejorar la app.
+- **Interés legítimo:** los correos sobre tu cuenta (bienvenida, recordatorio y aviso de fin de prueba), para ayudarte a usar la app y avisarte antes de que cambie lo que incluye; puedes darte de baja con un clic. El identificador del dispositivo, para evitar abusos de la prueba gratuita, y el recuento anónimo de uso y los códigos de productos no encontrados, para mejorar la app.
 
 ## 4. Con quién se comparten (encargados del tratamiento)
 
@@ -52,7 +53,7 @@ No vendemos tus datos ni los usamos para publicidad. Solo los tratan estos prove
 - **RevenueCat** (estado de la suscripción).
 - **Google Play** (pagos y suscripciones).
 - **Google** (solo si eliges entrar con Google: comprueba que la cuenta es tuya).
-- **Resend** (envío de correos: códigos, respuestas a tus sugerencias y, si los pides, consejos y novedades).
+- **Resend** (envío de correos: códigos, respuestas a tus sugerencias, correos sobre tu cuenta y, si los pides, consejos y novedades).
 - **Expo y Google Firebase Cloud Messaging** (solo si aceptas los avisos de novedades: hacen llegar el aviso a tu móvil).
 - **Open Food Facts:** al escanear o buscar, la app consulta su base de datos con el código de barras o el texto buscado. No se envían tus datos de cuenta ni de salud. Si usas «Ayúdanos a añadirlo», las fotos y el nombre y la marca del producto se publican en Open Food Facts con su licencia libre, para que cualquiera pueda usarlos; desde Nutribot no podemos borrarlos después, pero puedes pedirlo a Open Food Facts.
 
