@@ -85,4 +85,4 @@ La intolerancia a la lactosa **no es una alergia**. La alergia a la leche es una
 
 ## Confírmalo antes de quitar nada
 
-Los gases y la hinchazón tienen muchas causas posibles, y la lactosa es solo una. Antes de quitar los lácteos por tu cuenta, coméntalo con tu médico: hay pruebas sencillas para confirmarlo. Mientras tanto, apuntar lo que comes y cómo te encuentras te ayudará a llegar a la consulta con datos. Te explicamos cómo en [cómo saber qué alimento te sienta mal](/blog/como-saber-que-alimento-me-sienta-mal/).
+Los gases y la hinchazón tienen muchas causas posibles, y la lactosa es solo una. Antes de quitar los lácteos por tu cuenta, coméntalo con tu médico: hay pruebas sencillas para confirmarlo, como el [test del aliento que hace la Seguridad Social](/blog/test-intolerancias-seguridad-social/). Mientras tanto, apuntar lo que comes y cómo te encuentras te ayudará a llegar a la consulta con datos. Te explicamos cómo en [cómo saber qué alimento te sienta mal](/blog/como-saber-que-alimento-me-sienta-mal/).

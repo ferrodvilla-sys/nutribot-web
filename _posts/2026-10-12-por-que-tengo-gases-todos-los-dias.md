@@ -1,9 +1,10 @@
 ---
-title: "¿Por qué tengo gases todos los días (y a todas horas)? Causas frecuentes y qué puedes hacer"
+title: "Tengo gases a todas horas: por qué pasa y qué puedes hacer"
 description: "Si tienes gases constantes, a todas horas, te contamos cuántos son normales, qué alimentos y hábitos suelen estar detrás y cuándo conviene consultar al médico."
 image: /assets/img/posts/por-que-tengo-gases-todos-los-dias.jpg
 tema: FODMAP
 destacado: true
+last_modified_at: 2026-11-12
 etiquetas: [gases, hinchazon, fodmap]
 keywords: [por qué tengo gases todos los días, tengo gases a todas horas, gases constantes, gases todos los días, tengo muchos gases, tener muchos gases, flatulencia crónica, gases en el intestino grueso, causas de los gases, alimentos que dan gases]
 medico:
@@ -18,6 +19,12 @@ preguntas:
     r: "Según el NIDDK (Instituto Nacional de Diabetes y Enfermedades Digestivas y Renales de EE. UU.), lo habitual es expulsar gases entre 8 y 14 veces al día, y hasta 25 veces se considera normal."
   - p: "¿Qué alimentos dan más gases?"
     r: "Los que llevan hidratos de carbono que el intestino delgado no digiere del todo, como las legumbres, algunas verduras (col, cebolla, ajo), ciertas frutas, los lácteos con lactosa en personas que la digieren mal y los edulcorantes acabados en «-ol». Varía mucho de una persona a otra."
+  - p: "¿Por qué tengo más gases por la tarde y por la noche?"
+    r: "Porque la fermentación en el intestino grueso no es inmediata: lo que comes a mediodía suele llegar allí varias horas después. Por eso muchas personas notan más gases e hinchazón a última hora del día, sumados al aire que se ha ido tragando durante la jornada."
+  - p: "¿Qué es la flatulencia crónica?"
+    r: "Se suele llamar así a tener gases molestos de forma continuada durante semanas o meses. No es un diagnóstico en sí: casi siempre tiene que ver con la alimentación y los hábitos, pero si dura, cambia de repente o viene con otros síntomas, conviene que lo valore un médico."
+  - p: "¿Por qué mis gases huelen tan mal?"
+    r: "La mayor parte del gas no huele. El olor viene de pequeñas cantidades de compuestos de azufre que producen las bacterias del intestino, y suele aumentar con alimentos ricos en azufre (huevo, carne, col, brócoli, ajo, cebolla). Normalmente no indica nada grave."
   - p: "¿Tener gases todos los días es malo?"
     r: "No necesariamente: los gases son parte normal de la digestión. Conviene consultar si molestan mucho, cambian de repente o vienen con otros síntomas como dolor, pérdida de peso o sangre en las heces."
 fuentes:
@@ -33,11 +40,24 @@ fuentes:
 
 Si tienes gases a diario, no eres la única persona: es una de las molestias digestivas más comunes. La mayoría de las veces tienen que ver con lo que comemos y cómo lo comemos, aunque a veces conviene revisarlos con un profesional.
 
+**En resumen:** tener gases cada día es normal (entre 8 y 14 veces, y hasta 25). Si te molestan a todas horas, lo más habitual es una mezcla de **alimentos que fermentan** en el intestino grueso y de **aire tragado** al comer deprisa o con bebidas con gas. Lo que mejor funciona es apuntar lo que comes unas semanas y cambiar **una cosa cada vez**.
+
 ## Primero: los gases son normales
 
 El gas se forma de dos maneras: por el **aire que tragamos** al comer, beber o hablar, y por la **fermentación** que hacen las bacterias del intestino grueso con la parte de la comida que no hemos digerido antes.
 
 Según el NIDDK, lo habitual es expulsar gases **entre 8 y 14 veces al día**, y hasta 25 veces se considera normal. Lo que cambia mucho de una persona a otra es **cuánto molestan**: hay personas con un intestino más sensible que notan hinchazón o dolor con la misma cantidad de gas.
+
+## ¿Por qué a todas horas, incluso cuando no has comido?
+
+Es una de las dudas más frecuentes, y tiene una explicación sencilla: **los gases no salen de lo último que has comido**.
+
+- La parte de la comida que no digerimos tarda **varias horas** en llegar al intestino grueso. Allí las bacterias la van fermentando poco a poco, así que el desayuno puede dar gases a mediodía y la comida, por la tarde y por la noche.
+- Si a lo largo del día tomas varios alimentos que fermentan (pan, fruta, legumbres, cebolla en las salsas, un yogur…), cada uno toma el relevo del anterior y la sensación es de **gases constantes**.
+- El **aire que tragas** se va sumando durante el día: por eso mucha gente nota más hinchazón y gases **a última hora de la tarde**.
+- Por la noche, tumbada, el gas se mueve más despacio y a veces se nota más al levantarte.
+
+Por eso es tan difícil adivinar el culpable de memoria: la molestia de las siete de la tarde puede venir de algo que comiste a las dos.
 
 ## Causas frecuentes
 
@@ -47,7 +67,7 @@ Algunos hidratos de carbono llegan sin digerir al intestino grueso y allí ferme
 
 - **Legumbres**: garbanzos, lentejas, alubias. Te contamos [cómo tomarlas sentándote mejor](/blog/legumbres-sin-gases/).
 - **Algunas verduras**: col, coliflor, brócoli, cebolla, [ajo](/blog/el-ajo-produce-gases/), alcachofa.
-- **Algunas frutas**: manzana, pera, mango, sandía, fruta desecada.
+- **Algunas frutas**: manzana, pera, mango, sandía, fruta desecada. Mira [qué fruta da gases](/blog/fruta-que-da-gases/).
 - **Trigo y centeno**, en cantidad.
 - **Lácteos con lactosa**, si la digieres mal (lo vemos en [intolerancia a la lactosa](/blog/intolerancia-a-la-lactosa-sintomas/)).
 - **Edulcorantes acabados en «-ol»**, como el sorbitol de los chicles sin azúcar. Mira [dónde se esconde el sorbitol](/blog/alimentos-con-sorbitol/).
@@ -56,22 +76,43 @@ Muchos de estos alimentos forman parte del grupo de los [FODMAP](/blog/que-son-l
 
 ### 2. Tragar aire
 
-Comer deprisa, hablar mientras comes, masticar chicle, chupar caramelos o tomar **bebidas con gas** hace que tragues más aire.
+Comer deprisa, hablar mientras comes, masticar chicle, chupar caramelos, fumar o tomar **bebidas con gas** hace que tragues más aire.
 
 ### 3. Otros factores
 
-La Fundación Española del Aparato Digestivo cita también las **intolerancias** (sobre todo a la lactosa y a la fructosa), los **cambios en la flora intestinal**, por ejemplo después de tomar antibióticos, y algunas enfermedades digestivas que debe valorar un médico. El estreñimiento también puede estar relacionado con más gases e hinchazón.
+La Fundación Española del Aparato Digestivo cita también las **intolerancias** (sobre todo a la lactosa y a la [fructosa](/blog/intolerancia-a-la-fructosa/)), los **cambios en la flora intestinal**, por ejemplo después de tomar antibióticos, y algunas enfermedades digestivas que debe valorar un médico. El estreñimiento también puede estar relacionado con más gases e hinchazón.
+
+## Tabla rápida: qué suele dar gases y qué probar en su lugar
+
+| Suele dar más gases | Prueba en su lugar |
+|---|---|
+| Legumbres cocidas en casa | Legumbres de bote bien enjuagadas, en raciones pequeñas |
+| Cebolla y ajo en el sofrito | La parte verde del puerro o la cebolleta, aceite aromatizado con ajo |
+| Manzana, pera, mango | Naranja, mandarina, kiwi, fresas |
+| Leche normal (si la lactosa te sienta mal) | Leche sin lactosa, yogur, quesos curados |
+| Chicles y caramelos «sin azúcar» | Una fruta pequeña o nada entre horas |
+| Bebidas con gas | Agua, infusiones |
+| Col, coliflor, brócoli en cantidad | Calabacín, zanahoria, judías verdes, espinacas |
+
+No hace falta cambiarlo todo: cada persona tolera unos alimentos y cantidades distintas. Tienes más ideas en [alimentos que dan más gases (y qué tomar en su lugar)](/blog/alimentos-que-dan-mas-gases/).
+
+## ¿Y si los gases huelen mal?
+
+La mayor parte del gas no huele. El mal olor viene de **pequeñas cantidades de compuestos de azufre** que fabrican las bacterias del intestino, y suele aumentar con alimentos ricos en azufre como el huevo, la carne, la col, el brócoli, el ajo o la cebolla. Por sí solo, el olor **no suele indicar nada grave**. Si cambia de forma brusca y viene con diarrea u otros síntomas, coméntalo con tu médico.
 
 ## Qué puedes probar
 
 - **Come más despacio** y mastica bien.
 - **Reduce las bebidas con gas**, los chicles y los caramelos.
-- **Muévete**: la actividad física regular ayuda al tránsito intestinal.
+- **Muévete**: la actividad física regular, incluso un paseo después de comer, ayuda al tránsito intestinal.
+- **Reparte los alimentos que fermentan.** No es lo mismo tomar legumbres, fruta y pan en la misma comida que repartirlos.
 - **Cambia una cosa cada vez.** Si quitas varios alimentos a la vez, no sabrás cuál influía.
 - **No elimines alimentos para siempre por tu cuenta.** Muchos de los que dan gases son muy nutritivos. Si sospechas de un grupo concreto, coméntalo con tu médico o un dietista-nutricionista.
 
 ## Apunta lo que comes y cómo te encuentras
 
-Los gases dependen de la cantidad, de la combinación de alimentos y de cada persona, así que la memoria engaña. Un [diario de comidas y síntomas](/blog/diario-de-comidas-y-sintomas/) durante unas semanas suele dar pistas mucho más útiles que adivinar, y te permite llegar a la consulta con datos.
+Los gases dependen de la cantidad, de la combinación de alimentos, de las horas que pasan y de cada persona, así que la memoria engaña. Un [diario de comidas y síntomas](/blog/diario-de-comidas-y-sintomas/) durante unas semanas suele dar pistas mucho más útiles que adivinar, y te permite llegar a la consulta con datos.
 
-Si quieres ir un paso más allá, lee [cómo saber qué alimento te sienta mal](/blog/como-saber-que-alimento-me-sienta-mal/).
+Si lo prefieres en el móvil, Nutribot te deja apuntar comidas y cómo te encuentras en unos segundos y busca coincidencias que se repiten, por ejemplo, días con más gases después de un alimento concreto. Son pistas para comprobar, no diagnósticos.
+
+Si quieres ir un paso más allá, lee [cómo saber qué alimento te sienta mal](/blog/como-saber-que-alimento-me-sienta-mal/) y, si tu médico te propone pruebas, [qué test de intolerancias hace la Seguridad Social](/blog/test-intolerancias-seguridad-social/).

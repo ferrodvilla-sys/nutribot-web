@@ -13,7 +13,7 @@ medico:
   - "Quieres hacer una dieta de eliminación: hazla siempre con un profesional."
 preguntas:
   - p: "¿Los test de intolerancias de farmacia o por internet sirven?"
-    r: "Los test que miden anticuerpos IgG en sangre no están recomendados por las sociedades de alergología para diagnosticar intolerancias. Las pruebas válidas, como la de la lactosa o la celiaquía, las indica un médico."
+    r: "Los test que miden anticuerpos IgG en sangre no están recomendados por las sociedades de alergología para diagnosticar intolerancias. Las pruebas válidas, como la de la lactosa o la celiaquía, las indica un médico y se hacen en la sanidad pública."
   - p: "¿Cuánto tiempo tengo que apuntar lo que como?"
     r: "Al menos dos o tres semanas, mejor cuatro. Con menos días es fácil confundir una coincidencia con una pista."
   - p: "¿Puedo quitar alimentos para ver si mejoro?"
@@ -62,7 +62,7 @@ Si una pista se repite mucho, coméntala con tu profesional. Si te propone proba
 ## Lo que mejor no hacer
 
 - **Quitar muchos alimentos a la vez y para siempre.** Puedes quedarte sin nutrientes y no aprender nada.
-- **Fiarte de test de intolerancias por IgG** de farmacia o internet: las sociedades de alergología no los recomiendan para diagnosticar intolerancias.
+- **Fiarte de test de intolerancias por IgG** de farmacia o internet: las sociedades de alergología no los recomiendan para diagnosticar intolerancias. Te explicamos [qué pruebas sí hace la Seguridad Social](/blog/test-intolerancias-seguridad-social/).
 - **Dejar de ir al médico** si hay señales de alarma.
 
 ## Con la app
