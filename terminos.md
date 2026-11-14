@@ -8,7 +8,7 @@ permalink: /terminos/
 
 # Términos y condiciones de Nutribot
 
-Última actualización: octubre de 2026.
+Última actualización: 14 de noviembre de 2026.
 
 ## 1. Quién presta el servicio
 
@@ -62,6 +62,6 @@ Si cambian estos términos, te avisaremos en la app. Si no estás de acuerdo, pu
 
 ## 12. Ley aplicable
 
-Se aplica la ley española. Si tienes una reclamación, escríbenos primero a [{{ site.contact_email }}](mailto:{{ site.contact_email }}). También puedes acudir a los servicios de consumo de tu comunidad autónoma o a los tribunales de tu domicilio.
+Se aplica la ley española. Si tienes una reclamación, escríbenos primero a [{{ site.contact_email }}](mailto:{{ site.contact_email }}). También puedes acudir a los servicios de consumo de tu comunidad autónoma o a los tribunales de tu domicilio. Si vives en otro país, conservas los derechos que te da la ley de consumo de tu país.
 
 </section>
