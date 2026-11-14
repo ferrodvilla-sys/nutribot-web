@@ -70,6 +70,6 @@ Las barritas y batidos de proteínas suelen llevar **proteína de leche o suero*
 
 ## Lo que hace Nutribot
 
-Le dices una vez qué te sienta mal (lactosa, gluten, FODMAP, alergias o un ingrediente concreto) y escaneas. Al momento te muestra la nota general **y** si el producto lleva algo de tu lista, con la frase de la etiqueta donde lo ha encontrado. El escáner es gratis para siempre.
+Le dices una vez qué te sienta mal (lactosa, gluten, FODMAP o alguno de los 14 alérgenos) y escaneas. Al momento te muestra la nota general **y** si el producto lleva algo de tu lista, con la frase de la etiqueta donde lo ha encontrado. El escáner es gratis para siempre.
 
 Es una ayuda orientativa: las recetas cambian, así que revisa siempre el envase.
