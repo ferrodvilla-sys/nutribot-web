@@ -9,7 +9,7 @@ permalink: /privacidad/
 # Política de privacidad de Nutribot
 
 
-Última actualización: 12 de noviembre de 2026.
+Última actualización: 14 de noviembre de 2026.
 
 ## 1. Responsable
 
@@ -67,7 +67,7 @@ Mientras tengas la cuenta. Si la borras, se eliminan tu cuenta y todos tus datos
 
 Puedes pedir acceso, rectificación, supresión, oposición, limitación y portabilidad de tus datos escribiendo a nutribotappl@gmail.com. También puedes borrar tu cuenta desde la app (Cuenta → Eliminar mi cuenta y mis datos) o desde esta página: https://sites.google.com/view/emiminacuentanutribot/inicio
 
-Si crees que no hemos tratado bien tus datos, puedes reclamar ante la Agencia Española de Protección de Datos (www.aepd.es).
+Si crees que no hemos tratado bien tus datos, puedes reclamar ante la Agencia Española de Protección de Datos (www.aepd.es). Si vives fuera de España, también puedes acudir a la autoridad de protección de datos de tu país.
 
 ## 7. Menores
 

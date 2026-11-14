@@ -1,0 +1,27 @@
+---
+title: Abrir Nutribot
+permalink: /app/
+sitemap: false
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#516645">
+  <title>Abrir Nutribot</title>
+  {% comment %}Los correos a usuarios enlazan aquí: lleva a Google Play, que enseña «Abrir» si ya tienes la app. Se cuenta en GoatCounter como /app/.{% endcomment %}
+  <meta http-equiv="refresh" content="1; url={{ site.play_store_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <main style="max-width:480px;margin:15vh auto;padding:0 16px;text-align:center">
+    <img src="{{ '/assets/img/logo.svg' | relative_url }}" width="64" height="64" alt="">
+    <h1>Abriendo Nutribot…</h1>
+    <p>Si no se abre sola, <a href="{{ site.play_store_url }}">toca aquí para ir a Google Play</a>. Si ya tienes la app, verás el botón «Abrir».</p>
+  </main>
+  {% if site.goatcounter and jekyll.environment == "production" %}<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>{% endif %}
+  <script>setTimeout(function () { location.replace({{ site.play_store_url | jsonify }}); }, 600);</script>
+</body>
+</html>
