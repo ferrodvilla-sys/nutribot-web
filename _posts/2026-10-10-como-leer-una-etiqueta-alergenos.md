@@ -50,6 +50,8 @@ Un alérgeno puede aparecer como ingrediente derivado. Algunos ejemplos:
 
 La ley obliga a que en estos casos se indique el origen ("suero de **leche**", "lecitina de **soja**"), así que el resaltado sigue siendo la pista clave.
 
+¿Y los códigos como E621 o E250? Son aditivos, no alérgenos. Si quieres saber qué es cada uno, usa nuestro [comprobador de aditivos E](/aditivos/): escribes el código o pegas la lista de ingredientes y te lo explica.
+
 ## Paso 4: lee "puede contener" aparte
 
 Debajo de los ingredientes a veces verás "puede contener trazas de…". Eso es otra cosa y lo explicamos en [Qué significa "puede contener trazas"](/blog/puede-contener-trazas/).
