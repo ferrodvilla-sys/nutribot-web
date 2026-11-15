@@ -29,7 +29,7 @@ ayuda:
   - icono: compare
     etiqueta: En el súper
     titulo: Compara dos productos cara a cara
-    texto: "Escanea dos marcas y Nutribot te dice cuál encaja mejor contigo según tus alergias."
+    texto: "Al escanear te enseña opciones parecidas que no llevan tus alérgenos. Y si dudas entre dos marcas, escanea las dos y te dice cuál encaja mejor contigo."
     captura: comparador.jpg
   - icono: share
     etiqueta: Para compartir
@@ -43,7 +43,7 @@ ayuda:
     captura: informes.jpg
 preguntas:
   - p: "¿Qué alérgenos detecta?"
-    r: "Los 14 de declaración obligatoria en la UE: gluten, leche, huevo, frutos de cáscara, cacahuete, soja, pescado, crustáceos, moluscos, sésamo, mostaza, apio, altramuces y sulfitos. Además, lactosa y FODMAP."
+    r: "Los 14 de declaración obligatoria en la UE: gluten, leche, huevo, frutos de cáscara, cacahuete, soja, pescado, crustáceos, moluscos, sésamo, mostaza, apio, altramuces y sulfitos. Además, lactosa, FODMAP y los ingredientes que tú añadas a tu lista. Entiende también etiquetas en inglés, francés, portugués, italiano y alemán."
   - p: "¿Puedo fiarme solo de la app?"
     r: "Úsala como ayuda, no como única fuente. La información viene de bases de datos de productos y las recetas cambian: comprueba siempre la etiqueta del envase, sobre todo si la alergia es grave."
   - p: "¿Sirve para las alergias de mis hijos?"

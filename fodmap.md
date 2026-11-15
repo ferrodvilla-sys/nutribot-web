@@ -16,7 +16,7 @@ ventajas:
 captura: patrones.jpg
 problemas_titulo: Lo que cuenta mucha gente
 problemas:
-  - "Te hinchas después de comer y no sabes con qué tiene que ver."
+  - "Te hinchas o te duele la tripa después de comer y no sabes con qué tiene que ver."
   - "Has quitado el gluten o la lactosa y sigues igual."
   - "En la consulta te preguntan qué comes y no te acuerdas."
 ayuda_titulo: De tu día a día a una pista clara
@@ -29,7 +29,7 @@ ayuda:
   - icono: scan
     etiqueta: En el súper
     titulo: FODMAP en la etiqueta
-    texto: "Al escanear un producto ves si lleva ingredientes altos en FODMAP, como ajo, cebolla, miel o edulcorantes como el sorbitol, que a menudo pasan desapercibidos."
+    texto: "Al escanear un producto ves si lleva ingredientes altos en FODMAP, como ajo, cebolla, miel o edulcorantes como el sorbitol, que a menudo pasan desapercibidos. Y si a ti te sienta mal algo concreto (ajo, cebolla, picante…), lo añades a tu lista y te avisa también."
     captura: alertas.jpg
   - icono: share
     etiqueta: Para tu consulta

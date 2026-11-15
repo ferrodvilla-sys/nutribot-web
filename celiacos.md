@@ -42,7 +42,7 @@ preguntas:
   - p: "¿Avisa de las trazas de gluten?"
     r: "Sí. Te enseña por separado si el gluten está en los ingredientes o si el envase solo dice «puede contener», para que decidas según lo que te haya indicado tu profesional."
   - p: "¿Sirve también si tengo otras alergias o intolerancias?"
-    r: "Sí. Puedes marcar los 14 alérgenos de la UE, la lactosa y los FODMAP, y Nutribot los revisa todos a la vez."
+    r: "Sí. Puedes marcar los 14 alérgenos de la UE, la lactosa, los FODMAP y tu propia lista de ingredientes, y Nutribot los revisa todos a la vez. Al escanear, también te enseña opciones parecidas sin gluten si las hay."
 cierre: Haz la compra sin leer cada etiqueta
 ilustracion: /assets/img/ilus/restaurante.svg
 ---
