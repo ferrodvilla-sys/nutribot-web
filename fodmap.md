@@ -24,7 +24,7 @@ ayuda:
   - icono: chart
     etiqueta: Pistas
     titulo: Qué se repite los días que te encuentras peor
-    texto: "Apunta lo que comes (escaneando o escribiéndolo tal cual, como «tortilla y ensalada») y cómo te has encontrado: gases, hinchazón, dolor de tripa, náuseas… Nutribot compara tus días buenos y malos y te cuenta lo que se repite, por ejemplo «más hinchazón los días con cebolla». Te dice si la señal es débil o clara, para que sepas cuánto fiarte. No es un diagnóstico: es una pista para comentar."
+    texto: "Apunta lo que comes (escaneando o escribiéndolo tal cual, como «tortilla y ensalada») y cómo te has encontrado: gases, hinchazón, dolor de tripa, náuseas… Nutribot compara tus días buenos y malos y te cuenta lo que se repite, por ejemplo «más hinchazón los días con cebolla», o qué tipo de FODMAP coincide más (fructanos, GOS, fructosa o polioles). Cada día ves también una barra con la carga de FODMAP que llevas, porque lo que suele molestar es la suma. Te dice si la señal es débil o clara, para que sepas cuánto fiarte. No es un diagnóstico: es una pista para comentar."
     captura: patrones.jpg
   - icono: scan
     etiqueta: En el súper

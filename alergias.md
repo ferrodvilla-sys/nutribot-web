@@ -43,7 +43,7 @@ ayuda:
     captura: informes.jpg
 preguntas:
   - p: "¿Qué alérgenos detecta?"
-    r: "Los 14 de declaración obligatoria en la UE: gluten, leche, huevo, frutos de cáscara, cacahuete, soja, pescado, crustáceos, moluscos, sésamo, mostaza, apio, altramuces y sulfitos. Además, lactosa, FODMAP y los ingredientes que tú añadas a tu lista. Entiende también etiquetas en inglés, francés, portugués, italiano y alemán."
+    r: "Los 14 de declaración obligatoria en la UE: gluten, leche, huevo, frutos de cáscara, cacahuete, soja, pescado, crustáceos, moluscos, sésamo, mostaza, apio, altramuces y sulfitos. Además, lactosa, FODMAP, histamina y los ingredientes que tú añadas a tu lista. Entiende también etiquetas en inglés, francés, portugués, italiano y alemán."
   - p: "¿Puedo fiarme solo de la app?"
     r: "Úsala como ayuda, no como única fuente. La información viene de bases de datos de productos y las recetas cambian: comprueba siempre la etiqueta del envase, sobre todo si la alergia es grave."
   - p: "¿Sirve para las alergias de mis hijos?"
