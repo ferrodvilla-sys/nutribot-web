@@ -28,8 +28,8 @@ ayuda:
     captura: alertas.jpg
   - icono: compare
     etiqueta: En el súper
-    titulo: Compara dos productos cara a cara
-    texto: "Al escanear te enseña opciones parecidas que no llevan tus alérgenos. Y si dudas entre dos marcas, escanea las dos y te dice cuál encaja mejor contigo."
+    titulo: Opciones aptas y comparador
+    texto: "Al escanear, Nutribot te propone productos parecidos sin tus alérgenos, que se venden en tu país. Y si dudas entre dos marcas, te dice cuál encaja mejor contigo según tus alergias."
     captura: comparador.jpg
   - icono: share
     etiqueta: Para compartir

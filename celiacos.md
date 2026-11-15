@@ -28,8 +28,8 @@ ayuda:
     captura: alertas.jpg
   - icono: compare
     etiqueta: En el súper
-    titulo: Compara dos productos
-    texto: "¿Dudas entre dos marcas? Escanea las dos y mira cuál encaja mejor contigo."
+    titulo: Opciones sin gluten y comparador
+    texto: "Si escaneas algo con gluten, Nutribot te propone productos parecidos que dicen «sin gluten» en la etiqueta y se venden en tu país. ¿Dudas entre dos marcas? Compáralas y mira cuál encaja mejor contigo."
     captura: comparador.jpg
   - icono: share
     etiqueta: Fuera de casa
