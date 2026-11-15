@@ -1,0 +1,149 @@
+---
+layout: default
+title: "Comprobador de aditivos E: qué es cada código de la etiqueta"
+description: "Escribe un código E (E621, E250…), un nombre o pega la lista de ingredientes y te decimos qué es cada aditivo y cuáles conviene vigilar. Gratis, sin registrarte. Más de 300 aditivos."
+keywords: [aditivos E, qué es el E621, comprobador de aditivos, lista de aditivos alimentarios, códigos E, aditivos a evitar, sulfitos, nitritos, edulcorantes, colorantes, INS]
+permalink: /aditivos/
+---
+{% comment %}
+Herramienta gratuita: comprobador de aditivos. Los datos (_data/aditivos.json) salen de la app con
+_herramientas/aditivos-generar.mjs, para que la web y el escáner digan exactamente lo mismo.
+Todo funciona en el navegador: no se envía nada a ningún sitio.
+{% endcomment %}
+{% assign aditivos = site.data.aditivos %}
+{% assign vigilar = aditivos | where: "tone", "vigilar" %}
+{% capture play %}{{ site.play_store_url }}&referrer=utm_source%3Dnutribot.eu%26utm_medium%3Dweb%26utm_campaign%3Daditivos{% endcapture %}
+<section class="page aditivos">
+  <p class="kicker">Herramienta gratis</p>
+  <h1>Comprobador de aditivos E</h1>
+  <p class="lead">Escribe un código (<strong>E621</strong>), un nombre (<strong>glutamato</strong>) o pega la lista de ingredientes de un envase. Te decimos qué es cada aditivo y cuáles conviene vigilar.</p>
+
+  <form class="ad-form" id="ad-form" onsubmit="return false">
+    <label for="ad-q" class="ad-label">Código, nombre o lista de ingredientes</label>
+    <textarea id="ad-q" rows="3" placeholder="Ej.: E250, glutamato, o «Ingredientes: carne de cerdo, sal, dextrosa, E-250, E-301…»" autocomplete="off" spellcheck="false"></textarea>
+    <div class="ad-actions">
+      <button type="button" class="btn" id="ad-go">Comprobar</button>
+      <button type="button" class="btn btn-ghost" id="ad-demo">Probar con un ejemplo</button>
+    </div>
+  </form>
+
+  <div id="ad-res" class="ad-res" aria-live="polite"></div>
+
+  <div class="ad-legend">
+    <span><i class="ad-dot ad-vigilar"></i>Conviene vigilar</span>
+    <span><i class="ad-dot ad-gases"></i>En cantidad, puede dar gases</span>
+    <span><i class="ad-dot ad-normal"></i>Sin aviso especial</span>
+  </div>
+
+  <aside class="post-cta ad-cta">
+    <p><strong>En el súper no hace falta copiar nada.</strong> Con Nutribot escaneas el código de barras y ves al momento los aditivos, los alérgenos y lo que te sienta mal a ti. El escáner es gratis para siempre.</p>
+    <a class="btn" href="{{ play }}">{% include icon.html name="play" %}Descárgala gratis</a>
+  </aside>
+
+  <h2>Todos los aditivos ({{ aditivos.size }})</h2>
+  <p>Ordenados por número. De ellos, <strong>{{ vigilar.size }}</strong> están marcados para vigilar: colorantes que la ley obliga a señalar para niños, sulfitos, nitritos y nitratos, benzoatos, glutamatos, edulcorantes intensos, fosfatos y algunos antioxidantes. En Latinoamérica muchos se escriben con el número <strong>INS</strong> (INS 621 = E621).</p>
+
+  {% assign grupos = aditivos | group_by: "group" %}
+  <nav class="topic-nav ad-nav">
+    {% for g in grupos %}<a class="tag" href="#{{ g.name | slugify }}">{{ g.name }}</a>{% endfor %}
+  </nav>
+  {% for g in grupos %}
+  <h3 id="{{ g.name | slugify }}" class="ad-group">{{ g.name }}</h3>
+  <ul class="ad-list">
+    {% for a in g.items %}<li id="{{ a.code | downcase }}" class="ad-row ad-{{ a.tone }}"><i class="ad-dot ad-{{ a.tone }}"></i><strong>{{ a.code }}</strong> <span class="ad-name">{{ a.name }}</span>{% if a.note != "" %}<span class="ad-note">{{ a.note }}</span>{% endif %}</li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+
+  <h2>Cómo leer esta lista</h2>
+  <ul>
+    <li><strong>Todos los aditivos con código E están autorizados en la Unión Europea</strong> en las cantidades que marca la ley (salvo el E171, prohibido desde 2022). «Conviene vigilar» no quiere decir que sea peligroso: es que, si lo tomas a menudo, merece la pena fijarse.</li>
+    <li><strong>Los polioles</strong> (sorbitol, manitol, maltitol, xilitol…) están en lo «sin azúcar». En cantidad pueden dar gases, hinchazón o efecto laxante, y son FODMAP.</li>
+    <li><strong>Un aditivo puede ir por su nombre</strong> y no por su código, por ejemplo «nitrito sódico» en vez de E250. Por eso aquí puedes buscar de las dos formas.</li>
+    <li>Esta página es informativa y no sustituye el consejo de un profesional sanitario. Si tienes una alergia, lee siempre la etiqueta completa.</li>
+  </ul>
+  <p>Más sobre etiquetas: <a href="{{ '/blog/como-leer-una-etiqueta-alergenos/' | relative_url }}">cómo leer una etiqueta</a>.</p>
+</section>
+
+<script>
+(function () {
+  var DATA = {{ aditivos | jsonify }};
+  var byCode = {};
+  DATA.forEach(function (a) { byCode[a.code] = a; });
+  var norm = function (s) {
+    return String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
+      .replace(/\bde sodio\b/g, "sodico").replace(/\bde potasio\b/g, "potasico").replace(/\bde calcio\b/g, "calcico")
+      .replace(/[^a-z0-9]+/g, " ").trim();
+  };
+  // Nombres por los que se busca cada aditivo: el nombre y lo que va entre paréntesis.
+  var NAMES = [];
+  DATA.forEach(function (a) {
+    a.name.split(/[()]/).forEach(function (part) {
+      var n = norm(part);
+      if (n.length >= 4 && n !== "sulfitos") NAMES.push([n, a.code]);
+    });
+  });
+  // Cómo se escriben a veces en España y Latinoamérica.
+  [["aspartame", "E951"], ["acesulfame k", "E950"], ["acesulfame", "E950"], ["amarillo 5", "E102"], ["amarillo 6", "E110"],
+   ["amarillo crepusculo", "E110"], ["rojo 40", "E129"], ["azul 1", "E133"], ["carmoisina", "E122"], ["metabisulfito sodico", "E223"],
+   ["metabisulfito potasico", "E224"], ["anhidrido sulfuroso", "E220"], ["dioxido de azufre", "E220"], ["goma xantana", "E415"],
+   ["goma guar", "E412"], ["carragenina", "E407"], ["glutamato", "E621"], ["sulfitos", "E220"]].forEach(function (x) { NAMES.push(x); });
+  NAMES.sort(function (a, b) { return b[0].length - a[0].length; });
+
+  function lookup(code) {
+    return byCode[code] || byCode[code.replace(/^(E\d{3,4})[A-Z]+$/, "$1")];
+  }
+  function find(text) {
+    var found = [], seen = {};
+    var add = function (a) { if (a && !seen[a.code]) { seen[a.code] = 1; found.push(a); } };
+    var raw = String(text);
+    if (/^\s*\d{3,4}[a-z]?\s*$/i.test(raw)) raw = "E" + raw.trim();
+    var re = /\b(?:e|ins)\s*-?\s*(\d{3,4})\s*(?:\(?\s*([a-d]|i{1,3}|iv|v|vi)\s*\)?(?![a-z]))?/gi;
+    var m;
+    while ((m = re.exec(raw))) {
+      var sub = (m[2] || "").toUpperCase();
+      add(lookup("E" + m[1] + sub));
+    }
+    var t = " " + norm(raw) + " ";
+    NAMES.forEach(function (x) {
+      if (t.indexOf(" " + x[0] + " ") >= 0) { add(byCode[x[1]]); t = t.split(" " + x[0] + " ").join(" "); }
+    });
+    var order = { vigilar: 0, gases: 1, normal: 2 };
+    return found.sort(function (a, b) { return order[a.tone] - order[b.tone] || a.num - b.num; });
+  }
+  var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+  var q = document.getElementById("ad-q"), res = document.getElementById("ad-res");
+  function run(count) {
+    var text = q.value.trim();
+    if (!text) { res.innerHTML = ""; return; }
+    var found = find(text);
+    var warn = found.filter(function (a) { return a.tone === "vigilar"; }).length;
+    var gas = found.filter(function (a) { return a.tone === "gases"; }).length;
+    var html;
+    if (!found.length) {
+      html = '<p class="ad-sum">No encontramos ningún aditivo. Prueba con el código (E621) o con el nombre que pone en el envase.</p>';
+    } else {
+      var parts = [found.length === 1 ? "1 aditivo" : found.length + " aditivos"];
+      if (warn) parts.push(warn + " para vigilar");
+      if (gas) parts.push(gas + (gas === 1 ? " que puede dar gases" : " que pueden dar gases"));
+      html = '<p class="ad-sum">' + parts.join(" · ") + "</p><ul class=\"ad-list ad-found\">" + found.map(function (a) {
+        return '<li class="ad-row ad-' + a.tone + '"><i class="ad-dot ad-' + a.tone + '"></i><a href="#' + a.code.toLowerCase() + '"><strong>' + a.code +
+          '</strong></a> <span class="ad-name">' + esc(a.name) + "</span>" + (a.note ? '<span class="ad-note">' + esc(a.note) + "</span>" : "") + "</li>";
+      }).join("") + "</ul>";
+    }
+    res.innerHTML = html;
+    if (count && window.goatcounter && window.goatcounter.count) {
+      window.goatcounter.count({ path: "aditivos-comprobar", title: "Comprobador de aditivos", event: true });
+    }
+  }
+  var timer;
+  q.addEventListener("input", function () { clearTimeout(timer); timer = setTimeout(function () { run(false); }, 250); });
+  document.getElementById("ad-go").addEventListener("click", function () { run(true); });
+  document.getElementById("ad-demo").addEventListener("click", function () {
+    q.value = "Ingredientes: carne de cerdo, agua, sal, dextrosa, proteína de soja, estabilizantes (E-451, E-452), potenciador del sabor (glutamato monosódico), antioxidante (E-316), conservador (nitrito sódico), edulcorante (sorbitol), colorante (E-120).";
+    run(true);
+  });
+  var hash = location.search.match(/[?&]q=([^&]+)/);
+  if (hash) { q.value = decodeURIComponent(hash[1].replace(/\+/g, " ")); run(false); }
+})();
+</script>

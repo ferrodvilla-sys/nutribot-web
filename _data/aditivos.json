@@ -1,0 +1,2410 @@
+[
+ {
+  "code": "E100",
+  "num": 100,
+  "name": "curcumina",
+  "note": "colorante",
+  "tone": "normal",
+  "group": "Colorante"
+ },
+ {
+  "code": "E101",
+  "num": 101,
+  "name": "riboflavina (vitamina B2)",
+  "note": "colorante",
+  "tone": "normal",
+  "group": "Colorante"
+ },
+ {
+  "code": "E102",
+  "num": 102,
+  "name": "tartrazina",
+  "note": "colorante que, según la ley, puede tener efectos negativos sobre la actividad y la atención de los niños",
+  "tone": "vigilar",
+  "group": "Colorante"
+ },
+ {
+  "code": "E104",
+  "num": 104,
+  "name": "amarillo de quinoleína",
+  "note": "colorante que, según la ley, puede tener efectos negativos sobre la actividad y la atención de los niños",
+  "tone": "vigilar",
+  "group": "Colorante"
+ },
+ {
+  "code": "E110",
+  "num": 110,
+  "name": "amarillo ocaso",
+  "note": "colorante que, según la ley, puede tener efectos negativos sobre la actividad y la atención de los niños",
+  "tone": "vigilar",
+  "group": "Colorante"
+ },
+ {
+  "code": "E120",
+  "num": 120,
+  "name": "carmín (cochinilla)",
+  "note": "colorante",
+  "tone": "normal",
+  "group": "Colorante"
+ },
+ {
+  "code": "E122",
+  "num": 122,
+  "name": "azorrubina",
+  "note": "colorante que, según la ley, puede tener efectos negativos sobre la actividad y la atención de los niños",
+  "tone": "vigilar",
+  "group": "Colorante"
+ },
+ {
+  "code": "E124",
+  "num": 124,
+  "name": "rojo cochinilla A (Ponceau 4R)",
+  "note": "colorante que, según la ley, puede tener efectos negativos sobre la actividad y la atención de los niños",
+  "tone": "vigilar",
+  "group": "Colorante"
+ },
+ {
+  "code": "E129",
+  "num": 129,
+  "name": "rojo allura",
+  "note": "colorante que, según la ley, puede tener efectos negativos sobre la actividad y la atención de los niños",
+  "tone": "vigilar",
+  "group": "Colorante"
+ },
+ {
+  "code": "E131",
+  "num": 131,
+  "name": "azul patente V",
+  "note": "colorante",
+  "tone": "normal",
+  "group": "Colorante"
+ },
+ {
+  "code": "E132",
+  "num": 132,
+  "name": "indigotina",
+  "note": "colorante",
+  "tone": "normal",
+  "group": "Colorante"
+ },
+ {
+  "code": "E133",
+  "num": 133,
+  "name": "azul brillante",
+  "note": "colorante",
+  "tone": "normal",
+  "group": "Colorante"
+ },
+ {
+  "code": "E140",
+  "num": 140,
+  "name": "clorofilas",
+  "note": "colorante",
+  "tone": "normal",
+  "group": "Colorante"
+ },
+ {
+  "code": "E141",
+  "num": 141,
+  "name": "complejos cúpricos de clorofilas",
+  "note": "colorante",
+  "tone": "normal",
+  "group": "Colorante"
+ },
+ {
+  "code": "E150A",
+  "num": 150,
+  "name": "caramelo natural",
+  "note": "colorante",
+  "tone": "normal",
+  "group": "Colorante"
+ },
+ {
+  "code": "E150B",
+  "num": 150,
+  "name": "caramelo de sulfito cáustico",
+  "note": "colorante",
+  "tone": "normal",
+  "group": "Colorante"
+ },
+ {
+  "code": "E150C",
+  "num": 150,
+  "name": "colorante caramelo amónico",
+  "note": "frecuente en productos muy procesados",
+  "tone": "vigilar",
+  "group": "Colorante"
+ },
+ {
+  "code": "E150D",
+  "num": 150,
+  "name": "colorante caramelo",
+  "note": "frecuente en bebidas muy procesadas",
+  "tone": "vigilar",
+  "group": "Colorante"
+ },
+ {
+  "code": "E151",
+  "num": 151,
+  "name": "negro brillante",
+  "note": "colorante",
+  "tone": "normal",
+  "group": "Colorante"
+ },
+ {
+  "code": "E153",
+  "num": 153,
+  "name": "carbón vegetal",
+  "note": "colorante",
+  "tone": "normal",
+  "group": "Colorante"
+ },
+ {
+  "code": "E160A",
+  "num": 160,
+  "name": "carotenos",
+  "note": "colorante",
+  "tone": "normal",
+  "group": "Colorante"
+ },
+ {
+  "code": "E160B",
+  "num": 160,
+  "name": "annato (bixina)",
+  "note": "colorante",
+  "tone": "normal",
+  "group": "Colorante"
+ },
+ {
+  "code": "E160C",
+  "num": 160,
+  "name": "extracto de pimentón",
+  "note": "colorante",
+  "tone": "normal",
+  "group": "Colorante"
+ },
+ {
+  "code": "E160D",
+  "num": 160,
+  "name": "licopeno",
+  "note": "colorante",
+  "tone": "normal",
+  "group": "Colorante"
+ },
+ {
+  "code": "E160E",
+  "num": 160,
+  "name": "betaapocarotenal",
+  "note": "colorante",
+  "tone": "normal",
+  "group": "Colorante"
+ },
+ {
+  "code": "E161B",
+  "num": 161,
+  "name": "luteína",
+  "note": "colorante",
+  "tone": "normal",
+  "group": "Colorante"
+ },
+ {
+  "code": "E162",
+  "num": 162,
+  "name": "rojo de remolacha",
+  "note": "colorante",
+  "tone": "normal",
+  "group": "Colorante"
+ },
+ {
+  "code": "E163",
+  "num": 163,
+  "name": "antocianinas",
+  "note": "colorante",
+  "tone": "normal",
+  "group": "Colorante"
+ },
+ {
+  "code": "E170",
+  "num": 170,
+  "name": "carbonato cálcico",
+  "note": "colorante y antiaglomerante",
+  "tone": "normal",
+  "group": "Colorante"
+ },
+ {
+  "code": "E171",
+  "num": 171,
+  "name": "dióxido de titanio",
+  "note": "colorante prohibido en la UE desde 2022",
+  "tone": "vigilar",
+  "group": "Colorante"
+ },
+ {
+  "code": "E172",
+  "num": 172,
+  "name": "óxidos de hierro",
+  "note": "colorante",
+  "tone": "normal",
+  "group": "Colorante"
+ },
+ {
+  "code": "E200",
+  "num": 200,
+  "name": "ácido sórbico",
+  "note": "conservador",
+  "tone": "normal",
+  "group": "Conservador"
+ },
+ {
+  "code": "E202",
+  "num": 202,
+  "name": "sorbato potásico",
+  "note": "conservador",
+  "tone": "normal",
+  "group": "Conservador"
+ },
+ {
+  "code": "E210",
+  "num": 210,
+  "name": "ácido benzoico",
+  "note": "conservador que conviene limitar",
+  "tone": "vigilar",
+  "group": "Conservador"
+ },
+ {
+  "code": "E211",
+  "num": 211,
+  "name": "benzoato sódico",
+  "note": "conservador que conviene limitar",
+  "tone": "vigilar",
+  "group": "Conservador"
+ },
+ {
+  "code": "E212",
+  "num": 212,
+  "name": "benzoato potásico",
+  "note": "conservador que conviene limitar",
+  "tone": "vigilar",
+  "group": "Conservador"
+ },
+ {
+  "code": "E213",
+  "num": 213,
+  "name": "benzoato cálcico",
+  "note": "conservador que conviene limitar",
+  "tone": "vigilar",
+  "group": "Conservador"
+ },
+ {
+  "code": "E220",
+  "num": 220,
+  "name": "sulfitos",
+  "note": "pueden causar sensibilidad en algunas personas",
+  "tone": "vigilar",
+  "group": "Conservador"
+ },
+ {
+  "code": "E221",
+  "num": 221,
+  "name": "sulfitos",
+  "note": "pueden causar sensibilidad en algunas personas",
+  "tone": "vigilar",
+  "group": "Conservador"
+ },
+ {
+  "code": "E222",
+  "num": 222,
+  "name": "sulfitos",
+  "note": "pueden causar sensibilidad en algunas personas",
+  "tone": "vigilar",
+  "group": "Conservador"
+ },
+ {
+  "code": "E223",
+  "num": 223,
+  "name": "sulfitos",
+  "note": "pueden causar sensibilidad en algunas personas",
+  "tone": "vigilar",
+  "group": "Conservador"
+ },
+ {
+  "code": "E224",
+  "num": 224,
+  "name": "sulfitos",
+  "note": "pueden causar sensibilidad en algunas personas",
+  "tone": "vigilar",
+  "group": "Conservador"
+ },
+ {
+  "code": "E226",
+  "num": 226,
+  "name": "sulfitos",
+  "note": "pueden causar sensibilidad en algunas personas",
+  "tone": "vigilar",
+  "group": "Conservador"
+ },
+ {
+  "code": "E227",
+  "num": 227,
+  "name": "sulfitos",
+  "note": "pueden causar sensibilidad en algunas personas",
+  "tone": "vigilar",
+  "group": "Conservador"
+ },
+ {
+  "code": "E228",
+  "num": 228,
+  "name": "sulfitos",
+  "note": "pueden causar sensibilidad en algunas personas",
+  "tone": "vigilar",
+  "group": "Conservador"
+ },
+ {
+  "code": "E234",
+  "num": 234,
+  "name": "nisina",
+  "note": "conservador",
+  "tone": "normal",
+  "group": "Conservador"
+ },
+ {
+  "code": "E235",
+  "num": 235,
+  "name": "natamicina",
+  "note": "conservador de la corteza del queso",
+  "tone": "normal",
+  "group": "Conservador"
+ },
+ {
+  "code": "E239",
+  "num": 239,
+  "name": "hexametilentetramina",
+  "note": "conservador",
+  "tone": "normal",
+  "group": "Conservador"
+ },
+ {
+  "code": "E242",
+  "num": 242,
+  "name": "dicarbonato de dimetilo",
+  "note": "conservador de bebidas",
+  "tone": "normal",
+  "group": "Conservador"
+ },
+ {
+  "code": "E249",
+  "num": 249,
+  "name": "nitrito potásico",
+  "note": "conservador de carnes que conviene limitar",
+  "tone": "vigilar",
+  "group": "Conservador"
+ },
+ {
+  "code": "E250",
+  "num": 250,
+  "name": "nitrito sódico",
+  "note": "conservador que conviene limitar",
+  "tone": "vigilar",
+  "group": "Conservador"
+ },
+ {
+  "code": "E251",
+  "num": 251,
+  "name": "nitrato sódico",
+  "note": "conservador que conviene limitar",
+  "tone": "vigilar",
+  "group": "Conservador"
+ },
+ {
+  "code": "E252",
+  "num": 252,
+  "name": "nitrato potásico",
+  "note": "conservador que conviene limitar",
+  "tone": "vigilar",
+  "group": "Conservador"
+ },
+ {
+  "code": "E260",
+  "num": 260,
+  "name": "ácido acético",
+  "note": "acidulante",
+  "tone": "normal",
+  "group": "Conservador"
+ },
+ {
+  "code": "E261",
+  "num": 261,
+  "name": "acetato potásico",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Conservador"
+ },
+ {
+  "code": "E262",
+  "num": 262,
+  "name": "acetatos de sodio",
+  "note": "conservador y regulador de acidez",
+  "tone": "normal",
+  "group": "Conservador"
+ },
+ {
+  "code": "E263",
+  "num": 263,
+  "name": "acetato cálcico",
+  "note": "conservador",
+  "tone": "normal",
+  "group": "Conservador"
+ },
+ {
+  "code": "E270",
+  "num": 270,
+  "name": "ácido láctico",
+  "note": "acidulante",
+  "tone": "normal",
+  "group": "Conservador"
+ },
+ {
+  "code": "E280",
+  "num": 280,
+  "name": "ácido propiónico",
+  "note": "conservador",
+  "tone": "normal",
+  "group": "Conservador"
+ },
+ {
+  "code": "E281",
+  "num": 281,
+  "name": "propionato sódico",
+  "note": "conservador",
+  "tone": "normal",
+  "group": "Conservador"
+ },
+ {
+  "code": "E282",
+  "num": 282,
+  "name": "propionato cálcico",
+  "note": "conservador",
+  "tone": "normal",
+  "group": "Conservador"
+ },
+ {
+  "code": "E290",
+  "num": 290,
+  "name": "dióxido de carbono",
+  "note": "gas de envasado",
+  "tone": "normal",
+  "group": "Conservador"
+ },
+ {
+  "code": "E296",
+  "num": 296,
+  "name": "ácido málico",
+  "note": "acidulante",
+  "tone": "normal",
+  "group": "Conservador"
+ },
+ {
+  "code": "E297",
+  "num": 297,
+  "name": "ácido fumárico",
+  "note": "acidulante",
+  "tone": "normal",
+  "group": "Conservador"
+ },
+ {
+  "code": "E300",
+  "num": 300,
+  "name": "ácido ascórbico (vitamina C)",
+  "note": "antioxidante",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E301",
+  "num": 301,
+  "name": "ascorbato sódico",
+  "note": "antioxidante",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E302",
+  "num": 302,
+  "name": "ascorbato cálcico",
+  "note": "antioxidante",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E304",
+  "num": 304,
+  "name": "palmitato de ascorbilo",
+  "note": "antioxidante",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E306",
+  "num": 306,
+  "name": "tocoferoles (vitamina E)",
+  "note": "antioxidante",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E307",
+  "num": 307,
+  "name": "alfa-tocoferol (vitamina E)",
+  "note": "antioxidante",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E308",
+  "num": 308,
+  "name": "gamma-tocoferol",
+  "note": "antioxidante (vitamina E)",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E309",
+  "num": 309,
+  "name": "delta-tocoferol",
+  "note": "antioxidante (vitamina E)",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E310",
+  "num": 310,
+  "name": "galato de propilo",
+  "note": "antioxidante",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E315",
+  "num": 315,
+  "name": "ácido eritórbico",
+  "note": "antioxidante",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E316",
+  "num": 316,
+  "name": "eritorbato sódico",
+  "note": "antioxidante",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E319",
+  "num": 319,
+  "name": "TBHQ",
+  "note": "antioxidante sintético que conviene limitar",
+  "tone": "vigilar",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E320",
+  "num": 320,
+  "name": "BHA",
+  "note": "antioxidante sintético que conviene limitar",
+  "tone": "vigilar",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E321",
+  "num": 321,
+  "name": "BHT",
+  "note": "antioxidante sintético que conviene limitar",
+  "tone": "vigilar",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E322",
+  "num": 322,
+  "name": "lecitinas",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E325",
+  "num": 325,
+  "name": "lactato sódico",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E326",
+  "num": 326,
+  "name": "lactato potásico",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E327",
+  "num": 327,
+  "name": "lactato cálcico",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E330",
+  "num": 330,
+  "name": "ácido cítrico",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E331",
+  "num": 331,
+  "name": "citratos de sodio",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E332",
+  "num": 332,
+  "name": "citratos de potasio",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E333",
+  "num": 333,
+  "name": "citratos de calcio",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E334",
+  "num": 334,
+  "name": "ácido tartárico",
+  "note": "acidulante",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E335",
+  "num": 335,
+  "name": "tartratos de sodio",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E336",
+  "num": 336,
+  "name": "tartratos de potasio",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E337",
+  "num": 337,
+  "name": "tartrato de sodio y potasio",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E338",
+  "num": 338,
+  "name": "ácido fosfórico",
+  "note": "acidulante",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E339",
+  "num": 339,
+  "name": "fosfatos de sodio",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E340",
+  "num": 340,
+  "name": "fosfatos de potasio",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E341",
+  "num": 341,
+  "name": "fosfatos de calcio",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E343",
+  "num": 343,
+  "name": "fosfatos de magnesio",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E350",
+  "num": 350,
+  "name": "malatos de sodio",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E351",
+  "num": 351,
+  "name": "malato potásico",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E352",
+  "num": 352,
+  "name": "malatos de calcio",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E353",
+  "num": 353,
+  "name": "ácido metatartárico",
+  "note": "estabilizante del vino",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E354",
+  "num": 354,
+  "name": "tartrato cálcico",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E355",
+  "num": 355,
+  "name": "ácido adípico",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E363",
+  "num": 363,
+  "name": "ácido succínico",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E380",
+  "num": 380,
+  "name": "citrato triamónico",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E385",
+  "num": 385,
+  "name": "EDTA cálcico disódico",
+  "note": "antioxidante",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E392",
+  "num": 392,
+  "name": "extracto de romero",
+  "note": "antioxidante",
+  "tone": "normal",
+  "group": "Antioxidante o regulador de acidez"
+ },
+ {
+  "code": "E400",
+  "num": 400,
+  "name": "ácido algínico",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E401",
+  "num": 401,
+  "name": "alginato sódico",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E402",
+  "num": 402,
+  "name": "alginato potásico",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E403",
+  "num": 403,
+  "name": "alginato amónico",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E404",
+  "num": 404,
+  "name": "alginato cálcico",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E405",
+  "num": 405,
+  "name": "alginato de propilenglicol",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E406",
+  "num": 406,
+  "name": "agar-agar",
+  "note": "gelificante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E407",
+  "num": 407,
+  "name": "carragenanos",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E410",
+  "num": 410,
+  "name": "goma de garrofín",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E412",
+  "num": 412,
+  "name": "goma guar",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E413",
+  "num": 413,
+  "name": "goma tragacanto",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E414",
+  "num": 414,
+  "name": "goma arábiga",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E415",
+  "num": 415,
+  "name": "goma xantana",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E416",
+  "num": 416,
+  "name": "goma karaya",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E417",
+  "num": 417,
+  "name": "goma tara",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E418",
+  "num": 418,
+  "name": "goma gellan",
+  "note": "gelificante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E420",
+  "num": 420,
+  "name": "sorbitol",
+  "note": "edulcorante, en cantidad puede dar gases o efecto laxante",
+  "tone": "gases",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E421",
+  "num": 421,
+  "name": "manitol",
+  "note": "edulcorante, en cantidad puede dar gases o efecto laxante",
+  "tone": "gases",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E422",
+  "num": 422,
+  "name": "glicerol",
+  "note": "humectante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E425",
+  "num": 425,
+  "name": "konjac",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E426",
+  "num": 426,
+  "name": "hemicelulosa de soja",
+  "note": "estabilizante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E427",
+  "num": 427,
+  "name": "goma casia",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E431",
+  "num": 431,
+  "name": "estearato de polioxietileno",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E432",
+  "num": 432,
+  "name": "polisorbato 20",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E433",
+  "num": 433,
+  "name": "polisorbato 80",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E434",
+  "num": 434,
+  "name": "polisorbato 40",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E435",
+  "num": 435,
+  "name": "polisorbato 60",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E436",
+  "num": 436,
+  "name": "polisorbato 65",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E440",
+  "num": 440,
+  "name": "pectinas",
+  "note": "gelificante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E442",
+  "num": 442,
+  "name": "fosfátidos de amonio",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E444",
+  "num": 444,
+  "name": "acetato isobutirato de sacarosa",
+  "note": "estabilizante de bebidas",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E445",
+  "num": 445,
+  "name": "ésteres de glicerol de colofonia",
+  "note": "estabilizante de bebidas",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E450",
+  "num": 450,
+  "name": "difosfatos",
+  "note": "estabilizante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E451",
+  "num": 451,
+  "name": "trifosfatos",
+  "note": "estabilizante que conviene limitar en ultraprocesados",
+  "tone": "vigilar",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E452",
+  "num": 452,
+  "name": "polifosfatos",
+  "note": "estabilizante que conviene limitar en ultraprocesados",
+  "tone": "vigilar",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E459",
+  "num": 459,
+  "name": "beta-ciclodextrina",
+  "note": "estabilizante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E460",
+  "num": 460,
+  "name": "celulosa",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E461",
+  "num": 461,
+  "name": "metilcelulosa",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E462",
+  "num": 462,
+  "name": "etilcelulosa",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E463",
+  "num": 463,
+  "name": "hidroxipropilcelulosa",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E464",
+  "num": 464,
+  "name": "hidroxipropilmetilcelulosa",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E465",
+  "num": 465,
+  "name": "etilmetilcelulosa",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E466",
+  "num": 466,
+  "name": "carboximetilcelulosa",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E468",
+  "num": 468,
+  "name": "carboximetilcelulosa reticulada",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E469",
+  "num": 469,
+  "name": "carboximetilcelulosa hidrolizada",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E470A",
+  "num": 470,
+  "name": "sales de ácidos grasos",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E470B",
+  "num": 470,
+  "name": "sales de magnesio de ácidos grasos",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E471",
+  "num": 471,
+  "name": "mono y diglicéridos de ácidos grasos",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E472A",
+  "num": 472,
+  "name": "ésteres acéticos de mono y diglicéridos",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E472B",
+  "num": 472,
+  "name": "ésteres lácticos de mono y diglicéridos",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E472C",
+  "num": 472,
+  "name": "ésteres cítricos de mono y diglicéridos",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E472D",
+  "num": 472,
+  "name": "ésteres tartáricos de mono y diglicéridos",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E472E",
+  "num": 472,
+  "name": "ésteres de mono y diglicéridos",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E472F",
+  "num": 472,
+  "name": "ésteres mixtos de mono y diglicéridos",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E473",
+  "num": 473,
+  "name": "sucroésteres de ácidos grasos",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E474",
+  "num": 474,
+  "name": "sucroglicéridos",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E475",
+  "num": 475,
+  "name": "ésteres de poliglicerol",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E476",
+  "num": 476,
+  "name": "polirricinoleato de poliglicerol",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E477",
+  "num": 477,
+  "name": "ésteres de propilenglicol",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E479B",
+  "num": 479,
+  "name": "aceite de soja oxidado térmicamente",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E481",
+  "num": 481,
+  "name": "estearoil lactilato sódico",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E482",
+  "num": 482,
+  "name": "estearoil-2-lactilato cálcico",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E483",
+  "num": 483,
+  "name": "tartrato de estearilo",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E491",
+  "num": 491,
+  "name": "monoestearato de sorbitano",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E492",
+  "num": 492,
+  "name": "triestearato de sorbitano",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E493",
+  "num": 493,
+  "name": "monolaurato de sorbitano",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E494",
+  "num": 494,
+  "name": "monooleato de sorbitano",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E495",
+  "num": 495,
+  "name": "monopalmitato de sorbitano",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Espesante, gelificante o emulgente"
+ },
+ {
+  "code": "E500",
+  "num": 500,
+  "name": "carbonatos sódicos",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E501",
+  "num": 501,
+  "name": "carbonatos potásicos",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E503",
+  "num": 503,
+  "name": "carbonatos amónicos",
+  "note": "gasificante (levadura química)",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E504",
+  "num": 504,
+  "name": "carbonatos de magnesio",
+  "note": "antiaglomerante",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E507",
+  "num": 507,
+  "name": "ácido clorhídrico",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E508",
+  "num": 508,
+  "name": "cloruro potásico",
+  "note": "sustituto de la sal",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E509",
+  "num": 509,
+  "name": "cloruro cálcico",
+  "note": "endurecedor",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E511",
+  "num": 511,
+  "name": "cloruro de magnesio",
+  "note": "coagulante (nigari)",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E512",
+  "num": 512,
+  "name": "cloruro estannoso",
+  "note": "antioxidante",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E513",
+  "num": 513,
+  "name": "ácido sulfúrico",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E514",
+  "num": 514,
+  "name": "sulfatos de sodio",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E515",
+  "num": 515,
+  "name": "sulfatos de potasio",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E516",
+  "num": 516,
+  "name": "sulfato cálcico",
+  "note": "coagulante",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E517",
+  "num": 517,
+  "name": "sulfato amónico",
+  "note": "gasificante",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E520",
+  "num": 520,
+  "name": "sulfato de aluminio",
+  "note": "endurecedor",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E521",
+  "num": 521,
+  "name": "sulfato de aluminio y sodio",
+  "note": "endurecedor",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E522",
+  "num": 522,
+  "name": "sulfato de aluminio y potasio",
+  "note": "endurecedor",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E523",
+  "num": 523,
+  "name": "sulfato de aluminio y amonio",
+  "note": "endurecedor",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E524",
+  "num": 524,
+  "name": "hidróxido sódico",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E525",
+  "num": 525,
+  "name": "hidróxido potásico",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E526",
+  "num": 526,
+  "name": "hidróxido cálcico",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E527",
+  "num": 527,
+  "name": "hidróxido amónico",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E528",
+  "num": 528,
+  "name": "hidróxido de magnesio",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E529",
+  "num": 529,
+  "name": "óxido de calcio",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E530",
+  "num": 530,
+  "name": "óxido de magnesio",
+  "note": "antiaglomerante",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E535",
+  "num": 535,
+  "name": "ferrocianuro sódico",
+  "note": "antiaglomerante de la sal",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E536",
+  "num": 536,
+  "name": "ferrocianuro potásico",
+  "note": "antiaglomerante de la sal",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E538",
+  "num": 538,
+  "name": "ferrocianuro cálcico",
+  "note": "antiaglomerante de la sal",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E541",
+  "num": 541,
+  "name": "fosfato ácido de sodio y aluminio",
+  "note": "gasificante",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E551",
+  "num": 551,
+  "name": "dióxido de silicio",
+  "note": "antiaglomerante",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E552",
+  "num": 552,
+  "name": "silicato cálcico",
+  "note": "antiaglomerante",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E553A",
+  "num": 553,
+  "name": "silicato de magnesio",
+  "note": "antiaglomerante",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E553B",
+  "num": 553,
+  "name": "talco",
+  "note": "antiaglomerante y recubrimiento",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E554",
+  "num": 554,
+  "name": "silicato de aluminio y sodio",
+  "note": "antiaglomerante",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E555",
+  "num": 555,
+  "name": "silicato de aluminio y potasio",
+  "note": "antiaglomerante",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E556",
+  "num": 556,
+  "name": "silicato de aluminio y calcio",
+  "note": "antiaglomerante",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E558",
+  "num": 558,
+  "name": "bentonita",
+  "note": "antiaglomerante",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E559",
+  "num": 559,
+  "name": "silicato de aluminio (caolín)",
+  "note": "antiaglomerante",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E570",
+  "num": 570,
+  "name": "ácidos grasos",
+  "note": "antiaglomerante",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E574",
+  "num": 574,
+  "name": "ácido glucónico",
+  "note": "regulador de acidez",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E575",
+  "num": 575,
+  "name": "glucono-delta-lactona",
+  "note": "acidulante",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E576",
+  "num": 576,
+  "name": "gluconato sódico",
+  "note": "secuestrante",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E577",
+  "num": 577,
+  "name": "gluconato potásico",
+  "note": "secuestrante",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E578",
+  "num": 578,
+  "name": "gluconato cálcico",
+  "note": "endurecedor",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E579",
+  "num": 579,
+  "name": "gluconato ferroso",
+  "note": "colorante de aceitunas negras",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E585",
+  "num": 585,
+  "name": "lactato ferroso",
+  "note": "colorante de aceitunas negras",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E586",
+  "num": 586,
+  "name": "4-hexilresorcinol",
+  "note": "antioxidante del marisco",
+  "tone": "normal",
+  "group": "Regulador de acidez o antiaglomerante"
+ },
+ {
+  "code": "E620",
+  "num": 620,
+  "name": "ácido glutámico",
+  "note": "potenciador del sabor",
+  "tone": "normal",
+  "group": "Potenciador del sabor"
+ },
+ {
+  "code": "E621",
+  "num": 621,
+  "name": "glutamato monosódico",
+  "note": "potenciador del sabor",
+  "tone": "vigilar",
+  "group": "Potenciador del sabor"
+ },
+ {
+  "code": "E622",
+  "num": 622,
+  "name": "glutamato monopotásico",
+  "note": "potenciador del sabor",
+  "tone": "vigilar",
+  "group": "Potenciador del sabor"
+ },
+ {
+  "code": "E623",
+  "num": 623,
+  "name": "glutamato cálcico",
+  "note": "potenciador del sabor",
+  "tone": "vigilar",
+  "group": "Potenciador del sabor"
+ },
+ {
+  "code": "E624",
+  "num": 624,
+  "name": "glutamato monoamónico",
+  "note": "potenciador del sabor",
+  "tone": "vigilar",
+  "group": "Potenciador del sabor"
+ },
+ {
+  "code": "E625",
+  "num": 625,
+  "name": "glutamato magnésico",
+  "note": "potenciador del sabor",
+  "tone": "vigilar",
+  "group": "Potenciador del sabor"
+ },
+ {
+  "code": "E626",
+  "num": 626,
+  "name": "ácido guanílico",
+  "note": "potenciador del sabor",
+  "tone": "normal",
+  "group": "Potenciador del sabor"
+ },
+ {
+  "code": "E627",
+  "num": 627,
+  "name": "guanilato disódico",
+  "note": "potenciador del sabor",
+  "tone": "normal",
+  "group": "Potenciador del sabor"
+ },
+ {
+  "code": "E628",
+  "num": 628,
+  "name": "guanilato dipotásico",
+  "note": "potenciador del sabor",
+  "tone": "normal",
+  "group": "Potenciador del sabor"
+ },
+ {
+  "code": "E629",
+  "num": 629,
+  "name": "guanilato cálcico",
+  "note": "potenciador del sabor",
+  "tone": "normal",
+  "group": "Potenciador del sabor"
+ },
+ {
+  "code": "E630",
+  "num": 630,
+  "name": "ácido inosínico",
+  "note": "potenciador del sabor",
+  "tone": "normal",
+  "group": "Potenciador del sabor"
+ },
+ {
+  "code": "E631",
+  "num": 631,
+  "name": "inosinato disódico",
+  "note": "potenciador del sabor",
+  "tone": "normal",
+  "group": "Potenciador del sabor"
+ },
+ {
+  "code": "E632",
+  "num": 632,
+  "name": "inosinato dipotásico",
+  "note": "potenciador del sabor",
+  "tone": "normal",
+  "group": "Potenciador del sabor"
+ },
+ {
+  "code": "E633",
+  "num": 633,
+  "name": "inosinato cálcico",
+  "note": "potenciador del sabor",
+  "tone": "normal",
+  "group": "Potenciador del sabor"
+ },
+ {
+  "code": "E634",
+  "num": 634,
+  "name": "ribonucleótidos de calcio",
+  "note": "potenciador del sabor",
+  "tone": "normal",
+  "group": "Potenciador del sabor"
+ },
+ {
+  "code": "E635",
+  "num": 635,
+  "name": "ribonucleótidos disódicos",
+  "note": "potenciador del sabor",
+  "tone": "normal",
+  "group": "Potenciador del sabor"
+ },
+ {
+  "code": "E640",
+  "num": 640,
+  "name": "glicina",
+  "note": "potenciador del sabor",
+  "tone": "normal",
+  "group": "Potenciador del sabor"
+ },
+ {
+  "code": "E641",
+  "num": 641,
+  "name": "L-leucina",
+  "note": "potenciador del sabor",
+  "tone": "normal",
+  "group": "Potenciador del sabor"
+ },
+ {
+  "code": "E650",
+  "num": 650,
+  "name": "acetato de zinc",
+  "note": "potenciador del sabor",
+  "tone": "normal",
+  "group": "Potenciador del sabor"
+ },
+ {
+  "code": "E900",
+  "num": 900,
+  "name": "dimeticona",
+  "note": "antiespumante",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E901",
+  "num": 901,
+  "name": "cera de abejas",
+  "note": "agente de recubrimiento",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E902",
+  "num": 902,
+  "name": "cera candelilla",
+  "note": "agente de recubrimiento",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E903",
+  "num": 903,
+  "name": "cera de carnauba",
+  "note": "agente de recubrimiento",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E904",
+  "num": 904,
+  "name": "goma laca",
+  "note": "agente de recubrimiento",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E905",
+  "num": 905,
+  "name": "cera microcristalina",
+  "note": "agente de recubrimiento",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E907",
+  "num": 907,
+  "name": "poli-1-deceno hidrogenado",
+  "note": "recubrimiento",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E914",
+  "num": 914,
+  "name": "cera de polietileno oxidada",
+  "note": "recubrimiento de fruta",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E920",
+  "num": 920,
+  "name": "L-cisteína",
+  "note": "mejorante de harinas",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E927B",
+  "num": 927,
+  "name": "carbamida",
+  "note": "agente de tratamiento",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E938",
+  "num": 938,
+  "name": "argón",
+  "note": "gas de envasado",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E939",
+  "num": 939,
+  "name": "helio",
+  "note": "gas de envasado",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E941",
+  "num": 941,
+  "name": "nitrógeno",
+  "note": "gas de envasado",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E942",
+  "num": 942,
+  "name": "óxido nitroso",
+  "note": "gas propulsor (nata en spray)",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E943A",
+  "num": 943,
+  "name": "butano",
+  "note": "gas propulsor",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E943B",
+  "num": 943,
+  "name": "isobutano",
+  "note": "gas propulsor",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E944",
+  "num": 944,
+  "name": "propano",
+  "note": "gas propulsor",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E948",
+  "num": 948,
+  "name": "oxígeno",
+  "note": "gas de envasado",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E949",
+  "num": 949,
+  "name": "hidrógeno",
+  "note": "gas de envasado",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E950",
+  "num": 950,
+  "name": "acesulfamo K",
+  "note": "edulcorante intenso en productos ultraprocesados",
+  "tone": "vigilar",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E951",
+  "num": 951,
+  "name": "aspartamo",
+  "note": "edulcorante que algunas personas deben evitar",
+  "tone": "vigilar",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E952",
+  "num": 952,
+  "name": "ciclamato",
+  "note": "edulcorante a vigilar dentro de una dieta variada",
+  "tone": "vigilar",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E953",
+  "num": 953,
+  "name": "isomalt",
+  "note": "edulcorante, en cantidad puede dar gases o efecto laxante",
+  "tone": "gases",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E954",
+  "num": 954,
+  "name": "sacarina",
+  "note": "edulcorante a vigilar dentro de una dieta variada",
+  "tone": "vigilar",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E955",
+  "num": 955,
+  "name": "sucralosa",
+  "note": "edulcorante intenso en productos ultraprocesados",
+  "tone": "vigilar",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E957",
+  "num": 957,
+  "name": "taumatina",
+  "note": "edulcorante natural",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E959",
+  "num": 959,
+  "name": "neohesperidina DC",
+  "note": "edulcorante",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E960",
+  "num": 960,
+  "name": "glucósidos de esteviol (estevia)",
+  "note": "edulcorante",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E961",
+  "num": 961,
+  "name": "neotamo",
+  "note": "edulcorante intenso",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E962",
+  "num": 962,
+  "name": "sal de aspartamo y acesulfamo",
+  "note": "edulcorante intenso que algunas personas deben evitar",
+  "tone": "vigilar",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E965",
+  "num": 965,
+  "name": "maltitol",
+  "note": "edulcorante, en cantidad puede dar gases o efecto laxante",
+  "tone": "gases",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E966",
+  "num": 966,
+  "name": "lactitol",
+  "note": "edulcorante, en cantidad puede dar gases o efecto laxante",
+  "tone": "gases",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E967",
+  "num": 967,
+  "name": "xilitol",
+  "note": "edulcorante, en cantidad puede dar gases o efecto laxante",
+  "tone": "gases",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E968",
+  "num": 968,
+  "name": "eritritol",
+  "note": "edulcorante",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E969",
+  "num": 969,
+  "name": "advantamo",
+  "note": "edulcorante intenso",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E999",
+  "num": 999,
+  "name": "extracto de quilaya",
+  "note": "espumante",
+  "tone": "normal",
+  "group": "Edulcorante, glaseante o gas"
+ },
+ {
+  "code": "E1103",
+  "num": 1103,
+  "name": "invertasa",
+  "note": "enzima",
+  "tone": "normal",
+  "group": "Otros"
+ },
+ {
+  "code": "E1105",
+  "num": 1105,
+  "name": "lisozima (de huevo)",
+  "note": "conservador",
+  "tone": "normal",
+  "group": "Otros"
+ },
+ {
+  "code": "E1200",
+  "num": 1200,
+  "name": "polidextrosa",
+  "note": "fibra y espesante",
+  "tone": "normal",
+  "group": "Otros"
+ },
+ {
+  "code": "E1201",
+  "num": 1201,
+  "name": "polivinilpirrolidona",
+  "note": "estabilizante",
+  "tone": "normal",
+  "group": "Otros"
+ },
+ {
+  "code": "E1202",
+  "num": 1202,
+  "name": "polivinilpolipirrolidona",
+  "note": "estabilizante",
+  "tone": "normal",
+  "group": "Otros"
+ },
+ {
+  "code": "E1203",
+  "num": 1203,
+  "name": "alcohol polivinílico",
+  "note": "recubrimiento",
+  "tone": "normal",
+  "group": "Otros"
+ },
+ {
+  "code": "E1204",
+  "num": 1204,
+  "name": "pululano",
+  "note": "recubrimiento",
+  "tone": "normal",
+  "group": "Otros"
+ },
+ {
+  "code": "E1400",
+  "num": 1400,
+  "name": "dextrina",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Otros"
+ },
+ {
+  "code": "E1404",
+  "num": 1404,
+  "name": "almidón oxidado",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Otros"
+ },
+ {
+  "code": "E1410",
+  "num": 1410,
+  "name": "fosfato de monoalmidón",
+  "note": "almidón modificado",
+  "tone": "normal",
+  "group": "Otros"
+ },
+ {
+  "code": "E1412",
+  "num": 1412,
+  "name": "fosfato de dialmidón",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Otros"
+ },
+ {
+  "code": "E1413",
+  "num": 1413,
+  "name": "fosfato de dialmidón fosfatado",
+  "note": "almidón modificado",
+  "tone": "normal",
+  "group": "Otros"
+ },
+ {
+  "code": "E1414",
+  "num": 1414,
+  "name": "fosfato de dialmidón acetilado",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Otros"
+ },
+ {
+  "code": "E1420",
+  "num": 1420,
+  "name": "almidón acetilado",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Otros"
+ },
+ {
+  "code": "E1422",
+  "num": 1422,
+  "name": "adipato de dialmidón acetilado",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Otros"
+ },
+ {
+  "code": "E1440",
+  "num": 1440,
+  "name": "almidón hidroxipropilado",
+  "note": "almidón modificado",
+  "tone": "normal",
+  "group": "Otros"
+ },
+ {
+  "code": "E1442",
+  "num": 1442,
+  "name": "fosfato de dialmidón hidroxipropilado",
+  "note": "espesante",
+  "tone": "normal",
+  "group": "Otros"
+ },
+ {
+  "code": "E1450",
+  "num": 1450,
+  "name": "octenilsuccinato sódico de almidón",
+  "note": "emulgente",
+  "tone": "normal",
+  "group": "Otros"
+ },
+ {
+  "code": "E1451",
+  "num": 1451,
+  "name": "almidón oxidado acetilado",
+  "note": "almidón modificado",
+  "tone": "normal",
+  "group": "Otros"
+ },
+ {
+  "code": "E1452",
+  "num": 1452,
+  "name": "octenilsuccinato alumínico de almidón",
+  "note": "almidón modificado",
+  "tone": "normal",
+  "group": "Otros"
+ },
+ {
+  "code": "E1505",
+  "num": 1505,
+  "name": "citrato de trietilo",
+  "note": "estabilizante",
+  "tone": "normal",
+  "group": "Otros"
+ },
+ {
+  "code": "E1517",
+  "num": 1517,
+  "name": "diacetato de glicerilo",
+  "note": "disolvente de aromas",
+  "tone": "normal",
+  "group": "Otros"
+ },
+ {
+  "code": "E1518",
+  "num": 1518,
+  "name": "triacetina",
+  "note": "disolvente de aromas",
+  "tone": "normal",
+  "group": "Otros"
+ },
+ {
+  "code": "E1519",
+  "num": 1519,
+  "name": "alcohol bencílico",
+  "note": "disolvente de aromas",
+  "tone": "normal",
+  "group": "Otros"
+ },
+ {
+  "code": "E1520",
+  "num": 1520,
+  "name": "propilenglicol",
+  "note": "humectante",
+  "tone": "normal",
+  "group": "Otros"
+ },
+ {
+  "code": "E1521",
+  "num": 1521,
+  "name": "polietilenglicol",
+  "note": "disolvente",
+  "tone": "normal",
+  "group": "Otros"
+ }
+]

@@ -372,3 +372,32 @@ svg.fill { fill: currentColor; stroke: none; }
 .post-video { margin: 24px auto; max-width: 320px; text-align: center; }
 .post-video video { display: block; width: 100%; height: auto; border-radius: 16px; background: #f5f2ea; box-shadow: 0 8px 24px rgba(47,58,40,.12); }
 .post-video figcaption { font-size: 15px; color: var(--muted); margin-top: 8px; }
+
+/* Comprobador de aditivos (/aditivos/) */
+.ad-form { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); margin: 20px 0 16px; }
+.ad-label { display: block; font-weight: 700; color: var(--heading); margin-bottom: 8px; }
+.ad-form textarea { width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; color: var(--text); background: var(--bg); border: 1.5px solid var(--border); border-radius: 14px; padding: 12px 14px; resize: vertical; }
+.ad-form textarea:focus { outline: none; border-color: var(--primary); }
+.ad-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+.ad-sum { font-family: var(--font-head); font-weight: 800; color: var(--heading); font-size: 18px; }
+.ad-legend { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 14px; color: var(--muted); margin: 10px 0 24px; }
+.ad-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.ad-dot { display: inline-block; flex: 0 0 auto; width: 10px; height: 10px; border-radius: 50%; margin-top: 7px; }
+.ad-legend .ad-dot { margin-top: 0; }
+.ad-dot.ad-vigilar { background: var(--danger); }
+.ad-dot.ad-gases { background: var(--accent); }
+.ad-dot.ad-normal { background: var(--border); border: 1px solid var(--muted); width: 8px; height: 8px; }
+.page ul.ad-list { list-style: none; margin: 8px 0 18px; }
+.ad-row { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 2px 8px; padding: 8px 12px; margin: 0; border-bottom: 1px solid var(--border); scroll-margin-top: 90px; }
+.page .ad-row { margin: 0; }
+.ad-row strong { min-width: 56px; }
+.ad-row a { text-decoration: none; }
+.ad-name { color: var(--heading); font-weight: 600; }
+.ad-note { flex-basis: 100%; padding-left: 74px; color: var(--muted); font-size: 15px; }
+.ad-row.ad-vigilar { background: var(--danger-soft); }
+.ad-row.ad-gases { background: var(--accent-soft); }
+.ad-found .ad-row { border-radius: 12px; border: none; margin-bottom: 6px; }
+.ad-row:target { outline: 2px solid var(--primary); border-radius: 12px; }
+.ad-group { font-size: 19px; margin: 28px 0 6px; scroll-margin-top: 90px; }
+.ad-cta { margin: 10px 0 30px; }
+@media (max-width: 640px) { .ad-note { padding-left: 18px; } }
