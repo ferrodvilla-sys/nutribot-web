@@ -36,6 +36,8 @@ Los alérgenos se esconden en:
 
 Es más fácil enseñar una pantalla que explicar todo de memoria, sobre todo con ruido o en otro idioma. Nutribot tiene una **ficha de alergias** pensada justo para eso: la abres y se la enseñas al camarero o a la persona que cocina.
 
+Y antes de pedir, puedes hacer una foto a la carta: Nutribot marca los platos que, por el nombre, suelen llevar algo de tu lista y te dice qué preguntar. Es solo una orientación, la última palabra la tiene siempre quien cocina.
+
 ## 6. Ten un plan B
 
 Si no te dan garantías, no pasa nada por pedir algo más sencillo o elegir otro sitio. Y si tu alergia es grave, sigue siempre el plan de actuación que te haya dado tu profesional sanitario.

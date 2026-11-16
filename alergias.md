@@ -36,6 +36,11 @@ ayuda:
     titulo: Tu ficha de alergias
     texto: "Enséñala en un restaurante o mándasela a un familiar: todo lo que no se puede tomar, en una pantalla clara."
     captura: ficha.jpg
+  - icono: scan
+    etiqueta: En el restaurante
+    titulo: Haz una foto a la carta
+    texto: "Nutribot lee la carta en tu teléfono y marca cada plato con un color según tus alergias, y nombra lo que puede llevar, por ejemplo «huevo» en un rebozado o «frutos de cáscara» en un postre. Es una estimación por el nombre del plato, no la receta de la cocina: úsalo para saber qué preguntar, y pregunta siempre a quien te atiende."
+    demo: alergias
   - icono: chart
     etiqueta: Informes
     titulo: Qué alérgenos se te cuelan

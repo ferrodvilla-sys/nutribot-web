@@ -1,0 +1,42 @@
+{% comment %}
+Ejemplo dibujado (no es una captura) de la foto de la carta (app v58).
+include.modo = "alergias" (colores por alergias, ejemplo con gluten) o "objetivo" (colores por objetivo).
+Cuando Fernando mande una captura real, se puede cambiar por screenshot.html.
+{% endcomment %}
+<figure class="shot carta-demo" aria-label="Ejemplo de una carta leída con Nutribot">
+  <div class="cd-phone">
+    <div class="cd-top">{% include icon.html name="scan" %}<span>Foto de la carta</span></div>
+    <div class="cd-menu">
+      <strong>Tu menú para hoy</strong>
+      {% if include.modo == "objetivo" %}
+      <span>Crema de calabacín + Merluza a la plancha con ensalada + Fruta del tiempo · ≈520 kcal</span>
+      <small>Lo que mejor encaja con tu objetivo y con lo que te queda hoy.</small>
+      {% else %}
+      <span>Lentejas con chorizo + Merluza a la plancha con ensalada + Fruta del tiempo · ≈880 kcal</span>
+      <small>Solo platos que, por el nombre, no llevan nada de tu lista.</small>
+      {% endif %}
+    </div>
+    {% if include.modo == "objetivo" %}
+    <div class="cd-dish"><p class="cd-name"><i class="cd-dot g"></i>Merluza a la plancha con ensalada</p>
+      <p class="cd-stars"><b class="g">★★★</b> Muy bien para perder peso</p>
+      <p class="cd-tags">Ligero · Mucha proteína · ≈210 kcal</p></div>
+    <div class="cd-dish"><p class="cd-name"><i class="cd-dot g"></i>Pollo asado con verduras</p>
+      <p class="cd-stars"><b class="a">★★</b><b class="o">★</b> Bien para perder peso</p>
+      <p class="cd-tags">Equilibrado · Mucha proteína · ≈480 kcal</p></div>
+    <div class="cd-dish"><p class="cd-name"><i class="cd-dot a"></i>Calamares a la romana</p>
+      <p class="cd-stars"><b class="r">★</b><b class="o">★★</b> Poco recomendable para perder peso</p>
+      <p class="cd-tags">Contundente · Frito · ≈650 kcal</p>
+      <p class="cd-note">Frito: mejor de vez en cuando.</p></div>
+    {% else %}
+    <div class="cd-dish"><p class="cd-name"><i class="cd-dot g"></i>Lentejas con chorizo</p>
+      <p class="cd-stars"><b class="g">★★★</b> Muy bien para comer sano</p>
+      <p class="cd-tags">Equilibrado · Mucha proteína · Con fibra · ≈560 kcal</p>
+      <p class="cd-note">Por el nombre, no lleva nada de tu lista.</p></div>
+    <div class="cd-dish"><p class="cd-name"><i class="cd-dot r"></i>Macarrones a la boloñesa</p>
+      <p class="cd-tags">Equilibrado · ≈450 kcal</p>
+      <p class="cd-note">Por el nombre, suele llevar <strong>gluten (trigo)</strong>.</p>
+      <p class="cd-ask">Pregunta así: «¿Este plato lleva gluten? ¿Se puede preparar sin eso?»</p></div>
+    {% endif %}
+    <p class="cd-foot">Ejemplo. Es una estimación por el nombre del plato.</p>
+  </div>
+</figure>
