@@ -39,7 +39,7 @@ ayuda:
   - icono: scan
     etiqueta: En el restaurante
     titulo: Haz una foto a la carta
-    texto: "Nutribot lee la carta en tu teléfono y marca cada plato con un color según tus alergias, y nombra lo que puede llevar, por ejemplo «huevo» en un rebozado o «frutos de cáscara» en un postre. Es una estimación por el nombre del plato, no la receta de la cocina: úsalo para saber qué preguntar, y pregunta siempre a quien te atiende."
+    texto: "Haz una foto a la carta, o elígela de tu galería, y Nutribot la lee en tu teléfono. Marca cada plato con un color según tus alergias, y nombra lo que puede llevar, por ejemplo «huevo» en un rebozado o «frutos de cáscara» en un postre. Es una estimación por el nombre del plato, no la receta de la cocina: úsalo para saber qué preguntar, y pregunta siempre a quien te atiende."
     demo: alergias
   - icono: chart
     etiqueta: Informes

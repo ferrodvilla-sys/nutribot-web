@@ -39,7 +39,7 @@ ayuda:
   - icono: scan
     etiqueta: En el restaurante
     titulo: Haz una foto a la carta
-    texto: "Nutribot lee la carta en tu teléfono y marca en rojo los platos que, por el nombre, suelen llevar gluten, y te dice de dónde viene, por ejemplo «gluten (trigo)» en un rebozado. Arriba te propone un menú para hoy con platos que no lo llevan. Es una estimación por el nombre: pregunta siempre a quien te atiende, también por la freidora."
+    texto: "Haz una foto a la carta, o elígela de tu galería, y Nutribot la lee en tu teléfono. Marca en rojo los platos que, por el nombre, suelen llevar gluten, y te dice de dónde viene, por ejemplo «gluten (trigo)» en un rebozado. Arriba te propone un menú para hoy con platos que no lo llevan. Es una estimación por el nombre: pregunta siempre a quien te atiende, también por la freidora."
     demo: alergias
 preguntas:
   - p: "¿Puedo fiarme solo de la app?"
