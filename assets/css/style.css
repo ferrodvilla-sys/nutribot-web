@@ -401,3 +401,25 @@ svg.fill { fill: currentColor; stroke: none; }
 .ad-group { font-size: 19px; margin: 28px 0 6px; scroll-margin-top: 90px; }
 .ad-cta { margin: 10px 0 30px; }
 @media (max-width: 640px) { .ad-note { padding-left: 18px; } }
+
+/* Ejemplo dibujado de la foto de la carta (_includes/carta-demo.html) */
+.carta-demo .cd-phone { width: 100%; max-width: 330px; background: var(--card); border: 1px solid var(--border); border-radius: 26px; box-shadow: var(--shadow-lg); padding: 16px 14px 12px; font-size: 14px; line-height: 1.35; color: var(--text); }
+.cd-top { display: flex; align-items: center; gap: 8px; font-family: var(--font-head); font-weight: 800; color: var(--heading); margin: 2px 4px 12px; }
+.cd-top svg { width: 18px; height: 18px; color: var(--primary); }
+.cd-menu { background: var(--primary-soft); border-radius: 16px; padding: 12px 14px; margin-bottom: 10px; }
+.cd-menu strong { display: block; color: var(--heading); font-family: var(--font-head); margin-bottom: 4px; }
+.cd-menu span { display: block; }
+.cd-menu small { display: block; color: var(--muted); margin-top: 4px; font-size: 12px; }
+.cd-dish { border: 1px solid var(--border); border-radius: 16px; padding: 10px 12px; margin-bottom: 8px; }
+.cd-dish p { margin: 0; }
+.cd-name { font-weight: 700; color: var(--heading); display: flex; align-items: center; gap: 8px; }
+.cd-dot { width: 12px; height: 12px; border-radius: 50%; flex: none; }
+.cd-dot.g { background: #3e7d4a; } .cd-dot.a { background: var(--accent); } .cd-dot.r { background: var(--danger); }
+.cd-stars { margin-top: 4px !important; font-weight: 600; font-size: 13px; color: var(--heading); }
+.cd-stars b { font-size: 17px; letter-spacing: 1px; margin-right: 4px; }
+.cd-stars b.g { color: #3e7d4a; } .cd-stars b.a { color: var(--accent); margin-right: 0; } .cd-stars b.r { color: var(--danger); margin-right: 0; } .cd-stars b.o { color: var(--border); }
+.cd-tags { margin-top: 4px !important; color: var(--primary); font-weight: 600; font-size: 13px; }
+.cd-note { margin-top: 3px !important; color: var(--muted); font-size: 13px; }
+.cd-ask { margin-top: 6px !important; font-size: 13px; }
+.cd-foot { margin: 8px 4px 0 !important; color: var(--muted); font-size: 12px; text-align: center; }
+.feature-text p + p { margin-top: 12px; }

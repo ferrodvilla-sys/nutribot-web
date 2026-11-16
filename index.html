@@ -85,6 +85,16 @@ keywords: [diario de comidas y síntomas, gases e hinchazón, qué alimento me s
 
   <div class="feature">
     <div class="feature-text">
+      <span class="badge">{% include icon.html name="scan" %}En el restaurante</span>
+      <h3>Haz una foto a la carta y elige mejor</h3>
+      <p>Haz una foto a la carta, o elige una de tu galería, y Nutribot la lee en tu propio teléfono. Entiende platos de muchas cocinas, agrupa las bebidas aparte y marca cada plato con un color. Si tienes alergias o intolerancias, el color te dice qué puede llevar y lo nombra, por ejemplo «gluten (trigo)»; y si por el nombre no está claro, te lo marca para que preguntes. Si no, te dice cómo encaja con tu objetivo y con lo que te queda del día.</p>
+      <p>Cada plato lleva de 1 a 3 estrellas según tu objetivo, si es ligero, equilibrado o contundente y sus calorías aproximadas. Y arriba, «Tu menú para hoy»: primero, segundo y postre ya elegidos. Es una estimación por el nombre del plato, así que pregunta siempre a quien te atiende.</p>
+    </div>
+    {% include carta-demo.html modo="alergias" %}
+  </div>
+
+  <div class="feature">
+    <div class="feature-text">
       <span class="badge">{% include icon.html name="flask" %}Prueba guiada</span>
       <h3>Comprueba una pista en 14 días</h3>
       <p>Elige qué quieres probar a quitar (ajo, cebolla, lactosa, gluten, café…), déjalo 14 días y vuelve a tomarlo 3. Al final verás si tus síntomas cambiaron respecto a las dos semanas de antes. Antes de quitar alimentos, coméntalo con tu médico o dietista.</p>
@@ -177,6 +187,7 @@ keywords: [diario de comidas y síntomas, gases e hinchazón, qué alimento me s
         <li>{% include icon.html name="check" %}Pistas, prueba guiada e informes en PDF</li>
         <li>{% include icon.html name="check" %}Saciedad de cada alimento, comida y semana</li>
         <li>{% include icon.html name="check" %}Apunta escribiendo lo que has comido, y comidas guardadas</li>
+        <li>{% include icon.html name="check" %}Foto de la carta del restaurante, plato a plato</li>
         <li>{% include icon.html name="check" %}Escáner con avisos de alergias, intolerancias y tu propia lista</li>
         <li>{% include icon.html name="check" %}Mejores opciones para ti en cada producto</li>
         <li>{% include icon.html name="check" %}Comparador de productos</li>
@@ -208,8 +219,8 @@ keywords: [diario de comidas y síntomas, gases e hinchazón, qué alimento me s
     <p>Es una orientación a partir de tres datos por cada 100 kcal: las calorías por gramo, la fibra y la proteína. Un alimento con pocas calorías por gramo, con fibra o con proteína suele llenar más que otro con las mismas calorías. Las bebidas nunca salen como "sacia bien". No mide tu hambre ni sustituye el consejo de un profesional.</p>
   </details>
   <details>
-    <summary>¿Puedo apuntar lo que como en un restaurante?</summary>
-    <p>Sí, en la misma caja de siempre. Escribe el plato como lo dirías (por ejemplo, "lubina a la plancha con patatas y alioli") y Nutribot lo separa en ingredientes con unos gramos que puedes cambiar. Si algo de la carta choca con tus alergias, te avisa. La carta no lo dice todo, así que pregunta siempre a quien te atiende.</p>
+    <summary>¿Me ayuda a elegir en un restaurante?</summary>
+    <p>Sí. Haz una foto a la carta o elígela de tu galería: Nutribot la lee en tu teléfono (la foto no se envía a ningún sitio) y marca cada plato con un color, por tus alergias o por tu objetivo, con estrellas, calorías aproximadas y un menú para hoy. Si un plato no está en la carta, escríbelo como lo dirías (por ejemplo, "lubina a la plancha con ensalada") y Nutribot lo separa en ingredientes. Todo sale del nombre del plato, no de la receta de la cocina, así que pregunta siempre a quien te atiende.</p>
   </details>
   <details>
     <summary>¿Nutribot diagnostica intolerancias?</summary>

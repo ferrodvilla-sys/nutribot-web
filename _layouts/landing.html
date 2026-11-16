@@ -46,7 +46,7 @@ página viene cada descarga en Google Play (Play Console → Adquisición de usu
       <h3>{{ f.titulo }}</h3>
       <p>{{ f.texto }}</p>
     </div>
-    {% include screenshot.html file=f.captura alt=f.titulo %}
+    {% if f.demo %}{% include carta-demo.html modo=f.demo %}{% else %}{% include screenshot.html file=f.captura alt=f.titulo %}{% endif %}
   </div>
   {% endfor %}
 </section>

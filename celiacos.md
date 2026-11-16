@@ -36,6 +36,11 @@ ayuda:
     titulo: Tu ficha, lista para enseñar
     texto: "En el restaurante o en casa de otros, enseña en una pantalla clara todo lo que no puedes tomar."
     captura: ficha.jpg
+  - icono: scan
+    etiqueta: En el restaurante
+    titulo: Haz una foto a la carta
+    texto: "Haz una foto a la carta, o elígela de tu galería, y Nutribot la lee en tu teléfono. Marca en rojo los platos que, por el nombre, suelen llevar gluten, y te dice de dónde viene, por ejemplo «gluten (trigo)» en un rebozado. Arriba te propone un menú para hoy con platos que no lo llevan. Es una estimación por el nombre: pregunta siempre a quien te atiende, también por la freidora."
+    demo: alergias
 preguntas:
   - p: "¿Puedo fiarme solo de la app?"
     r: "Úsala como ayuda, no como única fuente. La información viene de bases de datos de productos y las recetas cambian: comprueba siempre la etiqueta del envase."
