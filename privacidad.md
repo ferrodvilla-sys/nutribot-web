@@ -9,7 +9,7 @@ permalink: /privacidad/
 # Política de privacidad de Nutribot
 
 
-Última actualización: 15 de noviembre de 2026.
+Última actualización: 16 de noviembre de 2026.
 
 ## 1. Responsable
 
@@ -22,6 +22,8 @@ Contacto: nutribotappl@gmail.com
 - **Si entras con Google:** tu email y un número que identifica tu cuenta de Google. No recibimos tu contraseña de Google ni nada más de tu cuenta.
 - **Perfil:** edad, sexo, peso, altura, actividad y objetivo. Para calcular tus objetivos de nutrientes.
 - **Control de peso:** el peso que apuntas cada día. Para enseñarte cómo cambia en la app y en tus informes.
+- **Actividad:** si apuntas cómo te has movido o un ejercicio (tipo, minutos e intensidad). Para ajustar tus calorías de ese día. Se borra con tu peso o con tu cuenta.
+- **Foto de la carta de un restaurante:** el texto se lee en tu propio móvil y la foto no se envía a ningún sitio.
 - **Alergias e intolerancias:** son datos de salud. Para avisarte al escanear productos.
 - **Lo que comes y escaneas:** productos, cantidades, horas. Para tu historial e informes.
 - **Bienestar y síntomas:** cómo te encuentras, síntomas e intensidad. Son datos de salud. Para mostrarte pistas en Patrones, la Prueba guiada y tus informes, comparándolos con lo que comes. **Son asociaciones orientativas, nunca un diagnóstico.**
