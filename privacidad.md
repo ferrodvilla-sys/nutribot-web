@@ -9,7 +9,7 @@ permalink: /privacidad/
 # Política de privacidad de Nutribot
 
 
-Última actualización: 16 de noviembre de 2026.
+Última actualización: 17 de noviembre de 2026.
 
 ## 1. Responsable
 
@@ -23,7 +23,8 @@ Contacto: nutribotappl@gmail.com
 - **Perfil:** edad, sexo, peso, altura, actividad y objetivo. Para calcular tus objetivos de nutrientes.
 - **Control de peso:** el peso que apuntas cada día. Para enseñarte cómo cambia en la app y en tus informes.
 - **Actividad:** si apuntas cómo te has movido o un ejercicio (tipo, minutos e intensidad). Para ajustar tus calorías de ese día. Se borra con tu peso o con tu cuenta.
-- **Foto de la carta de un restaurante:** el texto se lee en tu propio móvil y la foto no se envía a ningún sitio.
+- **Foto de la carta de un restaurante:** el texto se lee en tu propio móvil y la foto no se envía a ningún sitio, salvo que tú pulses «¿Algo ha salido mal? Avísanos».
+- **«¿Algo ha salido mal? Avísanos» (carta de restaurante):** si lo pulsas, enviamos el texto que leyó tu móvil de la carta (con la posición de cada línea) y los platos que te salieron, sin tu email ni tu nombre. Si en tu perfil tienes alergias o intolerancias, no se envía el color de cada plato. La foto de la carta solo se envía si marcas «Incluir la foto de la carta»: fotografía solo la carta, sin personas. Lo usamos para corregir errores al leer cartas; guardamos como mucho los 300 últimos envíos y las fotos solo de los 15 últimos.
 - **Alergias e intolerancias:** son datos de salud. Para avisarte al escanear productos.
 - **Lo que comes y escaneas:** productos, cantidades, horas. Para tu historial e informes.
 - **Bienestar y síntomas:** cómo te encuentras, síntomas e intensidad. Son datos de salud. Para mostrarte pistas en Patrones, la Prueba guiada y tus informes, comparándolos con lo que comes. **Son asociaciones orientativas, nunca un diagnóstico.**
@@ -48,7 +49,7 @@ Contacto: nutribotappl@gmail.com
 - **Consentimiento explícito (art. 9.2.a RGPD):** datos de salud (bienestar, síntomas, pruebas guiadas, alergias e intolerancias). Lo das en la app antes de usarlos y puedes retirarlo cuando quieras en Cuenta → Preferencias → «Retirar consentimiento de datos de salud». Al retirarlo se borran esos datos.
 - **Consentimiento explícito (art. 9.2.a RGPD):** «Ayuda a mejorar las pistas para todos», aparte del anterior y opcional. Se quita al retirarlo o al retirar el de datos de salud.
 - **Consentimiento:** los avisos de novedades, los correos de consejos y novedades y las fotos que envías con «Ayúdanos a añadirlo». Puedes retirarlo cuando quieras.
-- **Interés legítimo:** los correos sobre tu cuenta (bienvenida, recordatorio y aviso de fin de prueba), para ayudarte a usar la app y avisarte antes de que cambie lo que incluye; puedes darte de baja con un clic. El identificador del dispositivo, para evitar abusos de la prueba gratuita, y el recuento anónimo de uso y los códigos de productos no encontrados, para mejorar la app.
+- **Interés legítimo:** los correos sobre tu cuenta (bienvenida, recordatorio y aviso de fin de prueba), para ayudarte a usar la app y avisarte antes de que cambie lo que incluye; puedes darte de baja con un clic. El identificador del dispositivo, para evitar abusos de la prueba gratuita, y el recuento anónimo de uso y los códigos de productos no encontrados y los avisos de cartas mal leídas que envías, para mejorar la app.
 
 ## 4. Con quién se comparten (encargados del tratamiento)
 
@@ -61,7 +62,7 @@ No vendemos tus datos ni los usamos para publicidad. Solo los tratan estos prove
 - **Google** (solo si eliges entrar con Google: comprueba que la cuenta es tuya).
 - **Resend** (envío de correos: códigos, respuestas a tus sugerencias, correos sobre tu cuenta y, si los pides, consejos y novedades).
 - **Expo y Google Firebase Cloud Messaging** (solo si aceptas los avisos de novedades: hacen llegar el aviso a tu móvil).
-- **Anthropic** (herramienta de inteligencia artificial que usamos para revisar fuera de la app los avisos marcados, las fotos de productos, las búsquedas sin resultado y, solo si lo has activado, los datos agrupados de «Ayuda a mejorar las pistas para todos»). Solo recibe lo necesario para esa revisión, nunca tu email ni tu nombre. La app no usa inteligencia artificial para hablar contigo ni para darte consejos.
+- **Anthropic** (herramienta de inteligencia artificial que usamos para revisar fuera de la app los avisos marcados, las fotos de productos, las cartas mal leídas que nos envías, las búsquedas sin resultado y, solo si lo has activado, los datos agrupados de «Ayuda a mejorar las pistas para todos»). Solo recibe lo necesario para esa revisión, nunca tu email ni tu nombre. La app no usa inteligencia artificial para hablar contigo ni para darte consejos.
 - **Open Food Facts:** al escanear o buscar, la app consulta su base de datos con el código de barras o el texto buscado. No se envían tus datos de cuenta ni de salud. Si usas «Ayúdanos a añadirlo», las fotos y el nombre y la marca del producto se publican en Open Food Facts con su licencia libre, para que cualquiera pueda usarlos; desde Nutribot no podemos borrarlos después, pero puedes pedirlo a Open Food Facts.
 
 Algunos de estos proveedores están en Estados Unidos. Las transferencias se amparan en el Marco de Privacidad de Datos UE-EE. UU. o en cláusulas contractuales tipo de la Comisión Europea.
