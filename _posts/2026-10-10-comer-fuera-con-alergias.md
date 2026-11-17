@@ -10,6 +10,8 @@ keywords: [comer fuera con alergias, alérgenos en restaurantes, derechos alergi
 
 Comer fuera debería ser un placer, no un examen. Con un poco de preparación se puede.
 
+{% include video-caso.html slug="foto-a-la-carta" texto="Haz una foto a la carta y mira qué plato te va mejor, en 18 segundos. Es una estimación por el nombre del plato: confirma siempre los alérgenos en el restaurante." %}
+
 ## 1. Conoce tus derechos
 
 En la Unión Europea, bares, restaurantes, comedores y cualquier sitio que sirva comida sin envasar **tienen que poder informarte de los 14 alérgenos** de sus platos. Pueden hacerlo en la carta, en un cartel o de palabra, pero en ese caso deben tener la información **por escrito** para enseñártela si la pides.
