@@ -17,6 +17,23 @@
     {{ content }}
   </main>
   {% include footer.html %}
+  {% comment %}Si se llega desde un anuncio (?utm_source=...), los enlaces a Google Play llevan esa etiqueta
+  como «referrer»: así la app sabe de dónde vino la persona (tabla «Por origen» del panel).{% endcomment %}
+  <script>
+    (function () {
+      var q = new URLSearchParams(location.search), keep = [];
+      ['utm_source', 'utm_medium', 'utm_campaign'].forEach(function (k) {
+        var v = q.get(k);
+        if (v && /^[A-Za-z0-9_.-]{1,40}$/.test(v)) keep.push(k + '=' + v);
+      });
+      if (!keep.length) return;
+      var ref = encodeURIComponent(keep.join('&'));
+      document.querySelectorAll('a[href*="play.google.com/store/apps/details"]').forEach(function (a) {
+        if (a.href.indexOf('referrer=') !== -1) return;
+        a.href += (a.href.indexOf('?') === -1 ? '?' : '&') + 'referrer=' + ref;
+      });
+    })();
+  </script>
   {% if site.goatcounter and jekyll.environment == "production" %}<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
   {% comment %}Cuenta los clics hacia Google Play como evento "clic-google-play <página>" (en GoatCounter, filtrar por "clic").{% endcomment %}
   <script>
