@@ -25,7 +25,7 @@ Es un sello de certificación voluntario que gestionan las asociaciones de celí
 
 ## ¿Y la avena?
 
-La avena aparece en la lista de cereales con gluten porque muchas veces se contamina con trigo o cebada durante el cultivo y el procesado. Existe avena etiquetada "sin gluten", producida para evitar esa contaminación. Si tienes celiaquía, consulta con tu profesional si puedes tomarla.
+La avena aparece en la lista de cereales con gluten porque muchas veces se contamina con trigo o cebada durante el cultivo y el procesado. Existe avena etiquetada "sin gluten", producida para evitar esa contaminación. Si tienes celiaquía, consulta con tu profesional si puedes tomarla. Ojo: unos copos de avena normales pueden tener Nutri-Score A y llevar gluten igualmente, como en [este ejemplo](/blog/nota-a-no-es-para-todos/).
 
 ## Lo que no aparece en el envase
 
