@@ -1,11 +1,11 @@
 # Ajustes generales del sitio. Cambia aquí y se aplica en todas las páginas.
 title: Nutribot
-tagline: Entiende cómo te sienta lo que comes
+tagline: Come mejor para ti
 description: >-
-  Diario de comidas y síntomas que busca pistas entre lo que comes y cómo te
-  encuentras (gases, hinchazón, reflujo…) y te ayuda a comprobarlas con una prueba
-  guiada. Además, avisa de alérgenos, intolerancias y FODMAP en cada producto.
-  Android, empieza gratis y sin tarjeta.
+  Come mejor para ti. Escanea productos, haz una foto a la carta del restaurante y
+  Nutribot te dice si te conviene según tus alergias, intolerancias (lactosa,
+  gluten, FODMAP) y lo que cuidas. Y si apuntas cómo te sientes, te ayuda a
+  descubrir qué te sienta bien. Android, empieza gratis y sin tarjeta.
 url: "https://nutribot.eu"
 baseurl: ""
 lang: es_ES
