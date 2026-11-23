@@ -43,7 +43,7 @@ Lo que no miran:
 - Si llevan edulcorantes como el maltitol.
 - Si llevan un alérgeno o trazas.
 
-Por eso un producto puede sacar un «Excelente» y, para ti, ser justo lo que tenías que evitar.
+Por eso un producto puede sacar un «Excelente» y, para ti, ser justo lo que tenías que evitar. Pasa también con el gluten: mira [el ejemplo de unos copos de avena con Nutri-Score A](/blog/nota-a-no-es-para-todos/).
 
 ## Tres ejemplos de «sano» que no le sienta bien a todo el mundo
 
