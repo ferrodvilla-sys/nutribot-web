@@ -4,6 +4,8 @@ description: "Qué meter en el carro, qué cambiar en la cocina y qué palabras 
 image: /assets/img/posts/lista-compra-baja-en-fodmap.jpg
 tema: FODMAP
 etiquetas: [fodmap, ajo-y-cebolla, sorbitol, lactosa]
+# Google encontró esta dirección cortada en algún sitio: la llevamos al artículo
+redirect_from: /blog/lista-compra-baja/
 keywords: [lista de la compra baja en FODMAP, alimentos bajos en FODMAP, lista FODMAP, dieta baja en FODMAP, qué comer con dieta FODMAP, alimentos permitidos FODMAP, colon irritable qué comer, FODMAP supermercado]
 medico:
   - "Vas a empezar una dieta baja en FODMAP: conviene hacerla con un médico o dietista, por fases y durante poco tiempo."
