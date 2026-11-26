@@ -423,3 +423,38 @@ svg.fill { fill: currentColor; stroke: none; }
 .cd-ask { margin-top: 6px !important; font-size: 13px; }
 .cd-foot { margin: 8px 4px 0 !important; color: var(--muted); font-size: 12px; text-align: center; }
 .feature-text p + p { margin-top: 12px; }
+
+/* Ciclo «Así funciona Nutribot» (26 nov 2026, igual que la bienvenida de la app v78) */
+.ciclo { max-width: 1000px; margin: 0 auto; padding: 56px 24px 24px; }
+.ciclo .center { text-align: center; }
+.ciclo h2.center { margin-top: 4px; }
+.ciclo-wrap { position: relative; display: grid; grid-template-columns: 1fr 220px 1fr; grid-template-rows: auto auto auto; gap: 22px; align-items: center; margin: 30px auto 10px; }
+.ciclo-ring { position: absolute; left: 50%; top: 50%; width: 58%; aspect-ratio: 1; transform: translate(-50%, -50%); border: 4px solid var(--primary); opacity: .35; border-radius: 50%; }
+.ciclo-tile { position: relative; text-align: center; padding: 20px 18px; border-radius: var(--radius); box-shadow: var(--shadow); }
+.ciclo-tile h3 { margin: 4px 0 6px; font-size: 22px; color: var(--heading); }
+.ciclo-tile p { margin: 6px 0 4px; font-size: 16px; color: var(--text); }
+.t-elige { grid-column: 1 / 4; grid-row: 1; justify-self: center; width: min(440px, 100%); background: #e6f0e1; }
+.t-descubre { grid-column: 1; grid-row: 2; background: #fcebdd; }
+.t-apunta { grid-column: 3; grid-row: 2; background: #e2ecf6; }
+.t-siente { grid-column: 1 / 4; grid-row: 3; justify-self: center; width: min(400px, 100%); background: #efe6f5; }
+.ciclo-center { grid-column: 2; grid-row: 2; position: relative; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.ciclo-center strong { font-family: var(--font-head); font-size: 22px; color: var(--primary); }
+.ciclo-center small { font-size: 15px; color: var(--muted); }
+.ciclo-emoji { font-size: 34px; line-height: 1; }
+.ciclo-badge { display: inline-block; margin-top: 4px; padding: 3px 10px; border: 1.5px solid var(--primary); border-radius: 8px; font-size: 13px; font-weight: 800; color: var(--primary); background: var(--card); }
+.ciclo-badge.free { background: var(--primary); color: #fff; text-transform: uppercase; }
+.ciclo-foot { text-align: center; color: var(--muted); font-size: 17px; margin: 18px auto 18px; max-width: 640px; }
+.ciclo-foot strong { color: var(--heading); }
+@media (prefers-color-scheme: dark) {
+  .t-elige { background: #26331f; } .t-descubre { background: #3a2a1d; } .t-apunta { background: #1f2a36; } .t-siente { background: #2d2436; }
+  .ciclo-badge.free { color: #131511; }
+}
+@media (max-width: 720px) {
+  .ciclo-wrap { grid-template-columns: 1fr; gap: 12px; }
+  .ciclo-ring { display: none; }
+  .ciclo-center { grid-column: 1; grid-row: 1; flex-direction: row; justify-content: center; gap: 8px; flex-wrap: wrap; }
+  .t-elige { grid-column: 1; grid-row: 2; } .t-apunta { grid-column: 1; grid-row: 3; }
+  .t-siente { grid-column: 1; grid-row: 4; width: 100%; } .t-descubre { grid-column: 1; grid-row: 5; }
+  .t-elige { width: 100%; }
+  .ciclo-tile h3 { font-size: 19px; } .ciclo-tile p { font-size: 15px; }
+}
