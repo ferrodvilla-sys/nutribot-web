@@ -6,17 +6,17 @@ keywords: [diario de comidas y síntomas, gases e hinchazón, qué alimento me s
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-copy">
-      <span class="eyebrow"><span class="dot"></span>Android · Empieza gratis · Sin tarjeta</span>
+      <span class="eyebrow"><span class="dot"></span>La idea de Nutribot</span>
       <h1>No comas mejor. <em>Come mejor para ti.</em></h1>
-      <p class="subtitle">Lo sano no le sienta igual a todo el mundo. Escanea un producto o haz una foto a la carta y Nutribot te dice si te conviene según tus alergias, intolerancias y lo que cuidas. Y si apuntas cómo te sientes, te ayuda a descubrir qué te sienta bien a ti.</p>
+      <p class="subtitle">Lo sano no le sienta igual a todo el mundo. Lo que te va bien a ti se descubre con un ciclo sencillo: <strong>eliges, apuntas, notas cómo te sienta y descubres</strong>. Nutribot te da las herramientas para hacerlo, empezando por su app.</p>
       <div class="hero-actions">
         <a class="btn btn-lg" href="{{ site.play_store_url }}">{% include icon.html name="play" %}Descargar en Google Play</a>
-        <a class="btn btn-ghost btn-lg" href="#como-funciona">Cómo funciona</a>
+        <a class="btn btn-ghost btn-lg" href="#ciclo">Ver la idea</a>
       </div>
       {% include qr-play.html %}
       <ul class="hero-trust">
         <li>{% include icon.html name="check" %}Pistas, no diagnósticos</li>
-        <li>{% include icon.html name="check" %}Alérgenos y FODMAP</li>
+        <li>{% include icon.html name="check" %}Android · Sin tarjeta</li>
         <li>{% include icon.html name="check" %}Escáner gratis para siempre</li>
       </ul>
     </div>
@@ -30,34 +30,59 @@ keywords: [diario de comidas y síntomas, gases e hinchazón, qué alimento me s
   </div>
 </section>
 
-<section id="ciclo" class="ciclo" aria-label="Así funciona Nutribot">
-  <p class="kicker center">Así funciona Nutribot</p>
+<section id="ciclo" class="ciclo" aria-label="La idea: un ciclo alrededor de ti">
+  <p class="kicker center">La idea</p>
   <h2 class="center">Un ciclo que gira alrededor de ti</h2>
   <div class="ciclo-wrap">
     <div class="ciclo-ring" aria-hidden="true"></div>
     <div class="ciclo-tile t-elige">
       <span class="ciclo-emoji">🛒</span><h3>1. Elige</h3>
-      <p>Escáner, con recomendación para ti</p><span class="ciclo-badge free">Gratis siempre</span>
-      <p>Carta del restaurante y comparador</p><span class="ciclo-badge">Con cuenta · 30 días gratis · sin tarjeta</span>
+      <p>Antes de comprar o pedir, lo que te conviene a ti</p>
     </div>
     <div class="ciclo-tile t-apunta">
       <span class="ciclo-emoji">📔</span><h3>2. Apunta</h3>
-      <p>Lo que comes, en un toque</p><span class="ciclo-badge">Con cuenta · 30 días gratis · sin tarjeta</span>
+      <p>Lo que comes, sin complicarte</p>
     </div>
     <div class="ciclo-tile t-siente">
       <span class="ciclo-emoji">😊</span><h3>3. Siente</h3>
-      <p>Tripa, energía, hambre</p><span class="ciclo-badge">Con cuenta · 30 días gratis · sin tarjeta</span>
+      <p>Cómo te sienta: tripa, energía, hambre</p>
     </div>
     <div class="ciclo-tile t-descubre">
       <span class="ciclo-emoji">💡</span><h3>4. Descubre</h3>
-      <p>Tu día, tu semana y qué mejorar</p><span class="ciclo-badge">Con cuenta · 30 días gratis · sin tarjeta</span>
+      <p>Qué te va bien y qué puedes mejorar</p>
     </div>
     <div class="ciclo-center">
       <span class="ciclo-emoji">👤</span><strong>Para ti</strong><small>Tus objetivos y lo que cuidas</small>
     </div>
   </div>
-  <p class="ciclo-foot">Con lo que descubres, la próxima vez eliges mejor. <strong>Crear cuenta: solo tu email. Sin tarjeta y sin compromiso.</strong></p>
-  <div class="center"><a class="btn btn-lg" href="{{ site.play_store_url }}">{% include icon.html name="play" %}Descargar en Google Play</a></div>
+  <p class="ciclo-foot">Con lo que descubres, la próxima vez eliges mejor. Y vuelta a empezar.</p>
+</section>
+
+<section id="como-te-ayudamos" class="ayuda" aria-label="Cómo te ayudamos">
+  <p class="kicker center">Cómo te ayudamos</p>
+  <h2 class="center">Herramientas para cada paso del ciclo</h2>
+  <div class="ayuda-grid">
+    <div class="ayuda-app">
+      <span class="ayuda-tag">La herramienta principal</span>
+      <h3>La app Nutribot</h3>
+      <ul class="ayuda-pasos">
+        <li><span>🛒</span><div><strong>Elige</strong> con el escáner y la foto a la carta. <span class="ciclo-badge free">Escáner gratis siempre</span></div></li>
+        <li><span>📔</span><div><strong>Apunta</strong> lo que comes en un toque.</div></li>
+        <li><span>😊</span><div><strong>Siente:</strong> tripa, energía y hambre.</div></li>
+        <li><span>💡</span><div><strong>Descubre</strong> tu resumen del día y de la semana, pistas e informes.</div></li>
+      </ul>
+      <p class="ayuda-free">Todo gratis durante 30 días. Solo tu email, sin tarjeta.</p>
+      <a class="btn btn-lg" href="{{ site.play_store_url }}">{% include icon.html name="play" %}Descargar en Google Play</a>
+    </div>
+    <div class="ayuda-otras">
+      <h3>Otras herramientas</h3>
+      <p>En la web, sin instalar nada.</p>
+      {% for h in site.data.herramientas %}
+      <a class="ayuda-tool" href="{{ h.url | relative_url }}">{% include icon.html name=h.icono %}<span><strong>{{ h.titulo }}</strong><small>{{ h.grupo }} · {{ h.precio }}</small></span>{% include icon.html name="arrow" %}</a>
+      {% endfor %}
+      <a class="link-arrow" href="{{ '/herramientas/' | relative_url }}">Ver todas las herramientas {% include icon.html name="arrow" %}</a>
+    </div>
+  </div>
 </section>
 
 <section class="strip">
@@ -308,10 +333,6 @@ keywords: [diario de comidas y síntomas, gases e hinchazón, qué alimento me s
   <p class="center"><a class="link-arrow" href="{{ '/blog/' | relative_url }}">Ver todos los artículos {% include icon.html name="arrow" %}</a></p>
 </section>
 {% endif %}
-
-<section class="tools-strip" aria-label="Herramientas">
-  <p><strong>Herramientas gratis:</strong>{% assign gratis = site.data.herramientas | where: "precio", "Gratis" %}{% for h in gratis %} <a href="{{ h.url | relative_url }}">{{ h.corto }}</a>{% unless forloop.last %} ·{% endunless %}{% endfor %}. <a class="link-arrow" href="{{ '/herramientas/' | relative_url }}">Ver herramientas {% include icon.html name="arrow" %}</a></p>
-</section>
 
 <section class="cta-band">
   <div class="cta-inner">

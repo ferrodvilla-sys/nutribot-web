@@ -552,3 +552,27 @@ svg.fill { fill: currentColor; stroke: none; }
 .tool-text { font-size: 15px; flex: 1; }
 .tool-card .link-arrow { margin-top: 8px; }
 @media (max-width: 380px) { .nav-links a.nav-keep { display: none; } }
+
+/* Portada: «Cómo te ayudamos» (la app y las otras herramientas, después del ciclo) */
+.ayuda { max-width: 1180px; margin: 0 auto; padding: 44px 24px 20px; }
+.ayuda-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 20px; margin-top: 22px; align-items: start; }
+.ayuda-app, .ayuda-otras { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 26px; }
+.ayuda-app { border: 2px solid var(--primary); }
+.ayuda-tag { display: inline-block; font-size: 13px; font-weight: 700; padding: 4px 12px; border-radius: 999px; background: var(--primary); color: #fff; }
+.ayuda h3 { font-size: 24px; margin: 10px 0 12px; }
+.ayuda-otras h3 { font-size: 20px; margin: 0 0 2px; }
+.ayuda-otras > p { color: var(--muted); font-size: 15px; margin: 0 0 12px; }
+.ayuda-pasos { list-style: none; margin: 0 0 14px; padding: 0; }
+.ayuda-pasos li { display: flex; gap: 12px; align-items: flex-start; margin: 10px 0; }
+.ayuda-pasos li > span { font-size: 22px; line-height: 1.2; flex: none; }
+.ayuda-pasos .ciclo-badge { margin-left: 4px; }
+.ayuda-free { font-weight: 600; color: var(--heading); margin: 0 0 14px; }
+.ayuda-tool { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-top: 1px solid var(--border); text-decoration: none; color: var(--heading); }
+.ayuda-tool > svg:first-child { flex: none; width: 36px; height: 36px; padding: 8px; border-radius: 10px; background: var(--primary-soft); color: var(--primary); }
+.ayuda-tool span { flex: 1; }
+.ayuda-tool small { display: block; color: var(--muted); font-size: 13px; }
+.ayuda-tool > svg:last-child { flex: none; width: 18px; height: 18px; color: var(--primary); }
+.ayuda-otras .link-arrow { margin-top: 12px; }
+@media (max-width: 860px) { .ayuda-grid { grid-template-columns: 1fr; } }
+@media (max-width: 640px) { .ayuda { padding: 32px 16px 10px; } .ayuda-app, .ayuda-otras { padding: 20px; } }
+@media (prefers-color-scheme: dark) { .ayuda-tag { color: #131511; } }
