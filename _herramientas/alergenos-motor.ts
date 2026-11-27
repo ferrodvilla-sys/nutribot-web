@@ -149,6 +149,17 @@ export function grilled(name: string): boolean {
 }
 
 // Texto pegado de una carta → nombres de platos (sin precios, secciones ni direcciones).
+// Las líneas muy largas ("Almejas de Colósimo, con setas, jamón y langostinos todo regado con
+// vino del marco de jerez") el lector de cartas las toma por texto suelto: se parten en nombre
+// y descripción (en minúscula debajo, que el lector junta al plato).
+function splitLong(line: string): string {
+  const words = line.trim().split(/\s+/);
+  if (words.length <= 10) return line;
+  const m = line.match(/^(.{6,60}?)(?:,\s*|\s+(?=(?:con|y|sobre|acompañad[oa]s?|servid[oa]s?|al|a la|en)\s))(.+)$/i);
+  if (!m) return line;
+  const rest = m[2].trim();
+  return `${m[1].trim()}\n${rest.charAt(0).toLowerCase()}${rest.slice(1)}`;
+}
 export function splitCarta(text: string): { name: string; desc: string; section: string | null }[] {
-  return splitMenuItems(text).map((l) => ({ name: l.text, desc: l.desc || "", section: l.section }));
+  return splitMenuItems(String(text || "").split("\n").map(splitLong).join("\n")).map((l) => ({ name: l.text, desc: l.desc || "", section: l.section }));
 }

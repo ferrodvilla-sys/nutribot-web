@@ -121,8 +121,11 @@ Todo funciona en el navegador: no se envía nada a ningún sitio (el borrador se
   function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
   function cap(s) { s = String(s || '').trim().replace(/\s+/g, ' '); return s.charAt(0).toUpperCase() + s.slice(1); }
 
-  function newDish(name) {
+  function newDish(name, desc) {
     var s = A.suggest(name);
+    // La descripción de la carta ("con setas, jamón y langostinos…") también cuenta.
+    desc = String(desc || '').replace(/^(con|y|e)\s+/i, '');
+    if (desc) s.ingredients = s.ingredients ? s.ingredients + ', ' + desc : desc;
     var note = s.similar ? 'No conocemos este plato tal cual: lo hemos calculado con «' + s.similar + '». Revisa los ingredientes.'
       : s.unknown.length ? 'No conocemos «' + s.unknown.join('», «') + '». Escribe sus ingredientes.' : '';
     return { name: cap(name), ing: s.ingredients, note: note, fried: A.fried(name, s.ingredients), grill: A.grilled(name), set: {} };
@@ -151,11 +154,11 @@ Todo funciona en el navegador: no se envía nada a ningún sitio (el borrador se
   function addNames(names) {
     var added = 0;
     if (!ready) return 0;
-    names.forEach(function (n) {
-      n = String(n || '').trim();
+    names.forEach(function (it) {
+      var n = String((it && it.name) || it || '').trim(), desc = (it && it.desc) || '';
       if (!n || state.dishes.length >= MAX) return;
       if (state.dishes.some(function (d) { return d.name.toLowerCase() === n.toLowerCase(); })) return;
-      state.dishes.push(newDish(n)); added++;
+      state.dishes.push(newDish(n, desc)); added++;
     });
     save(); render();
     return added;
@@ -263,7 +266,7 @@ Todo funciona en el navegador: no se envía nada a ningún sitio (el borrador se
   $('al-add').addEventListener('click', addOne);
   $('al-new').addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); addOne(); } });
   $('al-paste-go').addEventListener('click', function () {
-    var found = A.splitCarta($('al-paste').value).map(function (x) { return x.name; });
+    var found = A.splitCarta($('al-paste').value);
     var n = addNames(found);
     count('pegar');
     var msg = n ? 'Hemos añadido ' + n + ' platos. Revisa abajo que estén bien y quita los que sobren.' : 'No hemos encontrado platos nuevos en el texto.';
