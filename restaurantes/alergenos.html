@@ -1,0 +1,299 @@
+---
+layout: default
+title: "Tabla de alérgenos para restaurantes y bares, gratis y en PDF"
+description: "Escribe tus platos o pega tu carta y te proponemos los ingredientes y los 14 alérgenos de cada plato. Tú lo revisas y descargas la tabla de alérgenos y el cartel en PDF. Gratis, sin registrarte."
+keywords: [tabla de alérgenos para restaurantes, tabla de alérgenos gratis, carta de alérgenos bar, 14 alérgenos, cartel de alérgenos, alérgenos hostelería, plantilla alérgenos PDF, reglamento 1169/2011]
+permalink: /restaurantes/alergenos/
+---
+{% comment %}
+Herramienta gratuita para bares y restaurantes: tabla de los 14 alérgenos y cartel en PDF.
+El detector, el buscador de platos y el lector de cartas son los de la app (repo nutriapp), empaquetados
+con _herramientas/alergenos-generar.mjs en assets/js/alergenos-motor.js + assets/data/alergenos-platos.json.
+Todo funciona en el navegador: no se envía nada a ningún sitio (el borrador se guarda solo en este navegador).
+{% endcomment %}
+<section class="page alergenos">
+  <p class="kicker">Herramientas · Gratis · Para bares y restaurantes</p>
+  <h1>Tabla de alérgenos para tu bar o restaurante</h1>
+  <p class="lead">Escribe tus platos o pega tu carta. Te proponemos los ingredientes y los alérgenos de cada uno; tú los revisas y descargas en PDF la <strong>tabla de los 14 alérgenos</strong> y el <strong>cartel</strong> para la pared. Gratis, sin registrarte y sin enviar nada: todo se hace en tu navegador.</p>
+
+  <div class="al-step">
+    <h2><span class="al-n">1</span>Tu local</h2>
+    <label class="ad-label" for="al-bar">Nombre del bar o restaurante</label>
+    <input id="al-bar" class="al-input" type="text" maxlength="60" placeholder="Ej.: Bar La Plaza" autocomplete="organization">
+  </div>
+
+  <div class="al-step">
+    <h2><span class="al-n">2</span>Tus platos <small id="al-count"></small></h2>
+    <label class="ad-label" for="al-new">Escribe un plato y pulsa «Añadir»</label>
+    <div class="al-add">
+      <input id="al-new" class="al-input" type="text" maxlength="80" placeholder="Ej.: Croquetas de jamón, Calamares a la romana…" autocomplete="off">
+      <button type="button" class="btn" id="al-add">Añadir</button>
+    </div>
+    <details class="al-paste" id="al-paste-box">
+      <summary>¿Tienes la carta escrita (web, Word, WhatsApp)? Pégala aquí</summary>
+      <textarea id="al-paste" rows="6" placeholder="Pega aquí el texto de tu carta. Quitamos los precios y las secciones y sacamos los platos."></textarea>
+      <div class="ad-actions"><button type="button" class="btn btn-ghost" id="al-paste-go">Sacar los platos</button></div>
+    </details>
+    <p class="al-loading" id="al-loading">Cargando la lista de platos…</p>
+    <div id="al-list" class="al-list" aria-live="polite"></div>
+    <p class="al-empty" id="al-empty">Aún no hay platos. <button type="button" class="al-link" id="al-demo">Probar con un ejemplo de bar</button></p>
+  </div>
+
+  <div class="al-step">
+    <h2><span class="al-n">3</span>Tu cocina</h2>
+    <p class="al-help">Si varios platos comparten freidora o plancha, uno puede llevar <strong>trazas</strong> de los alérgenos de otro. Lo marcamos solos con una <strong>T</strong>.</p>
+    <fieldset class="al-q"><legend>¿Fríes todo en la misma freidora o el mismo aceite?</legend>
+      <label><input type="radio" name="al-fry" value="si"> Sí</label>
+      <label><input type="radio" name="al-fry" value="no"> No, tengo freidoras separadas</label></fieldset>
+    <fieldset class="al-q"><legend>¿Haces carne, pescado y marisco en la misma plancha?</legend>
+      <label><input type="radio" name="al-grill" value="si"> Sí</label>
+      <label><input type="radio" name="al-grill" value="no"> No</label></fieldset>
+  </div>
+
+  <div class="al-step">
+    <h2><span class="al-n">4</span>Revisa y descarga</h2>
+    <div class="al-legend"><span><b class="al-c">●</b> Contiene</span><span><b class="al-t">T</b> Puede contener trazas</span><span>Toca un alérgeno de un plato para cambiarlo: contiene → trazas → no lleva.</span></div>
+    <div class="al-table-wrap"><table class="al-table" id="al-preview"></table></div>
+    <label class="al-check"><input type="checkbox" id="al-ok"> He revisado los ingredientes y los alérgenos de cada plato. Sé que la información es responsabilidad de mi establecimiento.</label>
+    <div class="ad-actions">
+      <button type="button" class="btn" id="al-pdf" disabled>Descargar PDF</button>
+      <button type="button" class="btn btn-ghost" id="al-clear">Empezar de nuevo</button>
+    </div>
+    <p class="al-help">Se abre la ventana de imprimir: elige <strong>«Guardar como PDF»</strong> para guardarlo, o tu impresora. Salen dos hojas: la tabla (en horizontal) y el cartel. Tu lista se queda guardada en este navegador para cuando vuelvas.</p>
+  </div>
+
+  <h2>Qué dice la ley sobre los alérgenos en bares y restaurantes</h2>
+  <p>Desde diciembre de 2014, el <strong>Reglamento (UE) 1169/2011</strong> obliga a todos los bares, restaurantes, cafeterías y comedores a informar de los <strong>14 alérgenos</strong> que llevan sus platos. En España lo desarrolla el <strong>Real Decreto 126/2015</strong>: la información tiene que estar disponible <strong>antes de pedir</strong>, por escrito (en la carta, en una tabla o en un cartel que indique dónde consultarla) y el personal debe saber responder.</p>
+  <h3>Los 14 alérgenos obligatorios</h3>
+  <ul class="al-14">
+    <li>🌾 Cereales con gluten (trigo, centeno, cebada, avena, espelta…)</li>
+    <li>🦐 Crustáceos (gambas, langostinos, cigalas, cangrejo…)</li>
+    <li>🥚 Huevo</li>
+    <li>🐟 Pescado</li>
+    <li>🥜 Cacahuetes</li>
+    <li>🫛 Soja</li>
+    <li>🥛 Leche (también la lactosa)</li>
+    <li>🌰 Frutos de cáscara (almendra, avellana, nuez, anacardo, pistacho…)</li>
+    <li>🥬 Apio</li>
+    <li>🟡 Mostaza</li>
+    <li>⚪ Sésamo</li>
+    <li>🍷 Sulfitos (vino, vinagre de vino, encurtidos…) en más de 10 mg/kg</li>
+    <li>🟠 Altramuces</li>
+    <li>🦑 Moluscos (mejillones, almejas, calamar, pulpo, sepia, caracoles…)</li>
+  </ul>
+  <h3>Lo que más se olvida</h3>
+  <ul>
+    <li><strong>El rebozado y el pan rallado</strong> llevan gluten, y muchas veces huevo.</li>
+    <li><strong>La bechamel</strong> de croquetas y canelones lleva leche y gluten.</li>
+    <li><strong>El vino y el vinagre</strong> de guisos, aliños y escabeches llevan sulfitos.</li>
+    <li><strong>La freidora compartida</strong>: si fríes los calamares y las patatas en el mismo aceite, las patatas pueden llevar trazas de moluscos, gluten y huevo.</li>
+    <li><strong>Los caldos y fondos</strong> de pescado o marisco en arroces y sopas.</li>
+  </ul>
+
+  <h2>Preguntas frecuentes</h2>
+  <h3>¿Es de verdad gratis?</h3>
+  <p>Sí. La tabla de hasta 20 platos y el cartel son gratis, sin registrarte y sin tarjeta. No guardamos tu carta en ningún servidor.</p>
+  <h3>¿Puedo fiarme de los alérgenos que propone?</h3>
+  <p>Son una propuesta a partir de la receta habitual de cada plato. Tu receta puede ser distinta (una salsa con harina, un caldo de marisco…): por eso tienes que revisar los ingredientes de cada plato. La información final es responsabilidad del establecimiento.</p>
+  <h3>¿Sirve un cartel de «pregunte al camarero»?</h3>
+  <p>El cartel sirve para avisar de que la información existe, pero la información tiene que estar <strong>por escrito</strong> y disponible antes de pedir. Lo más sencillo es tener la tabla impresa junto a la barra y el cartel a la vista.</p>
+  <h3>¿Y si cambio un plato?</h3>
+  <p>Vuelve a esta página desde el mismo navegador: tu lista sigue aquí. Cambia lo que haga falta y descarga el PDF otra vez.</p>
+
+  <aside class="post-cta ad-cta">
+    <p><strong>¿Te sirve?</strong> Estamos preparando la <strong>carta digital con código QR</strong>, con precios, tu logo, en varios idiomas y con filtro de alergias para tus clientes. Escríbenos a <a href="mailto:{{ site.contact_email }}?subject=Carta%20QR%20con%20al%C3%A9rgenos">{{ site.contact_email }}</a> y te avisamos cuando esté.</p>
+  </aside>
+  <p><a href="{{ '/herramientas/' | relative_url }}">← Todas las herramientas</a></p>
+</section>
+
+<div id="al-print" class="al-print" aria-hidden="true"></div>
+
+<script src="{{ '/assets/js/alergenos-motor.js' | relative_url }}"></script>
+<script>
+(function () {
+  var A = window.Alergenos, MAX = 20, KEY = 'nutribot-alergenos-v1';
+  var $ = function (id) { return document.getElementById(id); };
+  var state = { bar: '', fry: '', grill: '', dishes: [] };
+  var ready = false;
+  function count(ev) { try { if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({ path: 'alergenos-' + ev, title: ev, event: true }); } catch (e) {} }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
+  function restore() { try { var s = JSON.parse(localStorage.getItem(KEY) || 'null'); if (s && Array.isArray(s.dishes)) state = s; } catch (e) {} }
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function cap(s) { s = String(s || '').trim().replace(/\s+/g, ' '); return s.charAt(0).toUpperCase() + s.slice(1); }
+
+  function newDish(name) {
+    var s = A.suggest(name);
+    var note = s.similar ? 'No conocemos este plato tal cual: lo hemos calculado con «' + s.similar + '». Revisa los ingredientes.'
+      : s.unknown.length ? 'No conocemos «' + s.unknown.join('», «') + '». Escribe sus ingredientes.' : '';
+    return { name: cap(name), ing: s.ingredients, note: note, fried: A.fried(name, s.ingredients), grill: A.grilled(name), set: {} };
+  }
+  function auto(d) { return A.detect(d.name + ', ' + d.ing); }
+  // Contiene (C), trazas (T) o nada para cada plato y alérgeno, con lo que ha cambiado el dueño.
+  function marks() {
+    var c = state.dishes.map(auto);
+    var pool = function (flag) {
+      var u = {};
+      state.dishes.forEach(function (d, i) { if (d[flag]) c[i].forEach(function (k) { u[k] = 1; }); });
+      return u;
+    };
+    var fry = state.fry === 'si' ? pool('fried') : {}, grill = state.grill === 'si' ? pool('grill') : {};
+    return state.dishes.map(function (d, i) {
+      var m = {};
+      A.EU.forEach(function (a) {
+        var k = a.key, v = c[i].indexOf(k) >= 0 ? 'C' : ((d.fried && fry[k]) || (d.grill && grill[k])) ? 'T' : '';
+        if (d.set && Object.prototype.hasOwnProperty.call(d.set, k)) v = d.set[k];
+        m[k] = v;
+      });
+      return m;
+    });
+  }
+
+  function addNames(names) {
+    var added = 0;
+    if (!ready) return 0;
+    names.forEach(function (n) {
+      n = String(n || '').trim();
+      if (!n || state.dishes.length >= MAX) return;
+      if (state.dishes.some(function (d) { return d.name.toLowerCase() === n.toLowerCase(); })) return;
+      state.dishes.push(newDish(n)); added++;
+    });
+    save(); render();
+    return added;
+  }
+
+  function render() {
+    $('al-count').textContent = state.dishes.length ? '(' + state.dishes.length + ' de ' + MAX + ')' : '';
+    $('al-empty').style.display = state.dishes.length ? 'none' : '';
+    $('al-add').disabled = !ready || state.dishes.length >= MAX;
+    var M = marks(), list = $('al-list');
+    list.textContent = '';
+    state.dishes.forEach(function (d, i) {
+      var card = el('div', 'al-dish');
+      var top = el('div', 'al-dish-top');
+      var name = el('input', 'al-input al-name'); name.value = d.name; name.maxLength = 80; name.setAttribute('aria-label', 'Nombre del plato');
+      name.addEventListener('change', function () { d.name = cap(name.value) || d.name; save(); render(); });
+      var del = el('button', 'al-del', '✕'); del.type = 'button'; del.title = 'Quitar plato'; del.setAttribute('aria-label', 'Quitar ' + d.name);
+      del.addEventListener('click', function () { state.dishes.splice(i, 1); save(); render(); });
+      top.appendChild(name); top.appendChild(del); card.appendChild(top);
+      var lab = el('label', 'al-small', 'Ingredientes (cámbialos si tu receta es distinta)');
+      var ing = el('textarea', 'al-ing'); ing.rows = 2; ing.value = d.ing; ing.id = 'al-ing-' + i; lab.htmlFor = ing.id;
+      ing.addEventListener('change', function () { d.ing = ing.value; d.set = {}; d.note = ''; save(); render(); });
+      card.appendChild(lab); card.appendChild(ing);
+      if (d.note) card.appendChild(el('p', 'al-note', d.note));
+      var chips = el('div', 'al-chips');
+      A.EU.forEach(function (a) {
+        var v = M[i][a.key];
+        var b = el('button', 'al-chip' + (v === 'C' ? ' on' : v === 'T' ? ' tr' : ''));
+        b.type = 'button';
+        b.textContent = a.icon + ' ' + a.label + (v === 'T' ? ' (trazas)' : '');
+        b.setAttribute('aria-pressed', v ? 'true' : 'false');
+        b.addEventListener('click', function () {
+          d.set = d.set || {};
+          d.set[a.key] = v === 'C' ? 'T' : v === 'T' ? '' : 'C';
+          save(); render();
+        });
+        chips.appendChild(b);
+      });
+      card.appendChild(chips);
+      var kit = el('div', 'al-kit');
+      [['fried', 'Va a la freidora'], ['grill', 'Va a la plancha']].forEach(function (f) {
+        var l = el('label'), c = el('input'); c.type = 'checkbox'; c.checked = !!d[f[0]];
+        c.addEventListener('change', function () { d[f[0]] = c.checked; save(); render(); });
+        l.appendChild(c); l.appendChild(document.createTextNode(' ' + f[1])); kit.appendChild(l);
+      });
+      card.appendChild(kit);
+      list.appendChild(card);
+    });
+    table($('al-preview'), M, false);
+    $('al-pdf').disabled = !(state.dishes.length && $('al-ok').checked);
+  }
+
+  function table(t, M, print) {
+    t.textContent = '';
+    if (!state.dishes.length) return;
+    var head = el('thead'), tr = el('tr');
+    tr.appendChild(el('th', 'al-th-dish', 'Plato'));
+    A.EU.forEach(function (a) {
+      var th = el('th', 'al-th'); th.appendChild(el('span', 'al-ico', a.icon)); th.appendChild(el('span', 'al-lab', a.label)); tr.appendChild(th);
+    });
+    head.appendChild(tr); t.appendChild(head);
+    var body = el('tbody');
+    state.dishes.forEach(function (d, i) {
+      var r = el('tr'); r.appendChild(el('td', 'al-td-dish', d.name));
+      A.EU.forEach(function (a) {
+        var v = M[i][a.key];
+        r.appendChild(el('td', v === 'C' ? 'al-c' : v === 'T' ? 'al-t' : '', v === 'C' ? '●' : v === 'T' ? 'T' : ''));
+      });
+      body.appendChild(r);
+    });
+    t.appendChild(body);
+  }
+
+  function today() { var d = new Date(); return ('0' + d.getDate()).slice(-2) + '/' + ('0' + (d.getMonth() + 1)).slice(-2) + '/' + d.getFullYear(); }
+  function buildPrint() {
+    var p = $('al-print'); p.textContent = '';
+    var bar = state.bar || 'Nuestro establecimiento';
+    var s1 = el('section', 'al-sheet al-sheet-table');
+    s1.appendChild(el('h1', '', 'Información sobre alérgenos · ' + bar));
+    var t = el('table', 'al-table'); table(t, marks(), true); s1.appendChild(t);
+    var leg = el('p', 'al-p-leg', '● Contiene   ·   T Puede contener trazas' + (state.fry === 'si' ? ' (freidora compartida)' : '') + (state.grill === 'si' ? (state.fry === 'si' ? ' y plancha compartida' : ' (plancha compartida)') : '') + '   ·   Actualizado: ' + today());
+    s1.appendChild(leg);
+    s1.appendChild(el('p', 'al-p-note', 'Información facilitada por el establecimiento según el Reglamento (UE) 1169/2011 y el Real Decreto 126/2015. Si tiene alguna alergia o intolerancia, comuníquelo a nuestro personal antes de pedir.'));
+    s1.appendChild(el('p', 'al-p-foot', 'Hecho con Nutribot · nutribot.eu'));
+    var s2 = el('section', 'al-sheet al-sheet-sign');
+    s2.appendChild(el('p', 'al-sign-icons', A.EU.map(function (a) { return a.icon; }).join(' ')));
+    s2.appendChild(el('h1', '', '¿Alergias o intolerancias?'));
+    s2.appendChild(el('p', 'al-sign-big', 'Consulte aquí la información sobre alérgenos de nuestros platos'));
+    s2.appendChild(el('p', 'al-sign-sub', 'Pregunte a nuestro personal antes de pedir. Tenemos a su disposición la tabla de los 14 alérgenos.'));
+    s2.appendChild(el('p', 'al-sign-bar', bar));
+    s2.appendChild(el('p', 'al-p-foot', 'Hecho con Nutribot · nutribot.eu'));
+    p.appendChild(s1); p.appendChild(s2);
+  }
+
+  restore();
+  $('al-bar').value = state.bar || '';
+  ['fry', 'grill'].forEach(function (k) {
+    document.querySelectorAll('input[name="al-' + k + '"]').forEach(function (r) {
+      r.checked = r.value === state[k];
+      r.addEventListener('change', function () { state[k] = r.value; save(); render(); });
+    });
+  });
+  $('al-bar').addEventListener('input', function () { state.bar = $('al-bar').value.trim(); save(); });
+  function addOne() { var v = $('al-new').value; if (addNames([v])) { count('plato'); $('al-new').value = ''; } $('al-new').focus(); }
+  $('al-add').addEventListener('click', addOne);
+  $('al-new').addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); addOne(); } });
+  $('al-paste-go').addEventListener('click', function () {
+    var found = A.splitCarta($('al-paste').value).map(function (x) { return x.name; });
+    var n = addNames(found);
+    count('pegar');
+    var msg = n ? 'Hemos añadido ' + n + ' platos. Revisa abajo que estén bien y quita los que sobren.' : 'No hemos encontrado platos nuevos en el texto.';
+    if (found.length > n && state.dishes.length >= MAX) msg += ' La versión gratis llega a ' + MAX + ' platos.';
+    var old = $('al-paste-msg'); if (old) old.remove();
+    var m = el('p', 'al-note', msg); m.id = 'al-paste-msg'; $('al-paste-box').appendChild(m);
+    if (n) $('al-paste').value = '';
+  });
+  $('al-demo').addEventListener('click', function () {
+    if (!state.bar) { state.bar = 'Bar La Plaza'; $('al-bar').value = state.bar; }
+    addNames(['Patatas bravas', 'Croquetas de jamón', 'Calamares a la romana', 'Ensaladilla rusa', 'Tortilla de patatas', 'Gambas al ajillo', 'Secreto ibérico a la plancha', 'Flan casero']);
+    count('ejemplo');
+  });
+  $('al-ok').addEventListener('change', render);
+  $('al-clear').addEventListener('click', function () {
+    if (!state.dishes.length && !state.bar) return;
+    state = { bar: '', fry: '', grill: '', dishes: [] }; $('al-bar').value = ''; $('al-ok').checked = false;
+    document.querySelectorAll('.al-q input').forEach(function (r) { r.checked = false; });
+    save(); render();
+  });
+  $('al-pdf').addEventListener('click', function () {
+    buildPrint(); count('pdf');
+    var t = document.title; document.title = 'Alergenos ' + (state.bar || 'mi local');
+    window.print();
+    setTimeout(function () { document.title = t; }, 1000);
+  });
+
+  render();
+  fetch('{{ "/assets/data/alergenos-platos.json" | relative_url }}').then(function (r) { return r.json(); }).then(function (data) {
+    A.load(data); ready = true; $('al-loading').style.display = 'none'; render();
+  }).catch(function () { $('al-loading').textContent = 'No se ha podido cargar la lista de platos. Recarga la página.'; });
+})();
+</script>

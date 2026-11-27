@@ -14,7 +14,7 @@ Todo funciona en el navegador: no se envía nada a ningún sitio.
 {% assign vigilar = aditivos | where: "tone", "vigilar" %}
 {% capture play %}{{ site.play_store_url }}&referrer=utm_source%3Dnutribot.eu%26utm_medium%3Dweb%26utm_campaign%3Daditivos{% endcapture %}
 <section class="page aditivos">
-  <p class="kicker">Herramienta gratis</p>
+  <p class="kicker"><a href="{{ '/herramientas/' | relative_url }}">Herramientas</a> · Gratis</p>
   <h1>Comprobador de aditivos E</h1>
   <p class="lead">Escribe un código (<strong>E621</strong>), un nombre (<strong>glutamato</strong>) o pega la lista de ingredientes de un envase. Te decimos qué es cada aditivo y cuáles conviene vigilar.</p>
 

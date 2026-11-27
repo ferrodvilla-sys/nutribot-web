@@ -38,3 +38,5 @@ Es una guía aproximada: hay excepciones.
 - Si un producto lleva **muchos** aditivos, suele ser un ultraprocesado (ver [ultraprocesados](/blog/ultraprocesados-nova/)).
 
 Nutribot te muestra los aditivos de cada producto y los tiene en cuenta en la sección Patrones.
+
+¿Tienes un código delante? Compruébalo en nuestro [comprobador de aditivos E](/aditivos/): escribes el código o pegas la lista de ingredientes y te dice qué es cada uno. Gratis.
