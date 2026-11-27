@@ -1,13 +1,18 @@
 ---
 layout: default
 title: "Herramientas de Nutribot: aditivos y alérgenos"
-description: "Herramientas online de Nutribot: comprobador de aditivos E y tabla de alérgenos para bares y restaurantes en PDF. Cada una indica si es gratis."
+description: "Herramientas online de Nutribot. Para ti: comprobador de aditivos E. Para negocios: tabla de alérgenos para bares y restaurantes en PDF. Cada una indica si es gratis."
 permalink: /herramientas/
 ---
 <section class="page herramientas">
   <p class="kicker">Herramientas</p>
   <h1>Herramientas de Nutribot</h1>
   <p class="lead">Soluciones sencillas a problemas concretos, en el navegador y sin instalar nada. Cada herramienta indica si es gratis o de pago.</p>
-  {% include herramientas-lista.html %}
+  <h2>Para ti</h2>
+  <p>Para entender lo que compras y lo que comes.</p>
+  {% include herramientas-lista.html grupo="Para ti" %}
+  <h2>Para negocios</h2>
+  <p>Para bares, restaurantes y pequeños productores. Más adelante: etiquetas para productos artesanos.</p>
+  {% include herramientas-lista.html grupo="Para negocios" %}
   <p class="al-help">¿Echas en falta alguna? Escríbenos a <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a>.</p>
 </section>

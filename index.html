@@ -90,13 +90,6 @@ keywords: [diario de comidas y síntomas, gases e hinchazón, qué alimento me s
   </div>
 </section>
 
-<section class="tools-home" aria-label="Herramientas">
-  <p class="kicker center">Herramientas</p>
-  <h2 class="center">Herramientas online, sin instalar nada</h2>
-  {% include herramientas-lista.html %}
-  <p class="center"><a class="link-arrow" href="{{ '/herramientas/' | relative_url }}">Ver todas las herramientas {% include icon.html name="arrow" %}</a></p>
-</section>
-
 <section id="como-funciona" class="steps">
   <div class="steps-head">
     <div>
@@ -315,6 +308,10 @@ keywords: [diario de comidas y síntomas, gases e hinchazón, qué alimento me s
   <p class="center"><a class="link-arrow" href="{{ '/blog/' | relative_url }}">Ver todos los artículos {% include icon.html name="arrow" %}</a></p>
 </section>
 {% endif %}
+
+<section class="tools-strip" aria-label="Herramientas">
+  <p><strong>Herramientas gratis:</strong>{% assign gratis = site.data.herramientas | where: "precio", "Gratis" %}{% for h in gratis %} <a href="{{ h.url | relative_url }}">{{ h.corto }}</a>{% unless forloop.last %} ·{% endunless %}{% endfor %}. <a class="link-arrow" href="{{ '/herramientas/' | relative_url }}">Ver herramientas {% include icon.html name="arrow" %}</a></p>
+</section>
 
 <section class="cta-band">
   <div class="cta-inner">
