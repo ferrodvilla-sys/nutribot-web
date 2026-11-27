@@ -101,12 +101,25 @@ Todo funciona en el navegador: no se envía nada a ningún sitio (el borrador se
   <h3>¿Y si cambio un plato?</h3>
   <p>Vuelve a esta página desde el mismo navegador: tu lista sigue aquí. Cambia lo que haga falta y descarga el PDF otra vez.</p>
 
+  <p>Más información: <a href="{{ '/blog/alergenos-en-la-carta-que-dice-la-ley/' | relative_url }}">qué obliga la ley a bares y restaurantes</a> y <a href="{{ '/blog/tabla-de-alergenos-para-tu-bar/' | relative_url }}">cómo hacer la tabla paso a paso</a>.</p>
+
   <aside class="post-cta ad-cta">
     <p><strong>¿Te sirve?</strong> Estamos preparando la <strong>carta digital con código QR</strong>, con precios, tu logo, en varios idiomas y con filtro de alergias para tus clientes. Escríbenos a <a href="mailto:{{ site.contact_email }}?subject=Carta%20QR%20con%20al%C3%A9rgenos">{{ site.contact_email }}</a> y te avisamos cuando esté.</p>
   </aside>
   <p><a href="{{ '/herramientas/' | relative_url }}">← Todas las herramientas</a></p>
 </section>
 
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Tabla de alérgenos para restaurantes y bares","url":{{ page.url | absolute_url | jsonify }},"applicationCategory":"BusinessApplication","operatingSystem":"Cualquiera (navegador)","inLanguage":"es","description":{{ page.description | jsonify }},"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@type":"Organization","name":"Nutribot","url":{{ '/' | absolute_url | jsonify }}}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"¿Es de verdad gratis?","acceptedAnswer":{"@type":"Answer","text":"Sí. La tabla de hasta 20 platos y el cartel son gratis, sin registrarte y sin tarjeta. No guardamos tu carta en ningún servidor."}},
+  {"@type":"Question","name":"¿Puedo fiarme de los alérgenos que propone?","acceptedAnswer":{"@type":"Answer","text":"Son una propuesta a partir de la receta habitual de cada plato. Tu receta puede ser distinta: por eso tienes que revisar los ingredientes de cada plato. La información final es responsabilidad del establecimiento."}},
+  {"@type":"Question","name":"¿Sirve un cartel de «pregunte al camarero»?","acceptedAnswer":{"@type":"Answer","text":"El cartel sirve para avisar de que la información existe, pero la información tiene que estar por escrito y disponible antes de pedir. Lo más sencillo es tener la tabla impresa junto a la barra y el cartel a la vista."}},
+  {"@type":"Question","name":"¿Y si cambio un plato?","acceptedAnswer":{"@type":"Answer","text":"Vuelve a esta página desde el mismo navegador: tu lista sigue aquí. Cambia lo que haga falta y descarga el PDF otra vez."}}
+]}
+</script>
 <div id="al-print" class="al-print" aria-hidden="true"></div>
 
 <script src="{{ '/assets/js/alergenos-motor.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>

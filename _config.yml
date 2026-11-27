@@ -68,6 +68,9 @@ temas:
   - nombre: Hábitos
     imagen: /assets/img/ilus/habitos.svg
     descripcion: Pequeños cambios para comer mejor y conocerte más.
+  - nombre: Hostelería
+    imagen: /assets/img/ilus/restaurante.svg
+    descripcion: "Para bares y restaurantes: los alérgenos de tu carta, sin complicaciones."
 
 defaults:
   - scope:

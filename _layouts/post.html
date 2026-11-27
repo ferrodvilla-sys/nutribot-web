@@ -42,8 +42,17 @@ layout: default
   </section>
   {% endif %}
 
+  {% if page.negocio %}
+  {% comment %}Artículos para bares y restaurantes: llevan a la herramienta gratis, no a la app.{% endcomment %}
+  <aside class="post-cta">
+    <p><strong>Haz gratis la tabla de alérgenos de tu carta.</strong> Escribe tus platos o pega tu carta, revisa lo que te proponemos y descarga la tabla de los 14 alérgenos y el cartel en PDF. Sin registrarte.</p>
+    <p><a class="btn" href="{{ '/restaurantes/alergenos/' | relative_url }}">Hacer mi tabla de alérgenos</a></p>
+  </aside>
+  <p class="disclaimer">Este artículo es informativo y no es asesoramiento legal. Si tienes dudas sobre tu caso, consulta con el servicio de inspección sanitaria de tu ayuntamiento o comunidad autónoma.</p>
+  {% else %}
   {% include cta-app.html campana="blog" %}
   <p class="disclaimer">Este artículo es informativo y no sustituye el consejo de un profesional sanitario. Nutribot no diagnostica: te ayuda a ordenar lo que comes y cómo te encuentras para hablarlo con tu profesional.</p>
+  {% endif %}
 
   {% comment %}Sigue leyendo: primero los artículos que comparten etiqueta, luego los del mismo tema y luego el resto.{% endcomment %}
   {% assign rel = "|" %}
