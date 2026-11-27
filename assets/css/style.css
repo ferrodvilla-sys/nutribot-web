@@ -304,7 +304,7 @@ svg.fill { fill: currentColor; stroke: none; }
 @media (max-width: 640px) {
   .nav-inner { padding: 12px 16px; }
   .nav-links { gap: 14px; }
-  .nav-links a:not(.btn) { display: none; }
+  .nav-links a:not(.btn):not(.nav-keep) { display: none; }
   .hero-inner, .steps, .features, .latest, .faq, .page, .post, .para-ti { padding-left: 16px; padding-right: 16px; }
   .para-ti { padding-top: 32px; }
   .step.pain { display: flex; align-items: center; gap: 14px; padding: 16px 18px; }
@@ -537,8 +537,10 @@ svg.fill { fill: currentColor; stroke: none; }
   .al-sign-bar { font-size: 24px; font-weight: 700; margin-bottom: 30mm; }
 }
 
-/* Herramientas (/herramientas/ y portada) */
-.tools-home { max-width: 1180px; margin: 0 auto; padding: 44px 24px 0; }
+/* Herramientas (/herramientas/ y franja de la portada) */
+.tools-strip { max-width: 1180px; margin: 0 auto; padding: 8px 24px 36px; text-align: center; color: var(--muted); font-size: 15px; }
+.tools-strip p { margin: 0; }
+.tools-strip .link-arrow { white-space: nowrap; }
 .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; margin: 22px 0; }
 .tool-card { display: flex; flex-direction: column; gap: 6px; padding: 22px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); text-decoration: none; color: var(--text); transition: box-shadow .15s, transform .15s; }
 .tool-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
@@ -547,6 +549,6 @@ svg.fill { fill: currentColor; stroke: none; }
 .tool-badge { font-size: 13px; font-weight: 700; padding: 4px 12px; border-radius: 999px; background: var(--primary-soft); color: var(--primary); }
 .tool-badge.tool-paid { background: var(--accent-soft); color: var(--accent); }
 .tool-card strong { font-family: var(--font-head); font-size: 19px; color: var(--heading); }
-.tool-for { color: var(--muted); font-size: 14px; font-weight: 600; }
 .tool-text { font-size: 15px; flex: 1; }
 .tool-card .link-arrow { margin-top: 8px; }
+@media (max-width: 380px) { .nav-links a.nav-keep { display: none; } }

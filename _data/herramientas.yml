@@ -1,13 +1,16 @@
-# Herramientas de la web (página /herramientas/, portada y menú). precio: «Gratis» o «De pago».
+# Herramientas de la web (página /herramientas/, portada y menú).
+# grupo: «Para ti» o «Para negocios». precio: «Gratis» o «De pago».
 - titulo: Comprobador de aditivos E
   url: /aditivos/
   icono: flask
   precio: Gratis
-  para: Para todos
+  grupo: Para ti
+  corto: comprobador de aditivos
   texto: Escribe un código (E621), un nombre o pega la lista de ingredientes y te dice qué es cada aditivo y cuáles conviene vigilar.
 - titulo: Tabla de alérgenos para restaurantes
   url: /restaurantes/alergenos/
   icono: shield
   precio: Gratis
-  para: Para bares y restaurantes
+  grupo: Para negocios
+  corto: tabla de alérgenos para tu bar
   texto: Escribe tus platos o pega tu carta. Te proponemos los 14 alérgenos de cada plato y descargas la tabla y el cartel en PDF.

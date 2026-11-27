@@ -1,9 +1,9 @@
+{% assign grupo_lista = site.data.herramientas %}{% if include.grupo %}{% assign grupo_lista = site.data.herramientas | where: "grupo", include.grupo %}{% endif %}
 <div class="tools-grid">
-  {% for h in site.data.herramientas %}
+  {% for h in grupo_lista %}
   <a class="tool-card" href="{{ h.url | relative_url }}">
     <span class="tool-top">{% include icon.html name=h.icono %}<span class="tool-badge{% if h.precio != 'Gratis' %} tool-paid{% endif %}">{{ h.precio }}</span></span>
     <strong>{{ h.titulo }}</strong>
-    <small class="tool-for">{{ h.para }}</small>
     <span class="tool-text">{{ h.texto }}</span>
     <span class="link-arrow">Abrir {% include icon.html name="arrow" %}</span>
   </a>
