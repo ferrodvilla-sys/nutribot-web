@@ -461,4 +461,92 @@ svg.fill { fill: currentColor; stroke: none; }
   .ciclo-badge { font-size: 11px; padding: 2px 6px; }
   .ciclo-center strong { font-size: 16px; } .ciclo-center small { font-size: 11px; }
 }
+
+/* Herramienta de alérgenos para restaurantes (/restaurantes/alergenos/) */
+.al-step { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); margin: 20px 0; }
+.al-step h2 { display: flex; align-items: center; gap: 10px; font-size: 21px; margin: 0 0 12px; }
+.al-step h2 small { font-size: 14px; color: var(--muted); font-weight: 600; }
+.al-n { display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--primary); color: #fff; font-size: 15px; flex: none; }
+.al-input, .al-ing, .al-paste textarea { width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; color: var(--text); background: var(--bg); border: 1.5px solid var(--border); border-radius: 12px; padding: 10px 12px; }
+.al-input:focus, .al-ing:focus, .al-paste textarea:focus { outline: none; border-color: var(--primary); }
+.al-add { display: flex; gap: 10px; }
+.al-add .btn { flex: none; }
+.al-paste { margin: 14px 0 4px; }
+.al-paste summary { cursor: pointer; color: var(--primary); font-weight: 600; }
+.al-paste textarea { margin-top: 10px; resize: vertical; }
+.al-loading, .al-empty, .al-help { color: var(--muted); font-size: 15px; }
+.al-link { background: none; border: none; padding: 0; font: inherit; color: var(--primary); text-decoration: underline; cursor: pointer; }
+.al-dish { border: 1px solid var(--border); border-radius: 16px; padding: 14px; margin: 12px 0; background: var(--bg); }
+.al-dish-top { display: flex; gap: 8px; align-items: center; }
+.al-name { font-weight: 700; color: var(--heading); }
+.al-del { flex: none; width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--border); background: var(--card); color: var(--muted); cursor: pointer; font-size: 16px; }
+.al-del:hover { color: var(--danger); border-color: var(--danger); }
+.al-small { display: block; font-size: 13px; color: var(--muted); margin: 10px 0 4px; }
+.al-ing { resize: vertical; font-size: 15px; }
+.al-note { font-size: 14px; color: var(--accent); margin: 6px 0 0; }
+.al-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.al-chip { font: inherit; font-size: 13px; padding: 5px 10px; border-radius: 999px; border: 1px solid var(--border); background: var(--card); color: var(--muted); cursor: pointer; }
+.al-chip.on { background: var(--danger-soft); border-color: var(--danger); color: var(--heading); font-weight: 700; }
+.al-chip.tr { background: var(--accent-soft); border: 1px dashed var(--accent); color: var(--heading); }
+.al-kit { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 10px; font-size: 14px; color: var(--muted); }
+.al-q { border: none; padding: 0; margin: 12px 0; }
+.al-q legend { font-weight: 700; color: var(--heading); margin-bottom: 6px; padding: 0; }
+.al-q label { display: inline-flex; align-items: center; gap: 6px; margin-right: 18px; }
+.al-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 14px; color: var(--muted); margin-bottom: 10px; }
+.al-c { color: var(--danger); }
+.al-t { color: var(--accent); font-weight: 800; }
+.al-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.al-table { border-collapse: collapse; font-size: 13px; width: 100%; }
+.al-table th, .al-table td { border: 1px solid var(--border); padding: 4px; text-align: center; }
+.al-th { min-width: 34px; vertical-align: bottom; }
+.al-th .al-ico { display: block; font-size: 18px; }
+.al-th .al-lab { display: block; font-size: 10px; line-height: 1.15; font-weight: 600; }
+.al-table .al-th-dish, .al-table .al-td-dish { text-align: left; min-width: 140px; font-weight: 600; color: var(--heading); }
+.al-table td.al-c { font-size: 16px; }
+.al-check { display: flex; gap: 10px; align-items: flex-start; margin: 16px 0 4px; font-size: 15px; }
+.al-check input { margin-top: 4px; flex: none; }
+.al-14 li { margin-bottom: 4px; }
+.al-print { display: none; }
+@media (max-width: 640px) { .al-add { flex-direction: column; } .al-step { padding: 16px; } }
+
+@page al-landscape { size: A4 landscape; margin: 12mm; }
+@page al-portrait { size: A4 portrait; margin: 15mm; }
+@media print {
+  body > *:not(main):not(.al-print), main > *:not(.al-print) { display: none !important; }
+  body { background: #fff !important; }
+  .al-print { display: block !important; color: #111; font-family: Arial, Helvetica, sans-serif; }
+  .al-sheet { break-after: page; }
+  .al-sheet:last-child { break-after: auto; }
+  .al-sheet-table { page: al-landscape; }
+  .al-sheet-sign { page: al-portrait; text-align: center; padding-top: 30mm; }
+  .al-sheet h1 { font-size: 20px; margin: 0 0 8px; color: #111; }
+  .al-print .al-table { font-size: 11px; color: #111; table-layout: fixed; }
+  .al-print .al-th-dish { width: 24%; }
+  .al-print .al-table th, .al-print .al-table td { border: 1px solid #555; padding: 3px; }
+  .al-print .al-th .al-lab { font-size: 9px; }
+  .al-print .al-td-dish { color: #111; }
+  .al-print td.al-c { color: #b00020; font-size: 15px; }
+  .al-print td.al-t { color: #a05a00; font-weight: 800; }
+  .al-p-leg { font-size: 11px; margin: 6px 0 2px; }
+  .al-p-note { font-size: 10px; color: #333; margin: 2px 0; }
+  .al-p-foot { font-size: 10px; color: #555; margin-top: 8px; }
+  .al-sign-icons { font-size: 24px; letter-spacing: 2px; margin: 0 0 18mm; }
+  .al-sheet-sign h1 { font-size: 44px; margin-bottom: 10mm; }
+  .al-sign-big { font-size: 28px; font-weight: 700; margin: 0 20mm 10mm; }
+  .al-sign-sub { font-size: 18px; margin: 0 20mm 25mm; }
+  .al-sign-bar { font-size: 24px; font-weight: 700; margin-bottom: 30mm; }
 }
+
+/* Herramientas (/herramientas/ y portada) */
+.tools-home { max-width: 1180px; margin: 0 auto; padding: 44px 24px 0; }
+.tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; margin: 22px 0; }
+.tool-card { display: flex; flex-direction: column; gap: 6px; padding: 22px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); text-decoration: none; color: var(--text); transition: box-shadow .15s, transform .15s; }
+.tool-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+.tool-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+.tool-top > svg { width: 42px; height: 42px; padding: 9px; border-radius: 12px; background: var(--primary-soft); color: var(--primary); }
+.tool-badge { font-size: 13px; font-weight: 700; padding: 4px 12px; border-radius: 999px; background: var(--primary-soft); color: var(--primary); }
+.tool-badge.tool-paid { background: var(--accent-soft); color: var(--accent); }
+.tool-card strong { font-family: var(--font-head); font-size: 19px; color: var(--heading); }
+.tool-for { color: var(--muted); font-size: 14px; font-weight: 600; }
+.tool-text { font-size: 15px; flex: 1; }
+.tool-card .link-arrow { margin-top: 8px; }

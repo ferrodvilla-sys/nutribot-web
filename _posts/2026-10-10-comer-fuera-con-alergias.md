@@ -45,3 +45,5 @@ Y antes de pedir, puedes hacer una foto a la carta: Nutribot marca los platos qu
 Si no te dan garantías, no pasa nada por pedir algo más sencillo o elegir otro sitio. Y si tu alergia es grave, sigue siempre el plan de actuación que te haya dado tu profesional sanitario.
 
 Relacionado: [Qué significa "puede contener trazas"](/blog/puede-contener-trazas/).
+
+¿Tienes un bar o un restaurante? Haz gratis la [tabla de alérgenos de tus platos](/restaurantes/alergenos/) y el cartel para la pared, en PDF.
