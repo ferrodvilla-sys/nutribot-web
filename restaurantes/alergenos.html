@@ -4,6 +4,7 @@ title: "Tabla de alérgenos para restaurantes y bares, gratis y en PDF"
 description: "Escribe tus platos o pega tu carta y te proponemos los ingredientes y los 14 alérgenos de cada plato. Tú lo revisas y descargas la tabla de alérgenos y el cartel en PDF. Gratis, sin registrarte."
 keywords: [tabla de alérgenos para restaurantes, tabla de alérgenos gratis, carta de alérgenos bar, 14 alérgenos, cartel de alérgenos, alérgenos hostelería, plantilla alérgenos PDF, reglamento 1169/2011]
 permalink: /restaurantes/alergenos/
+sin_boton_app: true
 ---
 {% comment %}
 Herramienta gratuita para bares y restaurantes: tabla de los 14 alérgenos y cartel en PDF.
@@ -12,7 +13,7 @@ con _herramientas/alergenos-generar.mjs en assets/js/alergenos-motor.js + assets
 Todo funciona en el navegador: no se envía nada a ningún sitio (el borrador se guarda solo en este navegador).
 {% endcomment %}
 <section class="page alergenos">
-  <p class="kicker">Herramientas · Gratis · Para bares y restaurantes</p>
+  <p class="al-by"><img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="" width="40" height="40"><span><strong>Nutribot</strong> · <em>Come mejor para ti</em><small>Herramienta gratis para bares y restaurantes</small></span></p>
   <h1>Tabla de alérgenos para tu bar o restaurante</h1>
   <p class="lead">Escribe tus platos o pega tu carta. Te proponemos los ingredientes y los alérgenos de cada uno; tú los revisas y descargas en PDF la <strong>tabla de los 14 alérgenos</strong> y el <strong>cartel</strong> para la pared. Gratis, sin registrarte y sin enviar nada: todo se hace en tu navegador.</p>
 
@@ -233,6 +234,17 @@ Todo funciona en el navegador: no se envía nada a ningún sitio (el borrador se
   }
 
   function today() { var d = new Date(); return ('0' + d.getDate()).slice(-2) + '/' + ('0' + (d.getMonth() + 1)).slice(-2) + '/' + d.getFullYear(); }
+  // Pie con la marca: logo, «Nutribot · Come mejor para ti» y dónde hacer la tabla gratis.
+  function brand() {
+    var f = el('div', 'al-brand');
+    var img = el('img'); img.src = '{{ "/assets/img/logo.svg" | relative_url }}'; img.alt = ''; img.width = 34; img.height = 34;
+    var t = el('div');
+    var n = el('p', 'al-brand-name'); n.appendChild(el('strong', '', 'Nutribot')); n.appendChild(el('span', '', ' · Come mejor para ti'));
+    t.appendChild(n);
+    t.appendChild(el('p', 'al-brand-sub', 'Tabla de alérgenos hecha gratis en nutribot.eu'));
+    f.appendChild(img); f.appendChild(t);
+    return f;
+  }
   function buildPrint() {
     var p = $('al-print'); p.textContent = '';
     var bar = state.bar || 'Nuestro establecimiento';
@@ -242,14 +254,14 @@ Todo funciona en el navegador: no se envía nada a ningún sitio (el borrador se
     var leg = el('p', 'al-p-leg', '● Contiene   ·   T Puede contener trazas' + (state.fry === 'si' ? ' (freidora compartida)' : '') + (state.grill === 'si' ? (state.fry === 'si' ? ' y plancha compartida' : ' (plancha compartida)') : '') + '   ·   Actualizado: ' + today());
     s1.appendChild(leg);
     s1.appendChild(el('p', 'al-p-note', 'Información facilitada por el establecimiento según el Reglamento (UE) 1169/2011 y el Real Decreto 126/2015. Si tiene alguna alergia o intolerancia, comuníquelo a nuestro personal antes de pedir.'));
-    s1.appendChild(el('p', 'al-p-foot', 'Hecho con Nutribot · nutribot.eu'));
+    s1.appendChild(brand());
     var s2 = el('section', 'al-sheet al-sheet-sign');
     s2.appendChild(el('p', 'al-sign-icons', A.EU.map(function (a) { return a.icon; }).join(' ')));
     s2.appendChild(el('h1', '', '¿Alergias o intolerancias?'));
     s2.appendChild(el('p', 'al-sign-big', 'Consulte aquí la información sobre alérgenos de nuestros platos'));
     s2.appendChild(el('p', 'al-sign-sub', 'Pregunte a nuestro personal antes de pedir. Tenemos a su disposición la tabla de los 14 alérgenos.'));
     s2.appendChild(el('p', 'al-sign-bar', bar));
-    s2.appendChild(el('p', 'al-p-foot', 'Hecho con Nutribot · nutribot.eu'));
+    s2.appendChild(brand());
     p.appendChild(s1); p.appendChild(s2);
   }
 
