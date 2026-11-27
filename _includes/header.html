@@ -5,8 +5,8 @@
       <a href="{{ '/#funciones' | relative_url }}">La app</a>
       <a class="nav-keep" href="{{ '/herramientas/' | relative_url }}">Herramientas</a>
       <a href="{{ '/blog/' | relative_url }}">Blog</a>
-      {% comment %}En las herramientas para negocios el botón «Descargar» confunde con descargar el PDF.{% endcomment %}
-      {% unless page.sin_boton_app %}<a class="btn btn-sm" href="{{ site.play_store_url }}">Descargar</a>{% endunless %}
+      {% comment %}En las herramientas para negocios el botón confunde con descargar el PDF; en el resto dice «Descargar la app».{% endcomment %}
+      {% unless page.sin_boton_app %}<a class="btn btn-sm" href="{{ site.play_store_url }}">Descargar la app</a>{% endunless %}
     </div>
   </div>
 </nav>
