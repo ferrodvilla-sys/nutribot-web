@@ -109,7 +109,7 @@ Todo funciona en el navegador: no se envía nada a ningún sitio (el borrador se
 
 <div id="al-print" class="al-print" aria-hidden="true"></div>
 
-<script src="{{ '/assets/js/alergenos-motor.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/alergenos-motor.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
 <script>
 (function () {
   var A = window.Alergenos, MAX = 20, KEY = 'nutribot-alergenos-v1';
@@ -307,7 +307,7 @@ Todo funciona en el navegador: no se envía nada a ningún sitio (el borrador se
   });
 
   render();
-  fetch('{{ "/assets/data/alergenos-platos.json" | relative_url }}').then(function (r) { return r.json(); }).then(function (data) {
+  fetch('{{ "/assets/data/alergenos-platos.json" | relative_url }}?v={{ site.time | date: "%s" }}').then(function (r) { return r.json(); }).then(function (data) {
     A.load(data); ready = true; $('al-loading').style.display = 'none'; render();
   }).catch(function () { $('al-loading').textContent = 'No se ha podido cargar la lista de platos. Recarga la página.'; });
 })();
