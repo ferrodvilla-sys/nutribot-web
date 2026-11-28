@@ -3,6 +3,8 @@ layout: aditivo
 permalink: /aditivos/e-621/
 slug_aditivo: e621
 title: "E-621 (glutamato monosódico): qué es, dónde está y a quién puede sentar mal"
+video: aditivo-5-glutamato
+video_texto: "Vídeo corto (10 segundos)."
 description: "El glutamato monosódico (E-621) es el potenciador del sabor de las patatas fritas de bolsa, sopas de sobre y salsas. Qué es, dónde se esconde y a quién le conviene vigilarlo."
 keywords: [E621, E-621, glutamato, glutamato monosódico, glutamato dolor de cabeza, potenciador del sabor, síndrome del restaurante chino, extracto de levadura, glutamato es malo]
 grupo: Potenciador del sabor

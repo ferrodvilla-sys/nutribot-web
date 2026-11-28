@@ -3,6 +3,8 @@ layout: aditivo
 permalink: /aditivos/e-965/
 slug_aditivo: e965
 title: "E-965 (maltitol): qué es y por qué puede darte gases"
+video: aditivo-2-maltitol
+video_texto: "Vídeo corto (10 segundos)."
 description: "El maltitol (E-965) es el edulcorante de muchos chocolates y galletas «sin azúcar añadido». En cantidad da gases, hinchazón o efecto laxante. Dónde está y cómo saber si lo llevas."
 keywords: [E965, E-965, maltitol, maltitol gases, maltitol laxante, chocolate sin azúcar gases, jarabe de maltitol, polioles, maltitol FODMAP, maltitol diabéticos]
 grupo: Edulcorante · Poliol

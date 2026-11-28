@@ -3,6 +3,8 @@ layout: aditivo
 permalink: /aditivos/e-951/
 slug_aditivo: e951
 title: "E-951 (aspartamo): qué es, dónde está y quién debe evitarlo"
+video: aditivo-4-aspartamo
+video_texto: "Vídeo corto (10 segundos)."
 description: "El aspartamo (E-951) es el edulcorante de muchos refrescos «zero», chicles y yogures. Qué se sabe de su seguridad, quién no debe tomarlo y cómo saber si lo llevas."
 keywords: [E951, E-951, aspartamo, aspartame, aspartamo cáncer, aspartamo es malo, fenilcetonuria, contiene una fuente de fenilalanina, refrescos zero, edulcorantes]
 grupo: Edulcorante intenso
