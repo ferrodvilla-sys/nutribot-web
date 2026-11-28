@@ -62,6 +62,12 @@
 - url: /aditivos/e-954/
   nombre: "E-954 · Sacarina"
   codes: [E954]
+- url: /aditivos/e-952/
+  nombre: "E-952 · Ciclamato"
+  codes: [E952]
+- url: /aditivos/bha-bht-tbhq/
+  nombre: "BHA, BHT y TBHQ (E-319 a E-321)"
+  codes: [E319, E320, E321]
 - url: /aditivos/e-960/
   nombre: "E-960 · Estevia"
   codes: [E960]
