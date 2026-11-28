@@ -21,15 +21,26 @@
   como «referrer»: así la app sabe de dónde vino la persona (tabla «Por origen» del panel).{% endcomment %}
   <script>
     (function () {
-      var q = new URLSearchParams(location.search), keep = [];
+      var q = new URLSearchParams(location.search), keep = [], got = {};
+      // En las fichas de aditivos, TODOS los botones de Play dicen de qué ficha viene la descarga,
+      // y si se llegó desde Pinterest/Instagram… también de qué red (utm_source de la visita).
+      var page = {% if page.slug_aditivo %}{ utm_source: 'nutribot.eu', utm_medium: 'web', utm_campaign: 'aditivo-{{ page.slug_aditivo }}' }{% else %}null{% endif %};
       ['utm_source', 'utm_medium', 'utm_campaign'].forEach(function (k) {
         var v = q.get(k);
-        if (v && /^[A-Za-z0-9_.-]{1,40}$/.test(v)) keep.push(k + '=' + v);
+        if (v && /^[A-Za-z0-9_.-]{1,40}$/.test(v)) got[k] = v;
+      });
+      ['utm_source', 'utm_medium', 'utm_campaign'].forEach(function (k) {
+        var v = page ? (k === 'utm_campaign' ? page[k] : (got[k] || page[k])) : got[k];
+        if (v) keep.push(k + '=' + v);
       });
       if (!keep.length) return;
       var ref = encodeURIComponent(keep.join('&'));
       document.querySelectorAll('a[href*="play.google.com/store/apps/details"]').forEach(function (a) {
-        if (a.href.indexOf('referrer=') !== -1) return;
+        if (a.href.indexOf('referrer=') !== -1) {
+          if (!page) return;
+          a.href = a.href.replace(/([?&])referrer=[^&#]*/, '$1referrer=' + ref);
+          return;
+        }
         a.href += (a.href.indexOf('?') === -1 ? '?' : '&') + 'referrer=' + ref;
       });
     })();
