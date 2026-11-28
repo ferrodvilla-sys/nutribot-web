@@ -569,7 +569,7 @@ svg.fill { fill: currentColor; stroke: none; }
 .tool-card strong { font-family: var(--font-head); font-size: 19px; color: var(--heading); }
 .tool-text { font-size: 15px; flex: 1; }
 .tool-card .link-arrow { margin-top: 8px; }
-@media (max-width: 380px) { .nav-links a.nav-keep { display: none; } }
+@media (max-width: 440px) { .nav-links a.nav-keep { display: none; } } /* con «Descargar la app» no cabe en móviles normales */
 
 /* Portada: «Cómo te ayudamos» (la app y las otras herramientas, después del ciclo) */
 .ayuda { max-width: 1180px; margin: 0 auto; padding: 44px 24px 20px; }
