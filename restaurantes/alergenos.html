@@ -249,9 +249,13 @@ Todo funciona en el navegador: no se envía nada a ningún sitio (el borrador se
   function today() { var d = new Date(); return ('0' + d.getDate()).slice(-2) + '/' + ('0' + (d.getMonth() + 1)).slice(-2) + '/' + d.getFullYear(); }
   // Pie: QR a la app (Google Play, marcado «tabla-alergenos» para contarlo), un motivo para el
   // cliente con alergias y, en pequeño, dónde hacer la tabla gratis (para otros bares).
+  {% capture qr_svg %}{% include qr-tabla-alergenos.svg %}{% endcapture %}
+  var QR_SVG = {{ qr_svg | strip | jsonify }};
   function brand(sign) {
     var f = el('div', 'al-brand');
-    var qr = el('img', 'al-brand-qr'); qr.src = '{{ "/assets/img/qr-tabla-alergenos.svg" | relative_url }}'; qr.alt = 'QR de la app Nutribot';
+    // El QR va dentro de la página (no como imagen aparte): si no, Chrome abre la ventana de
+    // imprimir antes de que la imagen cargue y el QR sale en blanco.
+    var qr = el('div', 'al-brand-qr'); qr.innerHTML = QR_SVG; qr.setAttribute('role', 'img'); qr.setAttribute('aria-label', 'QR de la app Nutribot');
     var t = el('div');
     // En el cartel el título ya lo pregunta: ahí no se repite.
     if (!sign) t.appendChild(el('p', 'al-brand-q', '¿Alergias o intolerancias?'));
@@ -260,7 +264,10 @@ Todo funciona en el navegador: no se envía nada a ningún sitio (el borrador se
     n.appendChild(el('strong', '', 'Nutribot'));
     n.appendChild(document.createTextNode(' escaneas lo que compras o haces una foto a la carta y te dice qué te conviene a ti.'));
     t.appendChild(n);
-    t.appendChild(el('p', 'al-brand-sub', 'Tabla hecha gratis en nutribot.eu'));
+    // En el PDF el enlace se puede pulsar; en papel se lee igual.
+    var sub = el('p', 'al-brand-sub', 'Tabla hecha gratis en ');
+    var a = el('a', '', 'nutribot.eu'); a.href = 'https://nutribot.eu/restaurantes/alergenos/';
+    sub.appendChild(a); t.appendChild(sub);
     f.appendChild(qr); f.appendChild(t);
     return f;
   }

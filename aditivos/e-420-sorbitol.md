@@ -30,9 +30,13 @@ preguntas:
     r: "Busca en los ingredientes «sorbitol», «jarabe de sorbitol» o «E-420». Con Nutribot escaneas el código de barras y te avisa si lleva polioles que en cantidad pueden dar gases."
 relacionados:
   - nombre: "E-965 · Maltitol"
+    url: /aditivos/e-965/
   - nombre: "E-967 · Xilitol"
+    url: /aditivos/e-967/
   - nombre: "E-421 · Manitol"
-  - nombre: "E-953 · Isomaltosa (isomalt)"
+    url: /aditivos/e-421/
+  - nombre: "E-953 · Isomalt"
+    url: /aditivos/e-953/
 fuentes:
   - nombre: "Reglamento (CE) 1333/2008 sobre aditivos alimentarios"
     url: https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32008R1333

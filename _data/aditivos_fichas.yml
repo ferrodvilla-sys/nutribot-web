@@ -1,0 +1,91 @@
+# Fichas de aditivos (aditivos/*.md): qué códigos del comprobador enlazan a cada una.
+- url: /aditivos/sulfitos/
+  nombre: "Sulfitos (E-220 a E-228)"
+  codes: [E220, E221, E222, E223, E224, E226, E227, E228]
+- url: /aditivos/e-420/
+  nombre: "E-420 · Sorbitol"
+  codes: [E420]
+- url: /aditivos/e-965/
+  nombre: "E-965 · Maltitol"
+  codes: [E965]
+- url: /aditivos/e-967/
+  nombre: "E-967 · Xilitol"
+  codes: [E967]
+- url: /aditivos/e-421/
+  nombre: "E-421 · Manitol"
+  codes: [E421]
+- url: /aditivos/e-953/
+  nombre: "E-953 · Isomalt"
+  codes: [E953]
+- url: /aditivos/e-968/
+  nombre: "E-968 · Eritritol"
+  codes: [E968]
+- url: /aditivos/e-966/
+  nombre: "E-966 · Lactitol"
+  codes: [E966]
+- url: /aditivos/e-621/
+  nombre: "E-621 · Glutamato"
+  codes: [E620, E621, E622, E623, E624, E625]
+- url: /aditivos/e-250/
+  nombre: "E-250 · Nitritos y nitratos"
+  codes: [E249, E250, E251, E252]
+- url: /aditivos/fosfatos/
+  nombre: "Fosfatos (E-338 a E-452)"
+  codes: [E338, E339, E340, E341, E343, E450, E451, E452]
+- url: /aditivos/colorantes-ninos/
+  nombre: "Colorantes con aviso para niños"
+  codes: [E104, E110, E122, E124]
+- url: /aditivos/e-102/
+  nombre: "E-102 · Tartrazina"
+  codes: [E102]
+- url: /aditivos/e-129/
+  nombre: "E-129 · Rojo allura"
+  codes: [E129]
+- url: /aditivos/e-120/
+  nombre: "E-120 · Carmín"
+  codes: [E120]
+- url: /aditivos/e-171/
+  nombre: "E-171 · Dióxido de titanio"
+  codes: [E171]
+- url: /aditivos/e-322/
+  nombre: "E-322 · Lecitina"
+  codes: [E322]
+- url: /aditivos/e-951/
+  nombre: "E-951 · Aspartamo"
+  codes: [E951, E962]
+- url: /aditivos/e-955/
+  nombre: "E-955 · Sucralosa"
+  codes: [E955]
+- url: /aditivos/e-950/
+  nombre: "E-950 · Acesulfamo K"
+  codes: [E950]
+- url: /aditivos/e-954/
+  nombre: "E-954 · Sacarina"
+  codes: [E954]
+- url: /aditivos/e-960/
+  nombre: "E-960 · Estevia"
+  codes: [E960]
+- url: /aditivos/e-210/
+  nombre: "E-210 · Benzoatos"
+  codes: [E210, E211, E212, E213]
+- url: /aditivos/e-202/
+  nombre: "E-202 · Sorbatos"
+  codes: [E200, E202]
+- url: /aditivos/e-407/
+  nombre: "E-407 · Carragenano"
+  codes: [E407]
+- url: /aditivos/e-415/
+  nombre: "E-415 · Goma xantana"
+  codes: [E415]
+- url: /aditivos/e-466/
+  nombre: "E-466 · Carboximetilcelulosa"
+  codes: [E466]
+- url: /aditivos/e-150/
+  nombre: "E-150 · Colorante caramelo"
+  codes: [E150A, E150B, E150C, E150D, E1505]
+- url: /aditivos/e-330/
+  nombre: "E-330 · Ácido cítrico"
+  codes: [E330]
+- url: /aditivos/almidon-modificado/
+  nombre: "Almidón modificado"
+  codes: [E1404, E1410, E1412, E1413, E1414, E1420, E1422, E1440, E1442, E1450, E1451, E1452]

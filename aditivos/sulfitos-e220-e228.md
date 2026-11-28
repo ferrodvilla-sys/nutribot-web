@@ -32,8 +32,11 @@ preguntas:
     r: "Busca «sulfitos», «dióxido de azufre», «metabisulfito» o los códigos E-220 a E-228. Con Nutribot escaneas el código de barras y, si marcas los sulfitos en tu perfil, te avisa."
 relacionados:
   - nombre: "E-250 · Nitrito sódico"
+    url: /aditivos/e-250/
   - nombre: "E-621 · Glutamato monosódico"
-  - nombre: "E-210 · Ácido benzoico"
+    url: /aditivos/e-621/
+  - nombre: "E-210 · Ácido benzoico y benzoatos"
+    url: /aditivos/e-210/
 fuentes:
   - nombre: "Reglamento (UE) 1169/2011, anexo II (los 14 alérgenos)"
     url: https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32011R1169
