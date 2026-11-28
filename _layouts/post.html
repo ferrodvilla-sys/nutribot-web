@@ -11,7 +11,7 @@ layout: default
   {% comment %}Aviso de descarga antes del apartado (h2) del medio. Solo en artículos con 3 apartados o más.{% endcomment %}
   {% assign trozos = content | split: "<h2" %}{% assign n_h2 = trozos.size | minus: 1 %}
   <div class="post-body">
-    {% if n_h2 >= 3 %}{% assign mitad = n_h2 | plus: 1 | divided_by: 2 | plus: 1 %}{% for t in trozos %}{% if forloop.first %}{{ t }}{% else %}{% if forloop.index == mitad %}{% include cta-mitad.html %}{% endif %}<h2{{ t }}{% endif %}{% endfor %}{% else %}{{ content }}{% endif %}
+    {% if n_h2 >= 3 and page.negocio != true %}{% assign mitad = n_h2 | plus: 1 | divided_by: 2 | plus: 1 %}{% for t in trozos %}{% if forloop.first %}{{ t }}{% else %}{% if forloop.index == mitad %}{% include cta-mitad.html %}{% endif %}<h2{{ t }}{% endif %}{% endfor %}{% else %}{{ content }}{% endif %}
   </div>
 
   {% if page.medico %}
