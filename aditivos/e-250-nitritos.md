@@ -3,6 +3,8 @@ layout: aditivo
 permalink: /aditivos/e-250/
 slug_aditivo: e250
 title: "E-250 (nitrito sódico) y nitratos: qué son y por qué conviene limitarlos"
+video: aditivo-6-nitritos
+video_texto: "Vídeo corto (10 segundos)."
 description: "El nitrito sódico (E-250) y los nitratos (E-249 a E-252) son los conservantes del jamón cocido, el bacon y los embutidos. Para qué sirven, dónde están y por qué conviene no abusar."
 keywords: [E250, E-250, nitrito sódico, nitritos, nitratos, E252, nitrato potásico, nitritos embutidos, nitritos jamón cocido, nitrosaminas, nitritos cáncer, nitratos espinacas bebés]
 grupo: Conservador · Conviene limitar

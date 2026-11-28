@@ -3,6 +3,8 @@ layout: aditivo
 permalink: /aditivos/sulfitos/
 slug_aditivo: sulfitos
 title: "Sulfitos (E-220 a E-228): qué son, dónde están y a quién pueden sentar mal"
+video: aditivo-3-sulfitos
+video_texto: "Vídeo corto (10 segundos)."
 description: "Los sulfitos (E-220 a E-228) son conservantes del vino, los frutos secos desecados, las gambas o algunas patatas. Son uno de los 14 alérgenos obligatorios. Dónde están y cómo saber si los llevas."
 keywords: [sulfitos, E220, E-220, E223, E224, metabisulfito, dióxido de azufre, sulfitos vino, alergia sulfitos, sensibilidad a los sulfitos, contiene sulfitos, sulfitos gambas]
 grupo: Conservador · Uno de los 14 alérgenos

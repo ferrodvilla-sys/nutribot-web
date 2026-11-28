@@ -3,6 +3,8 @@ layout: aditivo
 permalink: /aditivos/e-420/
 slug_aditivo: e420
 title: "E-420 (sorbitol): qué es y por qué puede sentarte mal"
+video: aditivo-1-sorbitol
+video_texto: "Vídeo corto (10 segundos)."
 description: "El sorbitol (E-420) es un edulcorante de los «sin azúcar». En cantidad puede dar gases, hinchazón o efecto laxante, y se evita en la dieta baja en FODMAP. Dónde está y cómo saber si lo llevas."
 keywords: [E420, E-420, sorbitol, sorbitol gases, sorbitol hinchazón, sorbitol efecto laxante, sorbitol FODMAP, polioles, chicles sin azúcar gases, edulcorantes que dan gases]
 grupo: Edulcorante · Poliol
