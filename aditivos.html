@@ -12,6 +12,7 @@ Todo funciona en el navegador: no se envía nada a ningún sitio.
 {% endcomment %}
 {% assign aditivos = site.data.aditivos %}
 {% assign vigilar = aditivos | where: "tone", "vigilar" %}
+{% assign fichas = site.data.aditivos_fichas %}
 {% capture play %}{{ site.play_store_url }}&referrer=utm_source%3Dnutribot.eu%26utm_medium%3Dweb%26utm_campaign%3Daditivos{% endcapture %}
 <section class="page aditivos">
   <p class="kicker"><a href="{{ '/herramientas/' | relative_url }}">Herramientas</a> · Gratis</p>
@@ -40,6 +41,12 @@ Todo funciona en el navegador: no se envía nada a ningún sitio.
     <a class="btn" href="{{ play }}">{% include icon.html name="play" %}Descárgala gratis</a>
   </aside>
 
+  <h2>Los aditivos que más preguntan</h2>
+  <p>Fichas cortas con dónde suele estar cada uno, a quién le conviene vigilarlo y cómo verlo en la etiqueta.</p>
+  <nav class="topic-nav ad-fichas">
+    {% for f in fichas %}<a class="tag" href="{{ f.url | relative_url }}">{{ f.nombre }}</a>{% endfor %}
+  </nav>
+
   <h2>Todos los aditivos ({{ aditivos.size }})</h2>
   <p>Ordenados por número. De ellos, <strong>{{ vigilar.size }}</strong> están marcados para vigilar: colorantes que la ley obliga a señalar para niños, sulfitos, nitritos y nitratos, benzoatos, glutamatos, edulcorantes intensos, fosfatos y algunos antioxidantes. En Latinoamérica muchos se escriben con el número <strong>INS</strong> (INS 621 = E621).</p>
 
@@ -50,7 +57,7 @@ Todo funciona en el navegador: no se envía nada a ningún sitio.
   {% for g in grupos %}
   <h3 id="{{ g.name | slugify }}" class="ad-group">{{ g.name }}</h3>
   <ul class="ad-list">
-    {% for a in g.items %}<li id="{{ a.code | downcase }}" class="ad-row ad-{{ a.tone }}"><i class="ad-dot ad-{{ a.tone }}"></i><strong>{{ a.code }}</strong> <span class="ad-name">{{ a.name }}</span>{% if a.note != "" %}<span class="ad-note">{{ a.note }}</span>{% endif %}</li>
+    {% for a in g.items %}<li id="{{ a.code | downcase }}" class="ad-row ad-{{ a.tone }}"><i class="ad-dot ad-{{ a.tone }}"></i><strong>{{ a.code }}</strong> <span class="ad-name">{{ a.name }}</span>{% if a.note != "" %}<span class="ad-note">{{ a.note }}</span>{% endif %}{% for f in fichas %}{% if f.codes contains a.code %} <a class="ad-more" href="{{ f.url | relative_url }}">Leer más</a>{% endif %}{% endfor %}</li>
     {% endfor %}
   </ul>
   {% endfor %}
@@ -68,6 +75,8 @@ Todo funciona en el navegador: no se envía nada a ningún sitio.
 <script>
 (function () {
   var DATA = {{ aditivos | jsonify }};
+  var FICHAS = {};
+  {{ fichas | jsonify }}.forEach(function (f) { f.codes.forEach(function (c) { FICHAS[c] = f.url; }); });
   var byCode = {};
   DATA.forEach(function (a) { byCode[a.code] = a; });
   var norm = function (s) {
@@ -87,7 +96,8 @@ Todo funciona en el navegador: no se envía nada a ningún sitio.
   [["aspartame", "E951"], ["acesulfame k", "E950"], ["acesulfame", "E950"], ["amarillo 5", "E102"], ["amarillo 6", "E110"],
    ["amarillo crepusculo", "E110"], ["rojo 40", "E129"], ["azul 1", "E133"], ["carmoisina", "E122"], ["metabisulfito sodico", "E223"],
    ["metabisulfito potasico", "E224"], ["anhidrido sulfuroso", "E220"], ["dioxido de azufre", "E220"], ["goma xantana", "E415"],
-   ["goma guar", "E412"], ["carragenina", "E407"], ["glutamato", "E621"], ["sulfitos", "E220"]].forEach(function (x) { NAMES.push(x); });
+   ["goma guar", "E412"], ["carragenina", "E407"], ["carragenano", "E407"], ["glutamato", "E621"], ["sulfitos", "E220"],
+   ["lecitina", "E322"], ["estevia", "E960"], ["stevia", "E960"], ["sucralose", "E955"]].forEach(function (x) { NAMES.push(x); });
   NAMES.sort(function (a, b) { return b[0].length - a[0].length; });
 
   function lookup(code) {
@@ -128,7 +138,8 @@ Todo funciona en el navegador: no se envía nada a ningún sitio.
       if (gas) parts.push(gas + (gas === 1 ? " que puede dar gases" : " que pueden dar gases"));
       html = '<p class="ad-sum">' + parts.join(" · ") + "</p><ul class=\"ad-list ad-found\">" + found.map(function (a) {
         return '<li class="ad-row ad-' + a.tone + '"><i class="ad-dot ad-' + a.tone + '"></i><a href="#' + a.code.toLowerCase() + '"><strong>' + a.code +
-          '</strong></a> <span class="ad-name">' + esc(a.name) + "</span>" + (a.note ? '<span class="ad-note">' + esc(a.note) + "</span>" : "") + "</li>";
+          '</strong></a> <span class="ad-name">' + esc(a.name) + "</span>" + (a.note ? '<span class="ad-note">' + esc(a.note) + "</span>" : "") +
+          (FICHAS[a.code] ? ' <a class="ad-more" href="{{ site.baseurl }}' + FICHAS[a.code] + '">Leer más</a>' : "") + "</li>";
       }).join("") + "</ul>";
     }
     res.innerHTML = html;

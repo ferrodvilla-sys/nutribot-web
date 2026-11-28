@@ -394,13 +394,14 @@ svg.fill { fill: currentColor; stroke: none; }
 .ad-row a { text-decoration: none; }
 .ad-name { color: var(--heading); font-weight: 600; }
 .ad-note { flex-basis: 100%; padding-left: 74px; color: var(--muted); font-size: 15px; }
+.ad-row a.ad-more { flex-basis: 100%; padding-left: 74px; font-size: 15px; font-weight: 600; color: var(--primary); text-decoration: underline; }
 .ad-row.ad-vigilar { background: var(--danger-soft); }
 .ad-row.ad-gases { background: var(--accent-soft); }
 .ad-found .ad-row { border-radius: 12px; border: none; margin-bottom: 6px; }
 .ad-row:target { outline: 2px solid var(--primary); border-radius: 12px; }
 .ad-group { font-size: 19px; margin: 28px 0 6px; scroll-margin-top: 90px; }
 .ad-cta { margin: 10px 0 30px; }
-@media (max-width: 640px) { .ad-note { padding-left: 18px; } }
+@media (max-width: 640px) { .ad-note, .ad-row a.ad-more { padding-left: 18px; } }
 
 /* Ejemplo dibujado de la foto de la carta (_includes/carta-demo.html) */
 .carta-demo .cd-phone { width: 100%; max-width: 330px; background: var(--card); border: 1px solid var(--border); border-radius: 26px; box-shadow: var(--shadow-lg); padding: 16px 14px 12px; font-size: 14px; line-height: 1.35; color: var(--text); }
@@ -543,8 +544,11 @@ svg.fill { fill: currentColor; stroke: none; }
   .al-brand-name { font-size: 11px; color: #333; max-width: 110mm; }
   .al-brand-name strong { color: #516645; }
   .al-brand-sub { font-size: 9px; color: #777; margin-top: 2px !important; }
+  .al-brand-sub a { color: #516645; text-decoration: underline; }
   .al-sheet-sign .al-brand { justify-content: center; margin-top: 0; text-align: left; }
   .al-sheet-sign .al-brand-qr { width: 28mm; height: 28mm; }
+  .al-brand-qr svg { display: block; width: 100%; height: 100%; fill: none; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: miter; }
+  .al-brand-qr svg path { stroke: #1f2419; stroke-width: 1; }
   .al-sheet-sign .al-brand-q { font-size: 15px; }
   .al-sheet-sign .al-brand-name { font-size: 13px; }
   .al-sheet-sign .al-brand-sub { font-size: 10px; }
@@ -569,7 +573,7 @@ svg.fill { fill: currentColor; stroke: none; }
 .tool-card strong { font-family: var(--font-head); font-size: 19px; color: var(--heading); }
 .tool-text { font-size: 15px; flex: 1; }
 .tool-card .link-arrow { margin-top: 8px; }
-@media (max-width: 380px) { .nav-links a.nav-keep { display: none; } }
+@media (max-width: 440px) { .nav-links a.nav-keep { display: none; } } /* con «Descargar la app» no cabe en móviles normales */
 
 /* Portada: «Cómo te ayudamos» (la app y las otras herramientas, después del ciclo) */
 .ayuda { max-width: 1180px; margin: 0 auto; padding: 44px 24px 20px; }
