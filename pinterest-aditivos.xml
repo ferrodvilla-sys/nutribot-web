@@ -1,0 +1,23 @@
+---
+layout: null
+permalink: /pinterest/aditivos.xml
+sitemap: false
+---
+{% comment %}Feed para Pinterest («Crear pines desde RSS»): un pin por ficha de aditivo, con su imagen vertical y enlace a la ficha.{% endcomment %}<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+  <title>Nutribot · Aditivos: qué son y por qué pueden sentarte mal</title>
+  <link>{{ site.url }}/aditivos/</link>
+  <description>Fichas cortas de aditivos alimentarios: qué son, dónde suelen estar y a quién pueden sentar mal.</description>
+  <language>es</language>
+  {% assign fichas = site.pages | where: "layout", "aditivo" | sort: "permalink" %}{% for p in fichas %}{% assign base = p.name | remove: ".md" %}
+  <item>
+    <title>{{ p.title | xml_escape }}</title>
+    <link>{{ site.url }}{{ p.permalink }}?utm_source=pinterest&amp;utm_medium=pin&amp;utm_campaign=aditivos</link>
+    <guid isPermaLink="false">nutribot-aditivo-{{ base }}</guid>
+    <description>{{ p.resumen | xml_escape }} Ficha completa gratis en nutribot.eu.</description>
+    <enclosure url="{{ site.url }}/assets/img/pins/pin-{{ base }}.jpg" type="image/jpeg" length="0"/>
+    <media:content url="{{ site.url }}/assets/img/pins/pin-{{ base }}.jpg" medium="image" type="image/jpeg" width="1000" height="1500"/>
+  </item>{% endfor %}
+</channel>
+</rss>
