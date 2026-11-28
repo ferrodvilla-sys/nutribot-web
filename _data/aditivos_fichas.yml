@@ -82,7 +82,7 @@
   codes: [E466]
 - url: /aditivos/e-150/
   nombre: "E-150 · Colorante caramelo"
-  codes: [E150A, E150B, E150C, E150D, E1505]
+  codes: [E150A, E150B, E150C, E150D]
 - url: /aditivos/e-330/
   nombre: "E-330 · Ácido cítrico"
   codes: [E330]
